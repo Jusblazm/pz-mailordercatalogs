@@ -1,0 +1,4 @@
+ContextMenu_RU = {
+    ContextMenu_MailOrderCatalogs_ATM_UseATM = "Использовать банкомат",
+    ContextMenu_MailOrderCatalogs_Computer_AccessComputer = "Получить доступ к компьютеру",
+}

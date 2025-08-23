@@ -1,0 +1,6 @@
+IGUI_CH = {
+    IGUI_MailOrderCatalogs_PlayerText_PackageNearby = "我想我的包裹被送到附近了",
+    IGUI_MailOrderCatalogs_PlayerText_PackagePostOffice = "我想我的包裹被送到附近的郵局",
+    IGUI_MailOrderCatalogs_PlayerText_CantReachComputer = "我無法使用這台電腦",
+    IGUI_MailOrderCatalogs_PlayerText_CantReachATM = "我無法使用這台自動櫃員機",
+}

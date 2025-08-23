@@ -1,0 +1,6 @@
+IGUI_EN = {
+    IGUI_MailOrderCatalogs_PlayerText_PackageNearby = "I think my package was delivered nearby",
+    IGUI_MailOrderCatalogs_PlayerText_PackagePostOffice = "I think my package was delivered to a nearby Post Office",
+    IGUI_MailOrderCatalogs_PlayerText_CantReachComputer = "I can't reach the computer",
+    IGUI_MailOrderCatalogs_PlayerText_CantReachATM = "I can't reach the ATM",
+}

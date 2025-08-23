@@ -1,0 +1,10 @@
+Sandbox_CH = {
+    Sandbox_MailOrderCatalogs = "郵購目錄設定",
+    Sandbox_MailOrderCatalogs_OwnerPIN = "自動輸入你卡片的 PIN",
+    Sandbox_MailOrderCatalogs_OwnerPIN_tooltip = "卡片屬於你時，是否在 ATM 自動輸入 PIN？",
+    Sandbox_MailOrderCatalogs_PriceMultiplier = "商品價格",
+    Sandbox_MailOrderCatalogs_PriceMultiplier_tooltip = "調整所有郵購目錄商品價格。設為一半可便宜購買，普通為標準價格，雙倍為更貴價格。",
+    Sandbox_MailOrderCatalogs_PriceMultiplier_option1 = "一半",
+    Sandbox_MailOrderCatalogs_PriceMultiplier_option2 = "普通",
+    Sandbox_MailOrderCatalogs_PriceMultiplier_option3 = "雙倍",
+}

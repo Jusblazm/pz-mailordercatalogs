@@ -1,0 +1,6 @@
+IGUI_PT = {
+    IGUI_MailOrderCatalogs_PlayerText_PackageNearby = "Acho que a minha encomenda foi entregue por aqui perto",
+    IGUI_MailOrderCatalogs_PlayerText_PackagePostOffice = "Acho que a minha encomenda foi entregue num CTT próximo",
+    IGUI_MailOrderCatalogs_PlayerText_CantReachComputer = "Não consigo alcançar o computador",
+    IGUI_MailOrderCatalogs_PlayerText_CantReachATM = "Não consigo alcançar o ATM",
+}

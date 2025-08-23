@@ -1,0 +1,6 @@
+IGUI_RU = {
+    IGUI_MailOrderCatalogs_PlayerText_PackageNearby = "Кажется, моя посылка доставлена поблизости",
+    IGUI_MailOrderCatalogs_PlayerText_PackagePostOffice = "Кажется, моя посылка доставлена в ближайшее почтовое отделение",
+    IGUI_MailOrderCatalogs_PlayerText_CantReachComputer = "Я не могу добраться до компьютера",
+    IGUI_MailOrderCatalogs_PlayerText_CantReachATM = "Я не могу добраться до банкомата",
+}

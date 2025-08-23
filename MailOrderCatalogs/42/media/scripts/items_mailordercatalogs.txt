@@ -1,0 +1,666 @@
+module Base
+{
+	imports
+	{
+		Base
+	}
+
+	/******* LITERATURE - CATALOGS *******/
+
+	item AwlWorkAndSewPlayCatalog1
+	{
+		DisplayName         = Catalog: All Work and Sew Play - Beginner's Tools,
+		DisplayCategory     = Literature,
+		Type                = Literature,
+		Weight              = 0.5,
+		Icon                = AwlWorkAndSewPlayCatalog,
+		BoredomChange       = -10,
+		StressChange        = -10,
+		StaticModel         = Magazine,
+		WorldStaticModel    = MagazineGround,
+		Tags                = Magazine,	
+	}
+
+	item AwlWorkAndSewPlayCatalog2
+	{
+		DisplayName         = Catalog: All Work and Sew Play - Knitting Needs,
+		DisplayCategory     = Literature,
+		Type                = Literature,
+		Weight              = 0.5,
+		Icon                = AwlWorkAndSewPlayCatalog,
+		BoredomChange       = -10,
+		StressChange        = -10,
+		StaticModel         = Magazine,
+		WorldStaticModel    = MagazineGround,
+		Tags                = Magazine,	
+	}
+
+	item AwlWorkAndSewPlayCatalog3
+	{
+		DisplayName         = Catalog: All Work and Sew Play - Leatherworking,
+		DisplayCategory     = Literature,
+		Type                = Literature,
+		Weight              = 0.5,
+		Icon                = AwlWorkAndSewPlayCatalog,
+		BoredomChange       = -10,
+		StressChange        = -10,
+		StaticModel         = Magazine,
+		WorldStaticModel    = MagazineGround,
+		Tags                = Magazine,	
+	}
+
+	item AwlWorkAndSewPlayCatalog4
+	{
+		DisplayName         = Catalog: All Work and Sew Play - Tool Supplies,
+		DisplayCategory     = Literature,
+		Type                = Literature,
+		Weight              = 0.5,
+		Icon                = AwlWorkAndSewPlayCatalog,
+		BoredomChange       = -10,
+		StressChange        = -10,
+		StaticModel         = Magazine,
+		WorldStaticModel    = MagazineGround,
+		Tags                = Magazine,	
+	}
+
+	item AwlWorkAndSewPlayCatalog5
+	{
+		DisplayName         = Catalog: All Work and Sew Play - Professional Supplies,
+		DisplayCategory     = Literature,
+		Type                = Literature,
+		Weight              = 0.5,
+		Icon                = AwlWorkAndSewPlayCatalog,
+		BoredomChange       = -10,
+		StressChange        = -10,
+		StaticModel         = Magazine,
+		WorldStaticModel    = MagazineGround,
+		Tags                = Magazine,	
+	}
+
+    item AwlWorkAndSewPlayCatalog6
+	{
+		DisplayName         = Catalog: All Work and Sew Play - Glorious Dyes,
+		DisplayCategory     = Literature,
+		Type                = Literature,
+		Weight              = 0.5,
+		Icon                = AwlWorkAndSewPlayCatalog,
+		BoredomChange       = -10,
+		StressChange        = -10,
+		StaticModel         = Magazine,
+		WorldStaticModel    = MagazineGround,
+		Tags                = Magazine,	
+	}
+
+    item BookNakedCatalog1
+	{
+		DisplayName         = Catalog: Book Naked - Learn First Aid,
+		DisplayCategory     = Literature,
+		Type                = Literature,
+		Weight              = 0.5,
+		Icon                = Magazine,
+		BoredomChange       = -10,
+		StressChange        = -10,
+		StaticModel         = Magazine,
+		WorldStaticModel    = MagazineGround,
+		Tags                = Magazine,	
+	}
+
+    item BookNakedCatalog2
+	{
+		DisplayName         = Catalog: Book Naked - Complete Welding Collection,
+		DisplayCategory     = Literature,
+		Type                = Literature,
+		Weight              = 0.5,
+		Icon                = Magazine,
+		BoredomChange       = -10,
+		StressChange        = -10,
+		StaticModel         = Magazine,
+		WorldStaticModel    = MagazineGround,
+		Tags                = Magazine,	
+	}
+
+    item BookNakedCatalog3
+	{
+		DisplayName         = Catalog: Book Naked - Tailor Like Joann,
+		DisplayCategory     = Literature,
+		Type                = Literature,
+		Weight              = 0.5,
+		Icon                = Magazine,
+		BoredomChange       = -10,
+		StressChange        = -10,
+		StaticModel         = Magazine,
+		WorldStaticModel    = MagazineGround,
+		Tags                = Magazine,	
+	}
+
+	item DressedToThe90sCatalog1
+	{
+		DisplayName         = Catalog: Dressed to the 90s - Shellsuits,
+		DisplayCategory     = Literature,
+		Type                = Literature,
+		Weight              = 0.5,
+		Icon                = Magazine,
+		BoredomChange       = -10,
+		StressChange        = -10,
+		StaticModel         = Magazine,
+		WorldStaticModel    = MagazineGround,
+		Tags                = Magazine,	
+	}
+
+	item EPToolsCatalog1
+	{
+		DisplayName         = Catalog: E.P. Tools - Gardening,
+		DisplayCategory     = Literature,
+		Type                = Literature,
+		Weight              = 0.5,
+		Icon                = Magazine,
+		BoredomChange       = -10,
+		StressChange        = -10,
+		StaticModel         = Magazine,
+		WorldStaticModel    = MagazineGround,
+		Tags                = Magazine,	
+	}
+
+	item EPToolsCatalog2
+	{
+		DisplayName         = Catalog: E.P. Tools - Lumber,
+		DisplayCategory     = Literature,
+		Type                = Literature,
+		Weight              = 0.5,
+		Icon                = Magazine,
+		BoredomChange       = -10,
+		StressChange        = -10,
+		StaticModel         = Magazine,
+		WorldStaticModel    = MagazineGround,
+		Tags                = Magazine,	
+	}
+
+	item EPToolsCatalog3
+	{
+		DisplayName         = Catalog: E.P. Tools - Vehicle Essentials,
+		DisplayCategory     = Literature,
+		Type                = Literature,
+		Weight              = 0.5,
+		Icon                = Magazine,
+		BoredomChange       = -10,
+		StressChange        = -10,
+		StaticModel         = Magazine,
+		WorldStaticModel    = MagazineGround,
+		Tags                = Magazine,	
+	}
+
+	item EnigmaBooksCatalog1
+	{
+		DisplayName         = Catalog: Enigma Books - Basics of Survival,
+		DisplayCategory     = Literature,
+		Type                = Literature,
+		Weight              = 0.5,
+		Icon                = Magazine,
+		BoredomChange       = -10,
+		StressChange        = -10,
+		StaticModel         = Magazine,
+		WorldStaticModel    = MagazineGround,
+		Tags                = Magazine,	
+	}
+
+	item FamilyFashionCatalog1
+	{
+		DisplayName         = Catalog: Family Fashion - Sportswear,
+		DisplayCategory     = Literature,
+		Type                = Literature,
+		Weight              = 0.5,
+		Icon                = Magazine,
+		BoredomChange       = -10,
+		StressChange        = -10,
+		StaticModel         = Magazine,
+		WorldStaticModel    = MagazineGround,
+		Tags                = Magazine,	
+	}
+
+	item FarmingAndRuralSupplyCatalog1
+	{
+		DisplayName         = Catalog: Farming & Rural Supply - First Time Gardener,
+		DisplayCategory     = Literature,
+		Type                = Literature,
+		Weight              = 0.5,
+		Icon                = Magazine,
+		BoredomChange       = -10,
+		StressChange        = -10,
+		StaticModel         = Magazine,
+		WorldStaticModel    = MagazineGround,
+		Tags                = Magazine,	
+	}
+
+	item FarmingAndRuralSupplyCatalog2
+	{
+		DisplayName         = Catalog: Farming & Rural Supply - Rugged Wear,
+		DisplayCategory     = Literature,
+		Type                = Literature,
+		Weight              = 0.5,
+		Icon                = Magazine,
+		BoredomChange       = -10,
+		StressChange        = -10,
+		StaticModel         = Magazine,
+		WorldStaticModel    = MagazineGround,
+		Tags                = Magazine,	
+	}
+
+	item FiligreeFashionsCatalog1
+	{
+		DisplayName         = Catalog: Filigree Fashions - Intimates,
+		DisplayCategory     = Literature,
+		Type                = Literature,
+		Weight              = 0.5,
+		Icon                = Magazine,
+		BoredomChange       = -10,
+		StressChange        = -10,
+		StaticModel         = Magazine,
+		WorldStaticModel    = MagazineGround,
+		Tags                = Magazine,	
+	}
+
+	item LouisvilleBruiserCatalog
+	{
+		DisplayName         = Catalog: Louisville Bruiser Baseball Bats,
+		DisplayCategory     = Literature,
+		Type                = Literature,
+		Weight              = 0.5,
+		Icon                = Magazine,
+		BoredomChange       = -10,
+		StressChange        = -10,
+		StaticModel         = Magazine,
+		WorldStaticModel    = MagazineGround,
+		Tags                = Magazine,	
+	}
+
+	item MedUWellCatalog1
+	{
+		DisplayName         = Catalog: Med U Well,
+		DisplayCategory     = Literature,
+		Type                = Literature,
+		Weight              = 0.5,
+		Icon                = Magazine,
+		BoredomChange       = -10,
+		StressChange        = -10,
+		StaticModel         = Magazine,
+		WorldStaticModel    = MagazineGround,
+		Tags                = Magazine,	
+	}
+
+	item PharmahugCatalog1
+	{
+		DisplayName         = Catalog: Pharmahug,
+		DisplayCategory     = Literature,
+		Type                = Literature,
+		Weight              = 0.5,
+		Icon                = Magazine,
+		BoredomChange       = -10,
+		StressChange        = -10,
+		StaticModel         = Magazine,
+		WorldStaticModel    = MagazineGround,
+		Tags                = Magazine,	
+	}
+
+	item SaucyCatalog1
+	{
+		DisplayName         = Catalog: Saucy - Intimates,
+		DisplayCategory     = Literature,
+		Type                = Literature,
+		Weight              = 0.5,
+		Icon                = Magazine,
+		BoredomChange       = -10,
+		StressChange        = -10,
+		StaticModel         = Magazine,
+		WorldStaticModel    = MagazineGround,
+		Tags                = Magazine,	
+	}
+
+	item TheExquisitePearlCatalog1
+	{
+		DisplayName         = Catalog: The Exquisite Pearl - Exquisite Gems,
+		DisplayCategory     = Literature,
+		Type                = Literature,
+		Weight              = 0.5,
+		Icon                = TheExquisitePearlCatalog,
+		BoredomChange       = -10,
+		StressChange        = -10,
+		StaticModel         = Magazine,
+		WorldStaticModel    = MagazineGround,
+		Tags                = Magazine,	
+	}
+
+	item TheExquisitePearlCatalog2
+	{
+		DisplayName         = Catalog: The Exquisite Pearl - Exclusive Luthex,
+		DisplayCategory     = Literature,
+		Type                = Literature,
+		Weight              = 0.5,
+		Icon                = TheExquisitePearlCatalog,
+		BoredomChange       = -15,
+		StressChange        = -15,
+		StaticModel         = Magazine,
+		WorldStaticModel    = MagazineGround,
+		Tags                = Magazine,	
+	}
+
+	item TheExquisitePearlCatalog3
+	{
+		DisplayName         = Catalog: The Exquisite Pearl - Earrings,
+		DisplayCategory     = Literature,
+		Type                = Literature,
+		Weight              = 0.5,
+		Icon                = TheExquisitePearlCatalog,
+		BoredomChange       = -10,
+		StressChange        = -10,
+		StaticModel         = Magazine,
+		WorldStaticModel    = MagazineGround,
+		Tags                = Magazine,	
+	}
+
+	item TheExquisitePearlCatalog4
+	{
+		DisplayName         = Catalog: The Exquisite Pearl - Necklaces,
+		DisplayCategory     = Literature,
+		Type                = Literature,
+		Weight              = 0.5,
+		Icon                = TheExquisitePearlCatalog,
+		BoredomChange       = -10,
+		StressChange        = -10,
+		StaticModel         = Magazine,
+		WorldStaticModel    = MagazineGround,
+		Tags                = Magazine,	
+	}
+
+	item TheExquisitePearlCatalog5
+	{
+		DisplayName         = Catalog: The Exquisite Pearl - Rings,
+		DisplayCategory     = Literature,
+		Type                = Literature,
+		Weight              = 0.5,
+		Icon                = TheExquisitePearlCatalog,
+		BoredomChange       = -10,
+		StressChange        = -10,
+		StaticModel         = Magazine,
+		WorldStaticModel    = MagazineGround,
+		Tags                = Magazine,	
+	}
+
+	item ThumbsOfGreenCatalog1
+	{
+		DisplayName         = Catalog: Thumbs of Green - Beginner Seeds,
+		DisplayCategory     = Literature,
+		Type                = Literature,
+		Weight              = 0.5,
+		Icon                = Magazine,
+		BoredomChange       = -10,
+		StressChange        = -10,
+		StaticModel         = Magazine,
+		WorldStaticModel    = MagazineGround,
+		Tags                = Magazine,	
+	}
+
+	item ThumbsOfGreenCatalog2
+	{
+		DisplayName         = Catalog: Thumbs of Green - Alliums,
+		DisplayCategory     = Literature,
+		Type                = Literature,
+		Weight              = 0.5,
+		Icon                = Magazine,
+		BoredomChange       = -10,
+		StressChange        = -10,
+		StaticModel         = Magazine,
+		WorldStaticModel    = MagazineGround,
+		Tags                = Magazine,	
+	}
+
+	item ThumbsOfGreenCatalog3
+	{
+		DisplayName         = Catalog: Thumbs of Green - Flowers,
+		DisplayCategory     = Literature,
+		Type                = Literature,
+		Weight              = 0.5,
+		Icon                = Magazine,
+		BoredomChange       = -10,
+		StressChange        = -10,
+		StaticModel         = Magazine,
+		WorldStaticModel    = MagazineGround,
+		Tags                = Magazine,	
+	}
+
+	item ThumbsOfGreenCatalog4
+	{
+		DisplayName         = Catalog: Thumbs of Green - Cucurbits,
+		DisplayCategory     = Literature,
+		Type                = Literature,
+		Weight              = 0.5,
+		Icon                = Magazine,
+		BoredomChange       = -10,
+		StressChange        = -10,
+		StaticModel         = Magazine,
+		WorldStaticModel    = MagazineGround,
+		Tags                = Magazine,	
+	}
+
+	item ThumbsOfGreenCatalog5
+	{
+		DisplayName         = Catalog: Thumbs of Green - Cruciferous,
+		DisplayCategory     = Literature,
+		Type                = Literature,
+		Weight              = 0.5,
+		Icon                = Magazine,
+		BoredomChange       = -10,
+		StressChange        = -10,
+		StaticModel         = Magazine,
+		WorldStaticModel    = MagazineGround,
+		Tags                = Magazine,	
+	}
+
+	item ThumbsOfGreenCatalog6
+	{
+		DisplayName         = Catalog: Thumbs of Green - Brewing & Specialty Crops,
+		DisplayCategory     = Literature,
+		Type                = Literature,
+		Weight              = 0.5,
+		Icon                = Magazine,
+		BoredomChange       = -10,
+		StressChange        = -10,
+		StaticModel         = Magazine,
+		WorldStaticModel    = MagazineGround,
+		Tags                = Magazine,	
+	}
+
+	item ThumbsOfGreenCatalog7
+	{
+		DisplayName         = Catalog: Thumbs of Green - Fruits,
+		DisplayCategory     = Literature,
+		Type                = Literature,
+		Weight              = 0.5,
+		Icon                = Magazine,
+		BoredomChange       = -10,
+		StressChange        = -10,
+		StaticModel         = Magazine,
+		WorldStaticModel    = MagazineGround,
+		Tags                = Magazine,	
+	}
+
+	item ThumbsOfGreenCatalog8
+	{
+		DisplayName         = Catalog: Thumbs of Green - Cereal Grains,
+		DisplayCategory     = Literature,
+		Type                = Literature,
+		Weight              = 0.5,
+		Icon                = Magazine,
+		BoredomChange       = -10,
+		StressChange        = -10,
+		StaticModel         = Magazine,
+		WorldStaticModel    = MagazineGround,
+		Tags                = Magazine,	
+	}
+
+	item ThumbsOfGreenCatalog9
+	{
+		DisplayName         = Catalog: Thumbs of Green - Herbs,
+		DisplayCategory     = Literature,
+		Type                = Literature,
+		Weight              = 0.5,
+		Icon                = Magazine,
+		BoredomChange       = -10,
+		StressChange        = -10,
+		StaticModel         = Magazine,
+		WorldStaticModel    = MagazineGround,
+		Tags                = Magazine,	
+	}
+
+	item ThumbsOfGreenCatalog10
+	{
+		DisplayName         = Catalog: Thumbs of Green - Leafy Greens,
+		DisplayCategory     = Literature,
+		Type                = Literature,
+		Weight              = 0.5,
+		Icon                = Magazine,
+		BoredomChange       = -10,
+		StressChange        = -10,
+		StaticModel         = Magazine,
+		WorldStaticModel    = MagazineGround,
+		Tags                = Magazine,	
+	}
+
+	item ThumbsOfGreenCatalog11
+	{
+		DisplayName         = Catalog: Thumbs of Green - Medicinal Plants,
+		DisplayCategory     = Literature,
+		Type                = Literature,
+		Weight              = 0.5,
+		Icon                = Magazine,
+		BoredomChange       = -10,
+		StressChange        = -10,
+		StaticModel         = Magazine,
+		WorldStaticModel    = MagazineGround,
+		Tags                = Magazine,	
+	}
+
+	item ThumbsOfGreenCatalog12
+	{
+		DisplayName         = Catalog: Thumbs of Green - Oilseed Crops,
+		DisplayCategory     = Literature,
+		Type                = Literature,
+		Weight              = 0.5,
+		Icon                = Magazine,
+		BoredomChange       = -10,
+		StressChange        = -10,
+		StaticModel         = Magazine,
+		WorldStaticModel    = MagazineGround,
+		Tags                = Magazine,	
+	}
+
+	item ThumbsOfGreenCatalog13
+	{
+		DisplayName         = Catalog: Thumbs of Green - Nightshade Seeds,
+		DisplayCategory     = Literature,
+		Type                = Literature,
+		Weight              = 0.5,
+		Icon                = Magazine,
+		BoredomChange       = -10,
+		StressChange        = -10,
+		StaticModel         = Magazine,
+		WorldStaticModel    = MagazineGround,
+		Tags                = Magazine,	
+	}
+
+	item ThumbsOfGreenCatalog14
+	{
+		DisplayName         = Catalog: Thumbs of Green - Root & Tuber Crops,
+		DisplayCategory     = Literature,
+		Type                = Literature,
+		Weight              = 0.5,
+		Icon                = Magazine,
+		BoredomChange       = -10,
+		StressChange        = -10,
+		StaticModel         = Magazine,
+		WorldStaticModel    = MagazineGround,
+		Tags                = Magazine,	
+	}
+
+	item WormOfBooksCatalog1
+	{
+		DisplayName         = Catalog: Worm of Books - Learn A Skill,
+		DisplayCategory     = Literature,
+		Type                = Literature,
+		Weight              = 0.5,
+		Icon                = Magazine,
+		BoredomChange       = -10,
+		StressChange        = -10,
+		StaticModel         = Magazine,
+		WorldStaticModel    = MagazineGround,
+		Tags                = Magazine,	
+	}
+
+	item YourClosetCatalog1
+	{
+		DisplayName         = Catalog: Your Closet - Intimates,
+		DisplayCategory     = Literature,
+		Type                = Literature,
+		Weight              = 0.5,
+		Icon                = Magazine,
+		BoredomChange       = -10,
+		StressChange        = -10,
+		StaticModel         = Magazine,
+		WorldStaticModel    = MagazineGround,
+		Tags                = Magazine,	
+	}
+
+	item YourClosetCatalog2
+	{
+		DisplayName         = Catalog: Your Closet - Sportswear,
+		DisplayCategory     = Literature,
+		Type                = Literature,
+		Weight              = 0.5,
+		Icon                = Magazine,
+		BoredomChange       = -10,
+		StressChange        = -10,
+		StaticModel         = Magazine,
+		WorldStaticModel    = MagazineGround,
+		Tags                = Magazine,	
+	}
+
+	item ZacsHardwareCatalog1
+	{
+		DisplayName         = Catalog: Zac's Hardware - Tools,
+		DisplayCategory     = Literature,
+		Type                = Literature,
+		Weight              = 0.5,
+		Icon                = Magazine,
+		BoredomChange       = -10,
+		StressChange        = -10,
+		StaticModel         = Magazine,
+		WorldStaticModel    = MagazineGround,
+		Tags                = Magazine,	
+	}
+
+	item ZacsHardwareCatalog2
+	{
+		DisplayName         = Catalog: Zac's Hardware - Protective Gear,
+		DisplayCategory     = Literature,
+		Type                = Literature,
+		Weight              = 0.5,
+		Icon                = Magazine,
+		BoredomChange       = -10,
+		StressChange        = -10,
+		StaticModel         = Magazine,
+		WorldStaticModel    = MagazineGround,
+		Tags                = Magazine,	
+	}
+
+	/******* MOVEABLES - BOXES *******/
+
+	item Mov_DeliveryDropbox
+	{
+		DisplayCategory 	= Furniture,
+		Type 				= Moveable,
+		Icon 				= default,
+		Weight 				= 0.5,
+		DisplayName 		= Delivery Dropbox,
+		WorldObjectSprite 	= trashcontainers_01_25,
+		Tags 				= DeliveryDropbox,
+	}
+}

@@ -1,0 +1,10 @@
+Sandbox_EN = {
+    Sandbox_MailOrderCatalogs = "Mail Order Catalogs Settings",
+    Sandbox_MailOrderCatalogs_OwnerPIN = "PIN bypass for your card",
+    Sandbox_MailOrderCatalogs_OwnerPIN_tooltip = "Should the PIN be automatically entered in the ATM for a card that belongs to you?",
+    Sandbox_MailOrderCatalogs_PriceMultiplier = "Price of items",
+    Sandbox_MailOrderCatalogs_PriceMultiplier_tooltip = "Adjusts the cost of all mail order catalog items. Set to Half for cheaper items, Normal for standard prices, or Double for more expensive items.",
+    Sandbox_MailOrderCatalogs_PriceMultiplier_option1 = "Half",
+    Sandbox_MailOrderCatalogs_PriceMultiplier_option2 = "Normal",
+    Sandbox_MailOrderCatalogs_PriceMultiplier_option3 = "Double",
+}

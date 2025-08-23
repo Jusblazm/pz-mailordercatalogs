@@ -1,0 +1,23 @@
+module Base
+{
+	imports
+	{
+		Base
+	}
+
+	/******* LITERATURE - SKILL BOOKS *******/
+
+	item ExampleCatalog
+	{
+		DisplayName         = Catalog: Example,
+		DisplayCategory     = Literature,
+		Type                = Literature,
+		Weight              = 0.5,
+		Icon                = Magazine,
+		BoredomChange       = -10,
+		StressChange        = -10,
+		StaticModel         = Magazine,
+		WorldStaticModel    = MagazineGround,
+		Tags                = Magazine,	
+	}
+}

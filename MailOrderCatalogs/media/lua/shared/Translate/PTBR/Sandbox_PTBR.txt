@@ -1,0 +1,10 @@
+Sandbox_PTBR = {
+    Sandbox_MailOrderCatalogs = "Configurações de Catálogos de Encomenda",
+    Sandbox_MailOrderCatalogs_OwnerPIN = "Ignorar PIN do seu cartão",
+    Sandbox_MailOrderCatalogs_OwnerPIN_tooltip = "O PIN deve ser inserido automaticamente no caixa eletrônico para um cartão que seja seu?",
+    Sandbox_MailOrderCatalogs_PriceMultiplier = "Preço dos itens",
+    Sandbox_MailOrderCatalogs_PriceMultiplier_tooltip = "Ajusta o custo de todos os itens do catálogo de encomenda. Configure para Metade para itens mais baratos, Normal para preços padrão, ou Dobro para itens mais caros.",
+    Sandbox_MailOrderCatalogs_PriceMultiplier_option1 = "Metade",
+    Sandbox_MailOrderCatalogs_PriceMultiplier_option2 = "Normal",
+    Sandbox_MailOrderCatalogs_PriceMultiplier_option3 = "Dobro",
+}

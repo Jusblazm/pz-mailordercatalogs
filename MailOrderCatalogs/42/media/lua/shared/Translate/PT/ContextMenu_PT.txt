@@ -1,0 +1,4 @@
+ContextMenu_PT = {
+    ContextMenu_MailOrderCatalogs_ATM_UseATM = "Usar ATM",
+    ContextMenu_MailOrderCatalogs_Computer_AccessComputer = "Aceder ao Computador",
+}

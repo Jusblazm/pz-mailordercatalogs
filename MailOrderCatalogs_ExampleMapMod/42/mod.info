@@ -1,0 +1,7 @@
+name=Your Unique Map Mod
+id=YourUniqueModID
+description=An example mod for how to add custom delivery points to your map for the MailOrderCatalog mod.
+poster=poster.png
+author=YourName
+require=
+modversion=1.0

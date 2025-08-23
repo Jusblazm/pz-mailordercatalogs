@@ -1,0 +1,7 @@
+name=Example Catalog
+id=UniqueModID_ExampleCatalogMod
+description=An example mod for how to add your own catalogs to your mod for the MailOrderCatalogs mod.
+poster=poster.png
+author=YourName
+require=
+modversion=1.0

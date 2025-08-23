@@ -1,0 +1,10 @@
+Sandbox_UA = {
+    Sandbox_MailOrderCatalogs = "Налаштування каталогів поштових замовлень",
+    Sandbox_MailOrderCatalogs_OwnerPIN = "Обхід PIN для вашої картки",
+    Sandbox_MailOrderCatalogs_OwnerPIN_tooltip = "Чи повинен PIN автоматично вводитися в банкоматі для вашої картки?",
+    Sandbox_MailOrderCatalogs_PriceMultiplier = "Ціна товарів",
+    Sandbox_MailOrderCatalogs_PriceMultiplier_tooltip = "Регулює вартість усіх товарів з каталогів поштових замовлень. Встановіть Половина для дешевших, Нормальна для стандартної ціни або Подвоєно для дорожчих товарів.",
+    Sandbox_MailOrderCatalogs_PriceMultiplier_option1 = "Половина",
+    Sandbox_MailOrderCatalogs_PriceMultiplier_option2 = "Нормальна",
+    Sandbox_MailOrderCatalogs_PriceMultiplier_option3 = "Подвоєно",
+}

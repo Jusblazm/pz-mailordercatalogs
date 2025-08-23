@@ -1,0 +1,4 @@
+ContextMenu_CN = {
+    ContextMenu_MailOrderCatalogs_ATM_UseATM = "使用自动取款机",
+    ContextMenu_MailOrderCatalogs_Computer_AccessComputer = "访问电脑",
+}

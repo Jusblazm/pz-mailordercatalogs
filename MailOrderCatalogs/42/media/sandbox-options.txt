@@ -1,0 +1,18 @@
+VERSION = 1,
+
+option MailOrderCatalogs.OwnerPIN
+{
+    type = boolean,
+    default = false,
+    page = MailOrderCatalogs,
+    translation = MailOrderCatalogs_OwnerPIN,
+}
+
+option MailOrderCatalogs.PriceMultiplier
+{
+    type = enum,
+    default = 2,
+    numValues = 3,
+    page = MailOrderCatalogs,
+    translation = MailOrderCatalogs_PriceMultiplier,
+}
