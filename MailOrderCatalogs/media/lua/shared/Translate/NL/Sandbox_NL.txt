@@ -1,1 +1,10 @@
-Sandbox_NL = {}
+Sandbox_NL = {
+    Sandbox_MailOrderCatalogs = "Instellingen postordercatalogi",
+    Sandbox_MailOrderCatalogs_OwnerPIN = "PIN-bypass voor je kaart",
+    Sandbox_MailOrderCatalogs_OwnerPIN_tooltip = "Moet de pincode automatisch worden ingevoerd in de geldautomaat voor een kaart die van jou is?",
+    Sandbox_MailOrderCatalogs_PriceMultiplier = "Prijs van artikelen",
+    Sandbox_MailOrderCatalogs_PriceMultiplier_tooltip = "Past de prijs van alle postordercatalogusartikelen aan. Zet op Half voor goedkopere artikelen, Normaal voor standaardprijzen, of Dubbel voor duurdere artikelen.",
+    Sandbox_MailOrderCatalogs_PriceMultiplier_option1 = "Half",
+    Sandbox_MailOrderCatalogs_PriceMultiplier_option2 = "Normaal",
+    Sandbox_MailOrderCatalogs_PriceMultiplier_option3 = "Dubbel",
+}

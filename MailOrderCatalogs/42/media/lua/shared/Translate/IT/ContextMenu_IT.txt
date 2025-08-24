@@ -1,1 +1,4 @@
-ContextMenu_IT = {}
+ContextMenu_IT = {
+    ContextMenu_MailOrderCatalogs_ATM_UseATM = "Usa il Bancomat",
+    ContextMenu_MailOrderCatalogs_Computer_AccessComputer = "Accedi al Computer",
+}

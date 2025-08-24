@@ -1,1 +1,6 @@
-IG_UI_NL = {}
+IGUI_NL = {
+    IGUI_MailOrderCatalogs_PlayerText_PackageNearby = "Ik denk dat mijn pakket in de buurt is bezorgd",
+    IGUI_MailOrderCatalogs_PlayerText_PackagePostOffice = "Ik denk dat mijn pakket bij een nabijgelegen postkantoor is bezorgd",
+    IGUI_MailOrderCatalogs_PlayerText_CantReachComputer = "Ik kan de computer niet bereiken",
+    IGUI_MailOrderCatalogs_PlayerText_CantReachATM = "Ik kan de geldautomaat niet bereiken",
+}
