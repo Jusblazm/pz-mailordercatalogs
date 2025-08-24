@@ -1,1 +1,6 @@
-IG_UI_JP = {}
+IGUI_JP = {
+    IGUI_MailOrderCatalogs_PlayerText_PackageNearby = "荷物が近くに配達されたようです",
+    IGUI_MailOrderCatalogs_PlayerText_PackagePostOffice = "荷物が近くの郵便局に配達されたようです",
+    IGUI_MailOrderCatalogs_PlayerText_CantReachComputer = "コンピュータに届きません",
+    IGUI_MailOrderCatalogs_PlayerText_CantReachATM = "ATMに届きません",
+}

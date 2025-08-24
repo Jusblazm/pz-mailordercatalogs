@@ -1,1 +1,6 @@
-IG_UI_DE = {}
+IGUI_DE = {
+    IGUI_MailOrderCatalogs_PlayerText_PackageNearby = "Ich glaube, mein Paket wurde in der Nähe zugestellt",
+    IGUI_MailOrderCatalogs_PlayerText_PackagePostOffice = "Ich glaube, mein Paket wurde an ein nahegelegenes Postamt geliefert",
+    IGUI_MailOrderCatalogs_PlayerText_CantReachComputer = "Ich komme nicht an den Computer heran",
+    IGUI_MailOrderCatalogs_PlayerText_CantReachATM = "Ich komme nicht an den Geldautomaten heran",
+}

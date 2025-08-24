@@ -1,8 +1,8 @@
 name=Mail Order Catalogs
 id=JusMailOrderCatalogs
-description=Creates a semi-honest mail-order catalog system for computers.
+description=Creates a semi-honest mail order catalog system, similar to what would exist in 1993.
 poster=poster.png
 icon=icon.png
 author=Jusblazm
-url=
+url=https://github.com/Jusblazm/pz-mailordercatalogs
 modversion=1.0

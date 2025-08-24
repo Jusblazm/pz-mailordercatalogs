@@ -1,1 +1,10 @@
-Sandbox_JP = {}
+Sandbox_JP = {
+    Sandbox_MailOrderCatalogs = "通信販売カタログ設定",
+    Sandbox_MailOrderCatalogs_OwnerPIN = "自分のカード用PINスキップ",
+    Sandbox_MailOrderCatalogs_OwnerPIN_tooltip = "自分のカードならATMでPINが自動入力されますか？",
+    Sandbox_MailOrderCatalogs_PriceMultiplier = "アイテムの価格",
+    Sandbox_MailOrderCatalogs_PriceMultiplier_tooltip = "通信販売カタログの全アイテムの価格を調整します。半額にすると安く、通常は標準価格、2倍は高額になります。",
+    Sandbox_MailOrderCatalogs_PriceMultiplier_option1 = "半額",
+    Sandbox_MailOrderCatalogs_PriceMultiplier_option2 = "通常",
+    Sandbox_MailOrderCatalogs_PriceMultiplier_option3 = "2倍",
+}

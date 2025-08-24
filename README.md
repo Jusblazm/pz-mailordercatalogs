@@ -140,7 +140,7 @@ A new "minigame" at ATMs when you have stolen credit cards. You can guess the PI
 [/table]
 
 [h3]Trait[/h3]
-[img][/img] Credit Card Thief | 3 Points | +5 spread when trying stolen credit card PINs
+[img]https://raw.githubusercontent.com/Jusblazm/pz-mailordercatalogs/refs/heads/main/MailOrderCatalogs/42/media/ui/Traits/trait_creditcardthief.png[/img] Credit Card Thief | 3 Points | +5 spread when trying stolen credit card PINs
 
 [h2]Current Issues[/h2]
 Delivery Points respawn if picked up. Fallback safety rule due to how delivery is currently handled. Only triggers when delivered to a delivery point that isn't loaded. You can technically duplicate the storage containers.
@@ -196,6 +196,9 @@ Translation is ongoing. Project Zomboid has ~4900 items, each needing descriptio
 The Indie Stone for Project Zomboid
 
 [url=https://discord.gg/yqstRpuGXy][img]https://raw.githubusercontent.com/Jusblazm/pz_archive/refs/heads/main/_imgs/discordinvite.png[/img][/url]
+
+A simple like and a favorite is more than enough, but if you would like to do more:
+[url=https://ko-fi.com/jusblazm][img]https://storage.ko-fi.com/cdn/kofi3.png[/img][/url]
 
 
 

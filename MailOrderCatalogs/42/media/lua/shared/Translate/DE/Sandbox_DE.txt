@@ -1,1 +1,10 @@
-Sandbox_DE = {}
+Sandbox_DE = {
+    Sandbox_MailOrderCatalogs = "Einstellungen für Versandhauskataloge",
+    Sandbox_MailOrderCatalogs_OwnerPIN = "PIN-Umgehung für deine Karte",
+    Sandbox_MailOrderCatalogs_OwnerPIN_tooltip = "Soll die PIN für eine dir gehörende Karte am Geldautomaten automatisch eingegeben werden?",
+    Sandbox_MailOrderCatalogs_PriceMultiplier = "Preis der Artikel",
+    Sandbox_MailOrderCatalogs_PriceMultiplier_tooltip = "Passt die Kosten aller Versandhauskatalog-Artikel an. Wähle Halb für günstigere Artikel, Normal für Standardpreise oder Doppelt für teurere Artikel.",
+    Sandbox_MailOrderCatalogs_PriceMultiplier_option1 = "Halb",
+    Sandbox_MailOrderCatalogs_PriceMultiplier_option2 = "Normal",
+    Sandbox_MailOrderCatalogs_PriceMultiplier_option3 = "Doppelt",
+}
