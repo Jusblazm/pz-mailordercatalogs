@@ -1,6 +1,6 @@
 # Mail Order Catalogs
 Shop like it's 1995!\
-Only on Steam's Workshop at: NOT RELEASED YET\
+Only on Steam's Workshop at: https://steamcommunity.com/sharedfiles/filedetails/?id=3555453653 \
 If found elsewhere, please report.
 
 ## What This Mod Does
