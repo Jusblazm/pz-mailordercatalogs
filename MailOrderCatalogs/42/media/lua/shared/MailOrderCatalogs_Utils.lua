@@ -108,6 +108,16 @@ function MailOrderCatalogs_Utils.setPowerState(object, isOn)
     local modData = object:getModData()
     modData.ComputerIsOn = isOn
 
+    --[[
+        patch for S4_Economy
+        due to the mod automatically disabling 
+        "turned on" computer sprite if S4_Economy doesn't
+        believe it should be turned on.
+    ]]
+    if getActivatedMods():contains("\\S4_Economy") then
+        return
+    end
+
     -- update the sprite offset
     local sprite = object:getSprite()
     local spriteName = sprite and sprite:getName()
@@ -128,24 +138,6 @@ function MailOrderCatalogs_Utils.ensureComputerIsOff(object)
 
     MailOrderCatalogs_Utils.checkAndSetApplianceOffset(object, spriteName)
 end
-
--- function MailOrderCatalogs_Utils.getItemIcon(itemName)
---     if not itemName then return nil end
---     print("[MailOrderCatalogs] Debug: Item name -> " .. tostring(itemName))
-
---     local scriptItem = getScriptManager():FindItem(itemName)
---     print("[MailOrderCatalogs] Debug: Script item -> " .. tostring(scriptItem))
---     if not scriptItem then
---         print("[MailOrderCatalogs] Error: Item not found -> " .. tostring(itemName))
---         return nil
---     end
---     local iconName = scriptItem:getIcon()
---     local iconTexture = getTexture(iconName) or getTexture("Item_" .. iconName)
---     if not iconTexture then
---         print("[MailOrderCatalogs] Error: Texture file missing or failed to load -> " .. iconName .. ".png")
---     end
---     return iconTexture
--- end
 
 function MailOrderCatalogs_Utils.getItemIcon(itemName)
     if not itemName then return nil end

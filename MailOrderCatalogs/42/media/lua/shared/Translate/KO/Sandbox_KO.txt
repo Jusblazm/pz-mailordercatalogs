@@ -1,1 +1,10 @@
-Sandbox_KO = {}
+Sandbox_KO = {
+    Sandbox_MailOrderCatalogs = "통신 판매 카탈로그 설정",
+    Sandbox_MailOrderCatalogs_OwnerPIN = "카드 PIN 자동 입력",
+    Sandbox_MailOrderCatalogs_OwnerPIN_tooltip = "내 카드일 경우 ATM에서 PIN을 자동으로 입력할까요?",
+    Sandbox_MailOrderCatalogs_PriceMultiplier = "아이템 가격",
+    Sandbox_MailOrderCatalogs_PriceMultiplier_tooltip = "모든 통신 판매 카탈로그 아이템의 가격을 조정합니다. '절반'은 저렴하게, '보통'은 표준 가격으로, '두 배'는 더 비싸게 설정합니다.",
+    Sandbox_MailOrderCatalogs_PriceMultiplier_option1 = "절반",
+    Sandbox_MailOrderCatalogs_PriceMultiplier_option2 = "보통",
+    Sandbox_MailOrderCatalogs_PriceMultiplier_option3 = "두 배",
+}

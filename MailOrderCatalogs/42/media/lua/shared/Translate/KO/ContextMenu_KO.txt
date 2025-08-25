@@ -1,1 +1,4 @@
-ContextMenu_KO = {}
+ContextMenu_KO = {
+    ContextMenu_MailOrderCatalogs_ATM_UseATM = "ATM 사용",
+    ContextMenu_MailOrderCatalogs_Computer_AccessComputer = "컴퓨터 접속",
+}
