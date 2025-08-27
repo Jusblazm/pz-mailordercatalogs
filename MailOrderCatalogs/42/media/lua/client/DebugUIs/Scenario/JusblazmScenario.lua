@@ -5,8 +5,8 @@ end
 debugScenarios.JusblazmScenario = {
     name = "Jusblazm's Debug Scenario",
     --	forceLaunch = true, -- use this to force the launch of THIS scenario right after main menu was loaded, save more clicks! Don't do multiple scenarii with this options
-    startLoc = {x=8074, y=11734, z=0 }, -- rosewood police station
-    -- startLoc = {x=8176, y=11260, z=0}, -- rosewood gas station (ATM)
+    -- startLoc = {x=8074, y=11734, z=0 }, -- rosewood police station
+    startLoc = {x=8176, y=11260, z=0}, -- rosewood gas station (ATM)
     -- startLoc = {x=9997, y=13121, z=0}, -- houses for alarms
     -- startLoc = {x=8093, y=11513, z=0}, -- rosewood bookstore
     setSandbox = function()

@@ -95,6 +95,8 @@ end
 function MailOrderCatalogs_BankServer.setBalance(card, newBalance)
     local account = MailOrderCatalogs_BankServer.getOrCreateAccountByID(card)
     account.balance = newBalance
+    ModData.transmit("BankAccounts")
+    return true
 end
 
 

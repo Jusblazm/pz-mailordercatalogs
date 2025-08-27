@@ -200,6 +200,8 @@ local function isSquarePowered(square)
     )
 end
 
+-- required for ATM outside of post office in Ekron
+-- it's part of the building, but not defined as part of the building
 local function isNearbySquarePowered(square, radius)
     if not square then return false end
     radius = radius or 1
