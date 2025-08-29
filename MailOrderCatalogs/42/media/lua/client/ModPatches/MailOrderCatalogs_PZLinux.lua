@@ -1,80 +1,78 @@
 -- MailOrderCatalogs_PZLinux
 local MailOrderCatalogs_Utils = require("MailOrderCatalogs_Utils")
 local MailOrderCatalogs_BankServer = require("MailOrderCatalogs_BankServer")
+require("MailOrderCatalogs_Hooks")
 
--- stops infinite sync loop on setBalance
+--[[
+    this patch ensures PZLinux and MailOrderCatalogs share the same bank account
+]]
+
+-- stops infinite sync loop
 local syncingFromPZLinux = false
 
--- makes PZLinux and MailOrderCatalogs bank share the same balance
-local function mergeBankAccountsIfPZLinuxPresent()
-    if getActivatedMods():contains("\\B42_PZLinux") then
-        print("[MailOrderCatalogs] General: PZLinux is installed, merging bank account details")
-
-        local original_saveAtmBalance = saveAtmBalance
-        local original_deposit = MailOrderCatalogs_BankServer.deposit
-        local original_withdraw = MailOrderCatalogs_BankServer.withdraw
-        local original_setBalance = MailOrderCatalogs_BankServer.setBalance
-
-        function saveAtmBalance(balance)
-            if original_saveAtmBalance then
-                original_saveAtmBalance(balance)
-            end
-
-            if balance then
-                local player = getPlayer()
-                local card = MailOrderCatalogs_Utils.getPlayerCard(player)
-                if not card then
-                    print("[MailOrderCatalogs] General: No Credit Card found.")
-                else
-                    local modData = card:getModData()
-                    syncingFromPZLinux = true
-                    MailOrderCatalogs_BankServer.setBalance(modData, balance)
-                    syncingFromPZLinux = false
-                    print("[MailOrderCatalogs] General: Synced bank accounts between PZLinux and MailOrderCatalogs")
-                end
-            end
-        end
-
-        function MailOrderCatalogs_BankServer.deposit(accountID, amount)
-            local success = original_deposit(accountID, amount)
-
-            if success and amount and amount > 0 then
-                local player = getPlayer()
-                local modData = player:getModData()
-                local newBalance = MailOrderCatalogs_BankServer.getAccountByID(accountID).balance
-                modData.PZLinuxBank = newBalance
-                print("[MailOrderCatalogs] General: Synced deposit to PZLinux. Balance: " .. tostring(newBalance))
-            end
-            return success
-        end
-
-        function MailOrderCatalogs_BankServer.withdraw(accountID, amount)
-            local success = original_withdraw(accountID, amount)
-
-            if success and amount and amount > 0 then
-                local player = getPlayer()
-                local modData = player:getModData()
-                local newBalance = MailOrderCatalogs_BankServer.getAccountByID(accountID).balance
-                modData.PZLinuxBank = newBalance
-                print("[MailOrderCatalogs] General: Synced withdraw to PZLinux. Balance: " .. tostring(newBalance))
-            end
-            return success
-        end
-
-        function MailOrderCatalogs_BankServer.setBalance(card, newBalance)
-            local success = original_setBalance(card, newBalance)
-
-            if not syncingFromPZLinux and success then
-                local player = getPlayer()
-                local modData = player:getModData()
-                modData.PZLinuxBank = newBalance
-                print("[MailOrderCatalogs] General: Synced setBalance to PZLinux. Balance: " .. tostring(newBalance))
-            end
-            return success
-        end
-    else
+local function setupPZLinuxHooks()
+    if not getActivatedMods():contains("\\B42_PZLinux") then
         print("[MailOrderCatalogs] General: PZLinux is not installed")
+        return
+    end
+    print("[MailOrderCatalogs] General: PZLinux detected, enabling hooks")
+
+    MailOrderCatalogs_Hooks.wrapFunction(MailOrderCatalogs_BankServer, "deposit")
+    MailOrderCatalogs_Hooks.wrapFunction(MailOrderCatalogs_BankServer, "withdraw")
+    MailOrderCatalogs_Hooks.wrapFunction(MailOrderCatalogs_BankServer, "setBalance")
+
+    MailOrderCatalogs_Hooks.add("deposit", function(result, accountID, amount)
+        local success = result[1]
+        if success and amount and amount > 0 then
+            local player = getPlayer()
+            local modData = player:getModData()
+            local newBalance = MailOrderCatalogs_BankServer.getAccountByID(accountID).balance
+            modData.PZLinuxBank = newBalance
+            print("[MailOrderCatalogs] General: Synced deposit to PZLinux. Balance: " .. tostring(newBalance))
+        end
+    end)
+
+    MailOrderCatalogs_Hooks.add("withdraw", function(result, accountID, amount)
+        local success = result[1]
+        if success and amount and amount > 0 then
+            local player = getPlayer()
+            local modData = player:getModData()
+            local newBalance = MailOrderCatalogs_BankServer.getAccountByID(accountID).balance
+            modData.PZLinuxBank = newBalance
+            print("[MailOrderCatalogs] General: Synced withdraw to PZLinux. Balance: " .. tostring(newBalance))
+        end
+    end)
+
+    MailOrderCatalogs_Hooks.add("setBalance", function(result, card, newBalance)
+        local success = result[1]
+        if not syncingFromPZLinux and success then
+            local player = getPlayer()
+            local modData = player:getModData()
+            modData.PZLinuxBank = newBalance
+            print("[MailOrderCatalogs] General: Synced balance to PZLinux. Balance: " .. tostring(newBalance))
+        end
+    end)
+
+    local original_saveAtmBalance = saveAtmBalance
+    function saveAtmBalance(balance)
+        if original_saveAtmBalance then
+            original_saveAtmBalance(balance)
+        end
+
+        if balance then
+            local player = getPlayer()
+            local card = MailOrderCatalogs_Utils.getPlayerCard(player)
+            if card then
+                local modData = card:getModData()
+                syncingFromPZLinux = true
+                MailOrderCatalogs_BankServer.setBalance(modData, balance)
+                syncingFromPZLinux = false
+                print("[MailOrderCatalogs] General: Synced bank accounts between PZLinux and MailOrderCatalogs")
+            else
+                print("[MailOrderCatalogs] General: No Credit Card found")
+            end
+        end
     end
 end
 
-Events.OnGameStart.Add(mergeBankAccountsIfPZLinuxPresent)
+Events.OnGameStart.Add(setupPZLinuxHooks)
