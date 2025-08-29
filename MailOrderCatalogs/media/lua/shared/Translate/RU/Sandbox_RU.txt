@@ -1,10 +1,10 @@
 Sandbox_RU = {
-    Sandbox_MailOrderCatalogs = "РќР°СЃС‚СЂРѕР№РєРё РєР°С‚Р°Р»РѕРіРѕРІ РїРѕС‡С‚РѕРІС‹С… Р·Р°РєР°Р·РѕРІ",
-    Sandbox_MailOrderCatalogs_OwnerPIN = "РћР±С…РѕРґ PIN РґР»СЏ РІР°С€РµР№ РєР°СЂС‚С‹",
-    Sandbox_MailOrderCatalogs_OwnerPIN_tooltip = "Р”РѕР»Р¶РµРЅ Р»Рё PIN Р°РІС‚РѕРјР°С‚РёС‡РµСЃРєРё РІРІРѕРґРёС‚СЊСЃСЏ РІ Р±Р°РЅРєРѕРјР°С‚Рµ РґР»СЏ РІР°С€РµР№ РєР°СЂС‚С‹?",
-    Sandbox_MailOrderCatalogs_PriceMultiplier = "Р¦РµРЅР° С‚РѕРІР°СЂРѕРІ",
-    Sandbox_MailOrderCatalogs_PriceMultiplier_tooltip = "Р РµРіСѓР»РёСЂСѓРµС‚ СЃС‚РѕРёРјРѕСЃС‚СЊ РІСЃРµС… С‚РѕРІР°СЂРѕРІ РёР· РєР°С‚Р°Р»РѕРіРѕРІ РїРѕС‡С‚РѕРІС‹С… Р·Р°РєР°Р·РѕРІ. РЈСЃС‚Р°РЅРѕРІРёС‚Рµ РџРѕР»С†РµРЅС‹ РґР»СЏ РґРµС€РµРІР»Рµ, РќРѕСЂРјР°Р»СЊРЅРѕ РґР»СЏ СЃС‚Р°РЅРґР°СЂС‚РЅРѕР№ С†РµРЅС‹ РёР»Рё Р’РґРІРѕРµ РґРѕСЂРѕР¶Рµ РґР»СЏ СѓРІРµР»РёС‡РµРЅРЅРѕР№ С†РµРЅС‹.",
-    Sandbox_MailOrderCatalogs_PriceMultiplier_option1 = "РџРѕР»С†РµРЅС‹",
-    Sandbox_MailOrderCatalogs_PriceMultiplier_option2 = "РќРѕСЂРјР°Р»СЊРЅРѕ",
-    Sandbox_MailOrderCatalogs_PriceMultiplier_option3 = "Р’РґРІРѕРµ РґРѕСЂРѕР¶Рµ",
+    Sandbox_MailOrderCatalogs = "Настройки каталогов почтовых заказов",
+    Sandbox_MailOrderCatalogs_OwnerPIN = "Обход PIN для вашей карты",
+    Sandbox_MailOrderCatalogs_OwnerPIN_tooltip = "Должен ли PIN автоматически вводиться в банкомате для вашей карты?",
+    Sandbox_MailOrderCatalogs_PriceMultiplier = "Цена товаров",
+    Sandbox_MailOrderCatalogs_PriceMultiplier_tooltip = "Регулирует стоимость всех товаров из каталогов почтовых заказов. Установите Полцены для дешевле, Нормально для стандартной цены или Вдвое дороже для увеличенной цены.",
+    Sandbox_MailOrderCatalogs_PriceMultiplier_option1 = "Полцены",
+    Sandbox_MailOrderCatalogs_PriceMultiplier_option2 = "Нормально",
+    Sandbox_MailOrderCatalogs_PriceMultiplier_option3 = "Вдвое дороже",
 }

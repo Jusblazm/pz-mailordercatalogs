@@ -1,10 +1,10 @@
 Sandbox_UA = {
-    Sandbox_MailOrderCatalogs = "РќР°Р»Р°С€С‚СѓРІР°РЅРЅСЏ РєР°С‚Р°Р»РѕРіС–РІ РїРѕС€С‚РѕРІРёС… Р·Р°РјРѕРІР»РµРЅСЊ",
-    Sandbox_MailOrderCatalogs_OwnerPIN = "РћР±С…С–Рґ PIN РґР»СЏ РІР°С€РѕС— РєР°СЂС‚РєРё",
-    Sandbox_MailOrderCatalogs_OwnerPIN_tooltip = "Р§Рё РїРѕРІРёРЅРµРЅ PIN Р°РІС‚РѕРјР°С‚РёС‡РЅРѕ РІРІРѕРґРёС‚РёСЃСЏ РІ Р±Р°РЅРєРѕРјР°С‚С– РґР»СЏ РІР°С€РѕС— РєР°СЂС‚РєРё?",
-    Sandbox_MailOrderCatalogs_PriceMultiplier = "Р¦С–РЅР° С‚РѕРІР°СЂС–РІ",
-    Sandbox_MailOrderCatalogs_PriceMultiplier_tooltip = "Р РµРіСѓР»СЋС” РІР°СЂС‚С–СЃС‚СЊ СѓСЃС–С… С‚РѕРІР°СЂС–РІ Р· РєР°С‚Р°Р»РѕРіС–РІ РїРѕС€С‚РѕРІРёС… Р·Р°РјРѕРІР»РµРЅСЊ. Р’СЃС‚Р°РЅРѕРІС–С‚СЊ РџРѕР»РѕРІРёРЅР° РґР»СЏ РґРµС€РµРІС€РёС…, РќРѕСЂРјР°Р»СЊРЅР° РґР»СЏ СЃС‚Р°РЅРґР°СЂС‚РЅРѕС— С†С–РЅРё Р°Р±Рѕ РџРѕРґРІРѕС”РЅРѕ РґР»СЏ РґРѕСЂРѕР¶С‡РёС… С‚РѕРІР°СЂС–РІ.",
-    Sandbox_MailOrderCatalogs_PriceMultiplier_option1 = "РџРѕР»РѕРІРёРЅР°",
-    Sandbox_MailOrderCatalogs_PriceMultiplier_option2 = "РќРѕСЂРјР°Р»СЊРЅР°",
-    Sandbox_MailOrderCatalogs_PriceMultiplier_option3 = "РџРѕРґРІРѕС”РЅРѕ",
+    Sandbox_MailOrderCatalogs = "Налаштування каталогів поштових замовлень",
+    Sandbox_MailOrderCatalogs_OwnerPIN = "Обхід PIN для вашої картки",
+    Sandbox_MailOrderCatalogs_OwnerPIN_tooltip = "Чи повинен PIN автоматично вводитися в банкоматі для вашої картки?",
+    Sandbox_MailOrderCatalogs_PriceMultiplier = "Ціна товарів",
+    Sandbox_MailOrderCatalogs_PriceMultiplier_tooltip = "Регулює вартість усіх товарів з каталогів поштових замовлень. Встановіть Половина для дешевших, Нормальна для стандартної ціни або Подвоєно для дорожчих товарів.",
+    Sandbox_MailOrderCatalogs_PriceMultiplier_option1 = "Половина",
+    Sandbox_MailOrderCatalogs_PriceMultiplier_option2 = "Нормальна",
+    Sandbox_MailOrderCatalogs_PriceMultiplier_option3 = "Подвоєно",
 }

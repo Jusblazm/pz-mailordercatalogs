@@ -1,9 +1,9 @@
 Sandbox_ES = {
-    Sandbox_MailOrderCatalogs = "Ajustes de catÃ¡logos de pedidos por correo",
+    Sandbox_MailOrderCatalogs = "Ajustes de catálogos de pedidos por correo",
     Sandbox_MailOrderCatalogs_OwnerPIN = "Omitir PIN para tu tarjeta",
-    Sandbox_MailOrderCatalogs_OwnerPIN_tooltip = "Â¿Se debe introducir automÃ¡ticamente el PIN en el cajero automÃ¡tico para una tarjeta que te pertenece?",
-    Sandbox_MailOrderCatalogs_PriceMultiplier = "Precio de los artÃ­culos",
-    Sandbox_MailOrderCatalogs_PriceMultiplier_tooltip = "Ajusta el coste de todos los artÃ­culos de los catÃ¡logos de pedidos por correo. Ponlo en Mitad para objetos mÃ¡s baratos, Normal para precios estÃ¡ndar o Doble para objetos mÃ¡s caros.",
+    Sandbox_MailOrderCatalogs_OwnerPIN_tooltip = "¿Se debe introducir automáticamente el PIN en el cajero automático para una tarjeta que te pertenece?",
+    Sandbox_MailOrderCatalogs_PriceMultiplier = "Precio de los artículos",
+    Sandbox_MailOrderCatalogs_PriceMultiplier_tooltip = "Ajusta el coste de todos los artículos de los catálogos de pedidos por correo. Ponlo en Mitad para objetos más baratos, Normal para precios estándar o Doble para objetos más caros.",
     Sandbox_MailOrderCatalogs_PriceMultiplier_option1 = "Mitad",
     Sandbox_MailOrderCatalogs_PriceMultiplier_option2 = "Normal",
     Sandbox_MailOrderCatalogs_PriceMultiplier_option3 = "Doble",

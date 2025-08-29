@@ -1,6 +1,6 @@
 IGUI_RU = {
-    IGUI_MailOrderCatalogs_PlayerText_PackageNearby = "РљР°Р¶РµС‚СЃСЏ, РјРѕСЏ РїРѕСЃС‹Р»РєР° РґРѕСЃС‚Р°РІР»РµРЅР° РїРѕР±Р»РёР·РѕСЃС‚Рё",
-    IGUI_MailOrderCatalogs_PlayerText_PackagePostOffice = "РљР°Р¶РµС‚СЃСЏ, РјРѕСЏ РїРѕСЃС‹Р»РєР° РґРѕСЃС‚Р°РІР»РµРЅР° РІ Р±Р»РёР¶Р°Р№С€РµРµ РїРѕС‡С‚РѕРІРѕРµ РѕС‚РґРµР»РµРЅРёРµ",
-    IGUI_MailOrderCatalogs_PlayerText_CantReachComputer = "РЇ РЅРµ РјРѕРіСѓ РґРѕР±СЂР°С‚СЊСЃСЏ РґРѕ РєРѕРјРїСЊСЋС‚РµСЂР°",
-    IGUI_MailOrderCatalogs_PlayerText_CantReachATM = "РЇ РЅРµ РјРѕРіСѓ РґРѕР±СЂР°С‚СЊСЃСЏ РґРѕ Р±Р°РЅРєРѕРјР°С‚Р°",
+    IGUI_MailOrderCatalogs_PlayerText_PackageNearby = "Кажется, моя посылка доставлена поблизости",
+    IGUI_MailOrderCatalogs_PlayerText_PackagePostOffice = "Кажется, моя посылка доставлена в ближайшее почтовое отделение",
+    IGUI_MailOrderCatalogs_PlayerText_CantReachComputer = "Я не могу добраться до компьютера",
+    IGUI_MailOrderCatalogs_PlayerText_CantReachATM = "Я не могу добраться до банкомата",
 }

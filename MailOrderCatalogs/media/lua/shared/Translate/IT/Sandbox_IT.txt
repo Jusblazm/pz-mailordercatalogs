@@ -3,8 +3,8 @@ Sandbox_IT = {
     Sandbox_MailOrderCatalogs_OwnerPIN = "Bypass PIN per la tua carta",
     Sandbox_MailOrderCatalogs_OwnerPIN_tooltip = "Il PIN deve essere inserito automaticamente al bancomat per una carta che ti appartiene?",
     Sandbox_MailOrderCatalogs_PriceMultiplier = "Prezzo degli articoli",
-    Sandbox_MailOrderCatalogs_PriceMultiplier_tooltip = "Regola il costo di tutti gli articoli dei cataloghi per corrispondenza. Imposta su MetÃ  per articoli piÃ¹ economici, Normale per prezzi standard o Doppio per articoli piÃ¹ costosi.",
-    Sandbox_MailOrderCatalogs_PriceMultiplier_option1 = "MetÃ ",
+    Sandbox_MailOrderCatalogs_PriceMultiplier_tooltip = "Regola il costo di tutti gli articoli dei cataloghi per corrispondenza. Imposta su Metà per articoli più economici, Normale per prezzi standard o Doppio per articoli più costosi.",
+    Sandbox_MailOrderCatalogs_PriceMultiplier_option1 = "Metà",
     Sandbox_MailOrderCatalogs_PriceMultiplier_option2 = "Normale",
     Sandbox_MailOrderCatalogs_PriceMultiplier_option3 = "Doppio",
 }

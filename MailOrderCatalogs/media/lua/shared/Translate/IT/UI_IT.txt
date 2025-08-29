@@ -14,7 +14,7 @@ UI_IT = {
     UI_MailOrderCatalogs_CardSelectorUI_Attempts = "Tentativi:",
     UI_MailOrderCatalogs_CardSelectorUI_CardSelectorTitle = "Seleziona una Carta di Credito",
 
-    UI_MailOrderCatalogs_ComputerUI_CartEmpty = "Il carrello Ã¨ vuoto",
+    UI_MailOrderCatalogs_ComputerUI_CartEmpty = "Il carrello è vuoto",
     UI_MailOrderCatalogs_ComputerUI_CartItems = "Carrello:",
     UI_MailOrderCatalogs_ComputerUI_TotalPrice = "Totale: ",
     UI_MailOrderCatalogs_ComputerUI_DoesNotExist = "non esiste",
@@ -46,13 +46,13 @@ UI_IT = {
     UI_MailOrderCatalogs_KnoxBank_UpdatePIN = "Aggiorna PIN",
     UI_MailOrderCatalogs_KnoxBank_ReportStolen = "Segnala Carta Rubata",
 
-    UI_MailOrderCatalogs_ItemDescription_NotAnItem = "Non Ã¨ un oggetto reale.",
+    UI_MailOrderCatalogs_ItemDescription_NotAnItem = "Non è un oggetto reale.",
     UI_MailOrderCatalogs_ItemDescription_SkillMagazine = "Potresti riuscire a imparare qualcosa da questo.",
     UI_MailOrderCatalogs_ItemDescription_SkillBook1 = "Principiante? Non preoccuparti, ce la farai!",
-    UI_MailOrderCatalogs_ItemDescription_SkillBook2 = "Ãˆ il momento di costruire basi solide per le tue conoscenze.",
+    UI_MailOrderCatalogs_ItemDescription_SkillBook2 = "È il momento di costruire basi solide per le tue conoscenze.",
     UI_MailOrderCatalogs_ItemDescription_SkillBook3 = "Impariamo alcune nuove tecniche.",
-    UI_MailOrderCatalogs_ItemDescription_SkillBook4 = "Ci sei quasi! Continua cosÃ¬!",
-    UI_MailOrderCatalogs_ItemDescription_SkillBook5 = "Ãˆ il momento di padroneggiare l'arte.",
+    UI_MailOrderCatalogs_ItemDescription_SkillBook4 = "Ci sei quasi! Continua così!",
+    UI_MailOrderCatalogs_ItemDescription_SkillBook5 = "È il momento di padroneggiare l'arte.",
     UI_MailOrderCatalogs_ItemDescription_SeedPacket = "Una bustina di semi.",
     UI_MailOrderCatalogs_ItemDescription_SeedLoose = "Una piccola manciata di semi.",
 }

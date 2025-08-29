@@ -1,4 +1,4 @@
 ContextMenu_PTBR = {
-    ContextMenu_MailOrderCatalogs_ATM_UseATM = "Usar caixa eletrÃ´nico",
+    ContextMenu_MailOrderCatalogs_ATM_UseATM = "Usar caixa eletrônico",
     ContextMenu_MailOrderCatalogs_Computer_AccessComputer = "Acessar o computador",
 }

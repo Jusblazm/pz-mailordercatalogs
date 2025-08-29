@@ -1,6 +1,6 @@
 IGUI_PTBR = {
     IGUI_MailOrderCatalogs_PlayerText_PackageNearby = "Acho que meu pacote foi entregue por aqui perto",
-    IGUI_MailOrderCatalogs_PlayerText_PackagePostOffice = "Acho que meu pacote foi entregue em uma agÃªncia dos Correios prÃ³xima",
-    IGUI_MailOrderCatalogs_PlayerText_CantReachComputer = "NÃ£o consigo alcanÃ§ar o computador",
-    IGUI_MailOrderCatalogs_PlayerText_CantReachATM = "NÃ£o consigo alcanÃ§ar o caixa eletrÃ´nico",
+    IGUI_MailOrderCatalogs_PlayerText_PackagePostOffice = "Acho que meu pacote foi entregue em uma agência dos Correios próxima",
+    IGUI_MailOrderCatalogs_PlayerText_CantReachComputer = "Não consigo alcançar o computador",
+    IGUI_MailOrderCatalogs_PlayerText_CantReachATM = "Não consigo alcançar o caixa eletrônico",
 }
