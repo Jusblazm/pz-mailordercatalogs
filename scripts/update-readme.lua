@@ -32,15 +32,66 @@ local LANGUAGES = {
     UA = "🇺🇦 Ukrainian"
 }
 
--- extracts all keys inside a Lua table from a given file
-local function extract_keys_from_file(filepath)
+-- minimal utf8.char replacement
+local function codepoint_to_utf8(code)
+    if code < 0x80 then
+        return string.char(code)
+    elseif code < 0x800 then
+        return string.char(
+            0xC0 + math.floor(code / 0x40),
+            0x80 + (code % 0x40)
+        )
+    elseif code < 0x10000 then
+        return string.char(
+            0xE0 + math.floor(code / 0x1000),
+            0x80 + (math.floor(code / 0x40) % 0x40),
+            0x80 + (code % 0x40)
+        )
+    else
+        -- outside BMP, rarely needed
+        return "?"
+    end
+end
+
+local function read_file_utf16(path)
+    local f = assert(io.open(path, "rb"))
+    local data = f:read("*all")
+    f:close()
+
+    -- detect BOM
+    local bom = data:sub(1,2)
+    local little_endian = (bom == "\255\254") -- FF FE
+    local i = 3
+    local utf8 = {}
+
+    while i < #data do
+        local b1, b2 = data:byte(i, i+1)
+        if not b1 or not b2 then break end
+        local codepoint = little_endian and (b2*256 + b1) or (b1*256 + b2)
+        table.insert(utf8, codepoint_to_utf8(codepoint))
+        i = i + 2
+    end
+    return table.concat(utf8)
+end
+
+local function extract_keys_from_file(filepath, lang_code)
     local keys = {}
     local inside_table = false
 
-    local file = io.open(filepath, "r")
-    if not file then return keys end
+    -- create a line iterator depending on encoding
+    local iter, closer
+    if lang_code == "KO" then
+        local text = read_file_utf16(filepath)
+        iter = text:gmatch("[^\r\n]+") -- returns function
+        closer = function() end        -- no-op
+    else
+        local f = io.open(filepath, "r")
+        if not f then return keys end
+        iter = f:lines()
+        closer = function() f:close() end
+    end
 
-    for line in file:lines() do
+    for line in iter do
         if line:find("= %s*{") then
             inside_table = true
         elseif inside_table then
@@ -55,7 +106,7 @@ local function extract_keys_from_file(filepath)
             end
         end
     end
-    file:close()
+    closer()
     return keys
 end
 
@@ -66,7 +117,7 @@ local function get_reference_keys()
 
     for file in lfs.dir(path) do
         if file:match("%.txt$") then
-            local file_keys = extract_keys_from_file(path .. "/" .. file)
+            local file_keys = extract_keys_from_file(path .. "/" .. file, "EN")
             for k, _ in pairs(file_keys) do
                 keys[k] = true
             end
@@ -87,7 +138,7 @@ local function get_language_keys(lang_code)
 
     for file in lfs.dir(path) do
         if file:match("%.txt$") then
-            local file_keys = extract_keys_from_file(path .. "/" .. file)
+            local file_keys = extract_keys_from_file(path .. "/" .. file, lang_code)
             for k, _ in pairs(file_keys) do
                 keys[k] = true
             end
