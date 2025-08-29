@@ -108,16 +108,6 @@ function MailOrderCatalogs_Utils.setPowerState(object, isOn)
     local modData = object:getModData()
     modData.ComputerIsOn = isOn
 
-    --[[
-        patch for S4_Economy
-        due to the mod automatically disabling 
-        "turned on" computer sprite if S4_Economy doesn't
-        believe it should be turned on.
-    ]]
-    if getActivatedMods():contains("\\S4_Economy") then
-        return
-    end
-
     -- update the sprite offset
     local sprite = object:getSprite()
     local spriteName = sprite and sprite:getName()
@@ -130,13 +120,15 @@ end
 function MailOrderCatalogs_Utils.ensureComputerIsOff(object)
     if not object then return end
 
+    -- save the power state
     local modData = object:getModData()
     modData.ComputerIsOn = false
 
     local sprite = object:getSprite()
     local spriteName = sprite and sprite:getName()
-
-    MailOrderCatalogs_Utils.checkAndSetApplianceOffset(object, spriteName)
+    if spriteName then
+        MailOrderCatalogs_Utils.checkAndSetApplianceOffset(object, spriteName)
+    end
 end
 
 function MailOrderCatalogs_Utils.getItemIcon(itemName)
@@ -247,13 +239,24 @@ function MailOrderCatalogs_Utils.getPlayerCard(player)
     local fullName = descriptor:getForename() .. " " .. descriptor:getSurname()
 
     local inv = player:getInventory():getItems()
-    for i = 0, inv:size() - 1 do
+    for i=0, inv:size()-1 do
         local item = inv:get(i)
         if item:getType() == "CreditCard" then
             local modData = item:getModData()
             if modData and modData.owner == fullName then
                 return item
             end
+        end
+    end
+    return nil
+end
+
+function MailOrderCatalogs_Utils.getCard(player)
+    local inv = player:getInventory():getItems()
+    for i=0, inv:size()-1 do
+        local item = inv:get(i)
+        if item:getType() == "CreditCard" then
+            return item
         end
     end
     return nil
@@ -319,7 +322,6 @@ function MailOrderCatalogs_Utils.getItemPrice(item)
     if finalPrice < 1 then
         finalPrice = 1
     end
-
     return finalPrice
 end
 
