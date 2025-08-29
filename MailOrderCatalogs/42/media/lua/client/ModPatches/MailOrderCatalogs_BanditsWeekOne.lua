@@ -44,7 +44,8 @@ local function payUsingCreditCardsIfBanditsWeekOnePresent()
                 local modData = card:getModData()
                 local account = MailOrderCatalogs_BankServer.getAccountByID(modData.accountID)
                 if account and account.balance >= amountRemaining then
-                    MailOrderCatalogs_BankServer.withdraw(modData.accountID, amountRemaining)
+                    -- MailOrderCatalogs_BankServer.withdraw(modData.accountID, amountRemaining)
+                    MailOrderCatalogs_BankServer.setBalance(modData, account.balance - amountRemaining)
                     amountRemaining = 0
                 end
             end

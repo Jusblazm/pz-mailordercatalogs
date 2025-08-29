@@ -170,6 +170,7 @@ local function setupS4EconomyHooks()
 
     function S4_ATM_Info:ReturnCard(CardNum)
         original_ReturnCard(self, CardNum)
+
         local AtmModData = self.AtmUI.Obj:getModData()
         if AtmModData and AtmModData.CustomCardData then
             for i=0, self.player:getInventory():getItems():size()-1 do
@@ -183,55 +184,6 @@ local function setupS4EconomyHooks()
         end
     end
 
-    -- function S4_ATM_Deposit:ActionDeposit()
-    --     local depositAmount = self.CashValue
-    --     original_ActionDeposit(self)
-    --     if depositAmount and depositAmount > 0 then
-    --         local AtmModData = self.AtmUI.Obj:getModData()
-    --         if AtmModData and AtmModData.CustomCardData then
-    --             AtmModData.CustomCardData.balance = (AtmModData.CustomCardData.balance or 0) + depositAmount
-    --             local accountID = AtmModData.CustomCardData.accountID
-    --             if accountID then
-    --                 syncingFromS4Economy = true
-    --                 MailOrderCatalogs_BankServer.deposit(accountID, depositAmount)
-    --                 syncingFromS4Economy = false
-    --                 print("[MailOrderCatalogs] General: Synced bank accounts between S4Economy and MailOrderCatalogs")
-    --             end
-    --         else
-    --             print("[MailOrderCatalogs] Warning: No CustomCardData found in AtmModData")
-    --         end
-    --     end
-    -- end
-
-    -- function S4_ATM_Withdraw:ActionWithdraw()
-    --     local withdrawn = 0
-    --     local AtmModData = self.AtmUI.Obj:getModData()
-    --     local Text = self.MoneyEntry:getText()
-    --     if Text == "" then Text = "0" end
-    --     local filteredText = Text:gsub("[^%d]", "")
-    --     if filteredText == "" then filteredText = "0" end
-    --     filteredText = filteredText:gsub("^0+", "")
-    --     if filteredText == "" then filteredText = "0" end
-    --     local Value = tonumber(filteredText) or 0
-    --     if Value > 0 then
-    --         withdrawn = Value
-    --     end
-
-    --     original_ActionWithdraw(self)
-
-    --     if withdrawn > 0 and AtmModData and AtmModData.CustomCardData then
-    --         local accountID = AtmModData.CustomCardData.accountID
-    --         if accountID then
-    --             syncingFromS4Economy = true
-    --             MailOrderCatalogs_BankServer.withdraw(accountID, withdrawn)
-    --             syncingFromS4Economy = false
-    --             print("[MailOrderCatalogs] General: Synced bank accounts between S4Economy and MailOrderCatalogs")
-    --         else
-    --             print("[MailOrderCatalogs] Warning: No CustomCardData found in AtmModData")
-    --         end
-    --     end
-    -- end
-
     function S4_ATM_Deposit:ActionDeposit()
         local depositAmount = self.CashValue
         original_ActionDeposit(self)
@@ -239,12 +191,10 @@ local function setupS4EconomyHooks()
         if depositAmount and depositAmount > 0 then
             local AtmModData = self.AtmUI.Obj:getModData()
             if AtmModData and AtmModData.CustomCardData then
-                -- Calculate new balance
                 local currentBalance = AtmModData.CustomCardData.balance or 0
                 local newBalance = currentBalance + depositAmount
                 AtmModData.CustomCardData.balance = newBalance
 
-                -- Sync through setBalance
                 syncingFromS4Economy = true
                 MailOrderCatalogs_BankServer.setBalance(AtmModData.CustomCardData, newBalance)
                 syncingFromS4Economy = false
@@ -269,11 +219,9 @@ local function setupS4EconomyHooks()
         if Value > 0 then
             withdrawn = Value
         end
-
         original_ActionWithdraw(self)
 
         if withdrawn > 0 and AtmModData and AtmModData.CustomCardData then
-            -- Calculate new balance
             local currentBalance = AtmModData.CustomCardData.balance or 0
             print("current balance is " .. tostring(currentBalance))
             local newBalance = currentBalance - withdrawn
@@ -281,7 +229,6 @@ local function setupS4EconomyHooks()
             if newBalance < 0 then newBalance = 0 end
             AtmModData.CustomCardData.balance = newBalance
 
-            -- Sync through setBalance
             syncingFromS4Economy = true
             MailOrderCatalogs_BankServer.setBalance(AtmModData.CustomCardData, newBalance)
             print("set balance on account " .. tostring(AtmModData.CustomCardData.accountID) .. " to " .. tostring(newBalance))
@@ -292,19 +239,6 @@ local function setupS4EconomyHooks()
             print("[MailOrderCatalogs] Warning: No CustomCardData found in AtmModData (withdraw)")
         end
     end
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     function S4_ATM_Password:PasswordAction()
         original_PasswordAction(self)
