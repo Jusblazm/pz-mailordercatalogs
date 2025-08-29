@@ -199,20 +199,52 @@ function MailOrderCatalogs_ATMUI.ATMWindow:onDeposit()
     local account = MailOrderCatalogs_BankServer.getAccountByID(modData.accountID)
     if not account then return end
 
-    local moneyItems = inv:getAllType("Money")
-    if moneyItems:size() < amount then
+    local moneySingles = inv:getAllType("Money")
+    local moneyBundles = inv:getAllType("MoneyBundle")
+
+    local totalAvailable = moneySingles:size() + (moneyBundles:size() * 100)
+    if totalAvailable < 1 then
         self.amountEntry:setTooltip(getText("Tooltip_MailOrderCatalogs_ATMUI_AmountEntry_NoMoney"))
         return
     end
 
-    for i=1, amount do
-        local item = moneyItems:get(i-1)
-        if item then
-            inv:Remove(item)
+    local remaining = amount
+    local deposited = 0
+
+    for i=0, moneyBundles:size()-1 do
+        if remaining <= 0 then break end
+
+        local bundle = moneyBundles:get(i)
+        if bundle then
+            if remaining >= 100 then
+                inv:Remove(bundle)
+                deposited = deposited + 100
+                remaining = remaining - 100
+            else
+                inv:Remove(bundle)
+                deposited = deposited + remaining
+
+                local leftover = 100 - remaining
+                for j=1, leftover do
+                    inv:AddItem("Base.Money")
+                end
+                remaining = 0
+            end
         end
     end
 
-    MailOrderCatalogs_BankServer.deposit(modData.accountID, amount)
+    for i=0, moneySingles:size()-1 do
+        if remaining <= 0 then break end
+
+        local single = moneySingles:get(i)
+        if single then
+            inv:Remove(single)
+            deposited = deposited + 1
+            remaining = remaining - 1
+        end
+    end
+
+    MailOrderCatalogs_BankServer.deposit(modData.accountID, deposited)
     self:updateBalanceLabel()
 end
 
@@ -233,30 +265,28 @@ function MailOrderCatalogs_ATMUI.ATMWindow:onWithdraw()
         return
     end
 
-    for i=1, amount do
+    local remaining = amount
+
+    while remaining >= 100 do
+        player:getInventory():AddItem("Base.MoneyBundle")
+        remaining = remaining - 100
+    end
+
+    while remaining > 0 do
         player:getInventory():AddItem("Base.Money")
+        remaining = remaining - 1
     end
 
     MailOrderCatalogs_BankServer.withdraw(modData.accountID, amount)
     self:updateBalanceLabel()
 end
 
-function MailOrderCatalogs_ATMUI.getCard(player)
-    local inv = player:getInventory():getItems()
-    for i=0, inv:size()-1 do
-        local item = inv:get(i)
-        if item:getType() == "CreditCard" then
-            return item
-        end
-    end
-    return nil
-end
-
 function MailOrderCatalogs_ATMUI.openATMUI(player, card)
     if MailOrderCatalogs_ATMUI.instance and MailOrderCatalogs_ATMUI.instance:isVisible() then
         return
     end
-    card = card or MailOrderCatalogs_ATMUI.getCard(player)
+
+    card = card or MailOrderCatalogs_Utils.getCard(player)
     if not card then
         print("[MailOrderCatalogs] General: No Credit Card found.")
 
@@ -282,17 +312,6 @@ function MailOrderCatalogs_ATMUI.openATMUI(player, card)
     panel:setTitle(getText("UI_MailOrderCatalogs_ATMUI_ATMTitle"))
 
     MailOrderCatalogs_ATMUI.instance = panel
-
-    card = card or MailOrderCatalogs_ATMUI.getCard(player)
-    if not card then
-        print("[MailOrderCatalogs] General: No Credit Card found.")
-
-        if panel.pinEntry then panel.pinEntry:setVisible(false) end
-        if panel.submitButton then panel.submitButton:setVisible(false) end
-        local noCardLabel = ISLabel:new(10, 70, 20, getText("UI_MailOrderCatalogs_ATMUI_NoCardFound"), 1, 1, 1, 1, UIFont.Medium, true)
-        panel:addChild(noCardLabel)
-        return
-    end
 
     local modData = card:getModData()
     MailOrderCatalogs_Utils.ensureCardHasData(card)

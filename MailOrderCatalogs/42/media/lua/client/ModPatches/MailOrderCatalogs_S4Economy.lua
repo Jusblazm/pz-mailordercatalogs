@@ -125,7 +125,8 @@ local function setupS4EconomyHooks()
                     owner = modData.owner,
                     last4 = modData.last4,
                     attempts = modData.attempts,
-                    isStolen = modData.isStolen
+                    isStolen = modData.isStolen,
+                    websiteURL = modData.websiteURL
                 }
             end
         end
@@ -142,6 +143,7 @@ local function setupS4EconomyHooks()
             modData.last4 = savedData.last4
             modData.attempts = savedData.attempts
             modData.isStolen = savedData.isStolen
+            modData.websiteURL = savedData.websiteURL
 
             AtmModData.CustomCardData = nil
             S4_Utils.SnycObject(newCard)

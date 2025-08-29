@@ -29,7 +29,8 @@ function MailOrderCatalogs_BankServer.getOrCreateAccount(player)
             balance = 0,
             pin = "11",
             owner = player:getFullName(),
-            -- failedAttempts = 0
+            isStolen = false,
+            attempts = 0
         }
         ModData.transmit("BankAccounts")
     end
@@ -41,6 +42,8 @@ function MailOrderCatalogs_BankServer.getOrCreateAccountByID(card)
     local id = card.accountID
     local owner = card.owner
     local pin = card.pin
+    local isStolen = card.isStolen
+    local attempts = card.attempts
     if not bankData.accounts[id] then
         local isFakeCard = id:sub(1, 5) == "FAKE_"
         local startingBalance = isFakeCard and ZombRand(5, 501) or 0
@@ -50,7 +53,8 @@ function MailOrderCatalogs_BankServer.getOrCreateAccountByID(card)
             balance = startingBalance,
             pin = pin or "Unknown",
             owner = owner or "Unknown",
-            -- failedAttempts = 0
+            isStolen = isStolen or false,
+            attempts = attempts or 0
         }
         ModData.transmit("BankAccounts")
     else
@@ -95,6 +99,8 @@ end
 function MailOrderCatalogs_BankServer.setBalance(card, newBalance)
     local account = MailOrderCatalogs_BankServer.getOrCreateAccountByID(card)
     account.balance = newBalance
+    ModData.transmit("BankAccounts")
+    return true
 end
 
 

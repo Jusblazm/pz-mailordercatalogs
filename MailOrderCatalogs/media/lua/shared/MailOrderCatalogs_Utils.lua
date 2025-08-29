@@ -120,32 +120,16 @@ end
 function MailOrderCatalogs_Utils.ensureComputerIsOff(object)
     if not object then return end
 
+    -- save the power state
     local modData = object:getModData()
     modData.ComputerIsOn = false
 
     local sprite = object:getSprite()
     local spriteName = sprite and sprite:getName()
-
-    MailOrderCatalogs_Utils.checkAndSetApplianceOffset(object, spriteName)
+    if spriteName then
+        MailOrderCatalogs_Utils.checkAndSetApplianceOffset(object, spriteName)
+    end
 end
-
--- function MailOrderCatalogs_Utils.getItemIcon(itemName)
---     if not itemName then return nil end
---     print("[MailOrderCatalogs] Debug: Item name -> " .. tostring(itemName))
-
---     local scriptItem = getScriptManager():FindItem(itemName)
---     print("[MailOrderCatalogs] Debug: Script item -> " .. tostring(scriptItem))
---     if not scriptItem then
---         print("[MailOrderCatalogs] Error: Item not found -> " .. tostring(itemName))
---         return nil
---     end
---     local iconName = scriptItem:getIcon()
---     local iconTexture = getTexture(iconName) or getTexture("Item_" .. iconName)
---     if not iconTexture then
---         print("[MailOrderCatalogs] Error: Texture file missing or failed to load -> " .. iconName .. ".png")
---     end
---     return iconTexture
--- end
 
 function MailOrderCatalogs_Utils.getItemIcon(itemName)
     if not itemName then return nil end
@@ -208,6 +192,8 @@ local function isSquarePowered(square)
     )
 end
 
+-- required for ATM outside of post office in Ekron
+-- it's part of the building, but not defined as part of the building
 local function isNearbySquarePowered(square, radius)
     if not square then return false end
     radius = radius or 1
@@ -253,13 +239,24 @@ function MailOrderCatalogs_Utils.getPlayerCard(player)
     local fullName = descriptor:getForename() .. " " .. descriptor:getSurname()
 
     local inv = player:getInventory():getItems()
-    for i = 0, inv:size() - 1 do
+    for i=0, inv:size()-1 do
         local item = inv:get(i)
         if item:getType() == "CreditCard" then
             local modData = item:getModData()
             if modData and modData.owner == fullName then
                 return item
             end
+        end
+    end
+    return nil
+end
+
+function MailOrderCatalogs_Utils.getCard(player)
+    local inv = player:getInventory():getItems()
+    for i=0, inv:size()-1 do
+        local item = inv:get(i)
+        if item:getType() == "CreditCard" then
+            return item
         end
     end
     return nil
@@ -325,7 +322,6 @@ function MailOrderCatalogs_Utils.getItemPrice(item)
     if finalPrice < 1 then
         finalPrice = 1
     end
-
     return finalPrice
 end
 
