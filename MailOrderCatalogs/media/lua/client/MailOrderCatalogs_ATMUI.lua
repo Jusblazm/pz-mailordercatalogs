@@ -186,6 +186,103 @@ function MailOrderCatalogs_ATMUI.ATMWindow:updateBalanceLabel()
     self.balanceLabel:setName(getText("UI_MailOrderCatalogs_ATMUI_Balance") .. tostring(balance))
 end
 
+-- function MailOrderCatalogs_ATMUI.ATMWindow:onDeposit()
+--     local amount = tonumber(self.amountEntry:getText())
+--     if not amount or amount <= 0 then return end
+
+--     local player = self:getPlayer()
+--     local inv = player:getInventory()
+--     local card = self:getCard()
+--     if not card then return end
+
+--     local modData = card:getModData()
+--     local account = MailOrderCatalogs_BankServer.getAccountByID(modData.accountID)
+--     if not account then return end
+
+--     local moneySingles = inv:getAllType("Money")
+--     local moneyBundles = inv:getAllType("MoneyBundle")
+
+--     local totalAvailable = moneySingles:size() + (moneyBundles:size() * 100)
+--     if totalAvailable < 1 then
+--         self.amountEntry:setTooltip(getText("Tooltip_MailOrderCatalogs_ATMUI_AmountEntry_NoMoney"))
+--         return
+--     end
+
+--     local remaining = amount
+--     local deposited = 0
+
+--     for i=0, moneyBundles:size()-1 do
+--         if remaining <= 0 then break end
+
+--         local bundle = moneyBundles:get(i)
+--         if bundle then
+--             if remaining >= 100 then
+--                 inv:Remove(bundle)
+--                 deposited = deposited + 100
+--                 remaining = remaining - 100
+--             else
+--                 inv:Remove(bundle)
+--                 deposited = deposited + remaining
+
+--                 local leftover = 100 - remaining
+--                 for j=1, leftover do
+--                     inv:AddItem("Base.Money")
+--                 end
+--                 remaining = 0
+--             end
+--         end
+--     end
+
+--     for i=0, moneySingles:size()-1 do
+--         if remaining <= 0 then break end
+
+--         local single = moneySingles:get(i)
+--         if single then
+--             inv:Remove(single)
+--             deposited = deposited + 1
+--             remaining = remaining - 1
+--         end
+--     end
+
+--     MailOrderCatalogs_BankServer.deposit(modData.accountID, deposited)
+--     self:updateBalanceLabel()
+-- end
+
+-- function MailOrderCatalogs_ATMUI.ATMWindow:onWithdraw()
+--     local amount = tonumber(self.amountEntry:getText())
+--     if not amount or amount <= 0 then return end
+
+--     local player = self:getPlayer()
+--     local card = self:getCard()
+--     if not card then return end
+
+--     local modData = card:getModData()
+--     local account = MailOrderCatalogs_BankServer.getAccountByID(modData.accountID)
+--     if not account then return end
+
+--     if account.balance < amount then
+--         self.amountEntry:setTooltip(getText("Tooltip_MailOrderCatalogs_ATMUI_AmountEntry_Insufficient"))
+--         return
+--     end
+
+--     local remaining = amount
+
+--     while remaining >= 100 do
+--         player:getInventory():AddItem("Base.MoneyBundle")
+--         remaining = remaining - 100
+--     end
+
+--     while remaining > 0 do
+--         player:getInventory():AddItem("Base.Money")
+--         remaining = remaining - 1
+--     end
+
+--     MailOrderCatalogs_BankServer.withdraw(modData.accountID, amount)
+--     self:updateBalanceLabel()
+-- end
+
+
+
 function MailOrderCatalogs_ATMUI.ATMWindow:onDeposit()
     local amount = tonumber(self.amountEntry:getText())
     if not amount or amount <= 0 then return end
@@ -199,52 +296,20 @@ function MailOrderCatalogs_ATMUI.ATMWindow:onDeposit()
     local account = MailOrderCatalogs_BankServer.getAccountByID(modData.accountID)
     if not account then return end
 
-    local moneySingles = inv:getAllType("Money")
-    local moneyBundles = inv:getAllType("MoneyBundle")
-
-    local totalAvailable = moneySingles:size() + (moneyBundles:size() * 100)
-    if totalAvailable < 1 then
+    local moneyItems = inv:getAllType("Money")
+    if moneyItems:size() < amount then
         self.amountEntry:setTooltip(getText("Tooltip_MailOrderCatalogs_ATMUI_AmountEntry_NoMoney"))
         return
     end
 
-    local remaining = amount
-    local deposited = 0
-
-    for i=0, moneyBundles:size()-1 do
-        if remaining <= 0 then break end
-
-        local bundle = moneyBundles:get(i)
-        if bundle then
-            if remaining >= 100 then
-                inv:Remove(bundle)
-                deposited = deposited + 100
-                remaining = remaining - 100
-            else
-                inv:Remove(bundle)
-                deposited = deposited + remaining
-
-                local leftover = 100 - remaining
-                for j=1, leftover do
-                    inv:AddItem("Base.Money")
-                end
-                remaining = 0
-            end
+    for i=1, amount do
+        local item = moneyItems:get(i-1)
+        if item then
+            inv:Remove(item)
         end
     end
 
-    for i=0, moneySingles:size()-1 do
-        if remaining <= 0 then break end
-
-        local single = moneySingles:get(i)
-        if single then
-            inv:Remove(single)
-            deposited = deposited + 1
-            remaining = remaining - 1
-        end
-    end
-
-    MailOrderCatalogs_BankServer.deposit(modData.accountID, deposited)
+    MailOrderCatalogs_BankServer.deposit(modData.accountID, amount)
     self:updateBalanceLabel()
 end
 
@@ -265,16 +330,8 @@ function MailOrderCatalogs_ATMUI.ATMWindow:onWithdraw()
         return
     end
 
-    local remaining = amount
-
-    while remaining >= 100 do
-        player:getInventory():AddItem("Base.MoneyBundle")
-        remaining = remaining - 100
-    end
-
-    while remaining > 0 do
+    for i=1, amount do
         player:getInventory():AddItem("Base.Money")
-        remaining = remaining - 1
     end
 
     MailOrderCatalogs_BankServer.withdraw(modData.accountID, amount)
