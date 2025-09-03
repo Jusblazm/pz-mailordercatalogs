@@ -56,7 +56,7 @@ end
 function MailOrderCatalogs_ComputerUI.ComputerWindow:populateAvailableWebsites()
     self.leftScrollPanel:clear()
 
-    local player = getSpecificPlayer(0)
+    local player = self:getPlayer()
     local inventory = player and player:getInventory()
 
     local unlockedSites = {}
@@ -120,8 +120,8 @@ function MailOrderCatalogs_ComputerUI.ComputerWindow:renderWebsite(siteID)
     local currentPage = self.currentPage[siteID]
     local player = self:getPlayer()
     local card = self:getCard()
-    local modData = card:getModData()
-    local account = MailOrderCatalogs_BankServer.getOrCreateAccountByID(modData)
+    -- local modData = card:getModData()
+    -- local account = MailOrderCatalogs_BankServer.getOrCreateAccountByID(modData)
 
     local padding = 20
     local columnSpacing = 20
@@ -689,7 +689,7 @@ function MailOrderCatalogs_ComputerUI.ComputerWindow:createChildren()
         self.insufficientFundsLabel:setName("")
 
         -- deliver items
-        local player = getPlayer()
+        local player = self:getPlayer()
         for name, data in pairs(self.shoppingCart) do
             for i=1, data.count do
                 MailOrderCatalogs_Delivery.deliverItem(name, player)
@@ -1012,6 +1012,8 @@ function MailOrderCatalogs_ComputerUI.openComputerUI(object, player)
     local card = MailOrderCatalogs_Utils.getPlayerCard(player)
     if not card then
         print("[MailOrderCatalogs] General: No Credit Card found.")
+        -- return
+
     end
 
     local defaultWidth, defaultHeight = 1200, 800
@@ -1034,21 +1036,23 @@ function MailOrderCatalogs_ComputerUI.openComputerUI(object, player)
 
     MailOrderCatalogs_ComputerUI.instance = panel
 
-    local modData = card:getModData()
-    MailOrderCatalogs_Utils.ensureCardHasData(card)
-    local account = MailOrderCatalogs_BankServer.getOrCreateAccountByID(modData)
+    if card then
+        local modData = card:getModData()
+        MailOrderCatalogs_Utils.ensureCardHasData(card)
+        local account = MailOrderCatalogs_BankServer.getOrCreateAccountByID(modData)
 
-    if isDebugEnabled() then
-        print("[MailOrderCatalogs] Debug: Player: " .. tostring(player))
-        print("[MailOrderCatalogs] Debug: Credit Card Owner: " .. tostring(modData.owner))
-        print("[MailOrderCatalogs] Debug: Credit Card Account ID: " .. tostring(modData.accountID))
-        print("[MailOrderCatalogs] Debug: Credit Card Number: **** **** **** " .. tostring(modData.last4))
-        print("[MailOrderCatalogs] Debug: Credit Card PIN: " .. tostring(modData.pin))
-        print("[MailOrderCatalogs] Debug: Credit Card Attempts: " .. tostring(modData.attempts) .. "/3")
-        local descriptor = player:getDescriptor()
-        print("[MailOrderCatalogs] Debug: I own this Credit Card: " .. tostring(modData.owner == descriptor:getForename() .. " " .. descriptor:getSurname()))
-        print("[MailOrderCatalogs] Debug: This Credit Card is stolen: " .. tostring(modData.isStolen))
-        print("[MailOrderCatalogs] Debug: My account balance is: " .. tostring(account.balance))
+        if isDebugEnabled() then
+            print("[MailOrderCatalogs] Debug: Player: " .. tostring(player))
+            print("[MailOrderCatalogs] Debug: Credit Card Owner: " .. tostring(modData.owner))
+            print("[MailOrderCatalogs] Debug: Credit Card Account ID: " .. tostring(modData.accountID))
+            print("[MailOrderCatalogs] Debug: Credit Card Number: **** **** **** " .. tostring(modData.last4))
+            print("[MailOrderCatalogs] Debug: Credit Card PIN: " .. tostring(modData.pin))
+            print("[MailOrderCatalogs] Debug: Credit Card Attempts: " .. tostring(modData.attempts) .. "/3")
+            local descriptor = player:getDescriptor()
+            print("[MailOrderCatalogs] Debug: I own this Credit Card: " .. tostring(modData.owner == descriptor:getForename() .. " " .. descriptor:getSurname()))
+            print("[MailOrderCatalogs] Debug: This Credit Card is stolen: " .. tostring(modData.isStolen))
+            print("[MailOrderCatalogs] Debug: My account balance is: " .. tostring(account.balance))
+        end
     end
 end
 
