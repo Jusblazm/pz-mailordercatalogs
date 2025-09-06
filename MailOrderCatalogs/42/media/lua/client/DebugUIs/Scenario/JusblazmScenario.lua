@@ -103,34 +103,8 @@ debugScenarios.JusblazmScenario = {
         -- local dye = player:getInventory():AddItem("Base.IndustrialDye")
 
         player:getInventory():AddItems("Base.Money", 200);
-        player:getInventory():AddItem("Base.AwlWorkAndSewPlayCatalog1");
-        player:getInventory():AddItem("Base.AwlWorkAndSewPlayCatalog2");
-        player:getInventory():AddItem("Base.AwlWorkAndSewPlayCatalog3");
-        player:getInventory():AddItem("Base.AwlWorkAndSewPlayCatalog4");
-        player:getInventory():AddItem("Base.AwlWorkAndSewPlayCatalog5");
-        player:getInventory():AddItem("Base.WormOfBooksCatalog1");
-        player:getInventory():AddItem("Base.YourClosetCatalog1");
-        player:getInventory():AddItem("Base.YourClosetCatalog2");
-        player:getInventory():AddItem("Base.ZacsHardwareCatalog1");
-        player:getInventory():AddItem("Base.ZacsHardwareCatalog2");
-        player:getInventory():AddItem("Base.SaucyCatalog1");
-        player:getInventory():AddItem("Base.TheExquisitePearlCatalog1");
-        player:getInventory():AddItem("Base.TheExquisitePearlCatalog2");
-        player:getInventory():AddItem("Base.TheExquisitePearlCatalog3");
-        player:getInventory():AddItem("Base.TheExquisitePearlCatalog4");
-        player:getInventory():AddItem("Base.EPToolsCatalog3");
-        player:getInventory():AddItem("Base.EPToolsCatalog2");
-        player:getInventory():AddItem("Base.EPToolsCatalog1");
-        player:getInventory():AddItem("Base.DressedToThe90sCatalog1");
-        player:getInventory():AddItem("Base.BookNakedCatalog2");
-        player:getInventory():AddItem("Base.BookNakedCatalog3");
-        player:getInventory():AddItem("Base.BookNakedCatalog1");
-        player:getInventory():AddItem("Base.FarmingAndRuralSupplyCatalog1");
-        player:getInventory():AddItem("Base.FarmingAndRuralSupplyCatalog2");
-        player:getInventory():AddItem("Base.FiligreeFashionsCatalog1");
-        player:getInventory():AddItem("Base.LouisvilleBruiserCatalog");
-        player:getInventory():AddItem("Base.MedUWellCatalog1");
         player:getInventory():AddItem("Base.WalkieTalkie5");
+        player:getInventory():AddItem("Base.PetrolCan");
         player:getInventory():AddItem("Base.Fork");
         player:getInventory():AddItem("Base.CreditCard");
         player:setUnlimitedCarry(true);

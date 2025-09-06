@@ -5,11 +5,17 @@ local MailOrderCatalogs_Utils = require("MailOrderCatalogs_Utils")
 local function giveCreditCardOnStart(playerIndex, playerObj)
     if not playerObj or playerObj:isDead() then return end
 
+    local playerData = playerObj:getModData()
+    if playerData.hasCreditCard then
+        return
+    end
+
     local inv = playerObj:getInventory()
 
     for i=0, inv:getItems():size()-1 do
         local item = inv:getItems():get(i)
         if item:getType() == "CreditCard" then
+            playerData.hasCreditCard = true
             return
         end
     end
@@ -33,6 +39,7 @@ local function giveCreditCardOnStart(playerIndex, playerObj)
 
         MailOrderCatalogs_BankServer.getOrCreateAccount(playerObj)
     end
+    playerData.hasCreditCard = true
 end
 
 Events.OnCreatePlayer.Add(giveCreditCardOnStart)

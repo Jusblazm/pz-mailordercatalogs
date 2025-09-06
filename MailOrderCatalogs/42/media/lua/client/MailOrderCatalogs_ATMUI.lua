@@ -183,7 +183,8 @@ function MailOrderCatalogs_ATMUI.ATMWindow:updateBalanceLabel()
     local card = self:getCard()
     local account = MailOrderCatalogs_BankServer.getAccountByID(card:getModData().accountID)
     local balance = account and tonumber(account.balance or 0) or 0
-    self.balanceLabel:setName(getText("UI_MailOrderCatalogs_ATMUI_Balance") .. tostring(balance))
+    local formatBalance = string.format("%.2f", balance)
+    self.balanceLabel:setName(getText("UI_MailOrderCatalogs_ATMUI_Balance") .. formatBalance)
 end
 
 function MailOrderCatalogs_ATMUI.ATMWindow:onDeposit()

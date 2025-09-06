@@ -10,6 +10,8 @@ return {
 
         local modData = card:getModData()
         local account = MailOrderCatalogs_BankServer.getOrCreateAccountByID(modData)
+        local balance = tonumber(account.balance) or 0
+        local formatBalance = string.format("%.2f", balance)
 
         local function addLabel(text)
             local label = ISLabel:new(padding, y, 20, text, 1, 1, 1, 1, UIFont.Small, true)
@@ -21,7 +23,7 @@ return {
         addLabel(getText("UI_MailOrderCatalogs_KnoxBank_Welcome"))
         addLabel("-----------------------------")
         addLabel(getText("UI_MailOrderCatalogs_KnoxBank_YourCard") .. " **** **** **** " .. tostring(modData.last4))
-        addLabel(getText("UI_MailOrderCatalogs_KnoxBank_Balance") .. tostring(account.balance))
+        addLabel(getText("UI_MailOrderCatalogs_KnoxBank_Balance") .. formatBalance)
         local currentPinLabel = ISLabel:new(padding, y, 20, getText("UI_MailOrderCatalogs_KnoxBank_CurrentPIN") .. tostring(account.pin), 1, 1, 1, 1, UIFont.Small, true)
         currentPinLabel:initialise()
         self.rightPanel:addChild(currentPinLabel)
