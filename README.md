@@ -104,7 +104,7 @@ Translations are done via ChatGPT and checked with Google Translate. I do my bes
 
 ## Translation Credits
 A hearty thank you to everyone who contributed to translations for Mail Order Catalogs.\
-🇷🇺Russian and 🇺🇦Ukrainian: [DXI344](https://steamcommunity.com/id/dzidio/)
+🇷🇺 Russian and 🇺🇦 Ukrainian: [DXI344](https://steamcommunity.com/id/dzidio/)
 
 ## Support
 Come find me on discord! Be sure to grab the Project Zomboid Modding Role once you arrive.
