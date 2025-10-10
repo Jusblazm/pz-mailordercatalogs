@@ -7,4 +7,6 @@ Sandbox_CH = {
     Sandbox_MailOrderCatalogs_PriceMultiplier_option1 = "一半",
     Sandbox_MailOrderCatalogs_PriceMultiplier_option2 = "普通",
     Sandbox_MailOrderCatalogs_PriceMultiplier_option3 = "雙倍",
+    Sandbox_MailOrderCatalogs_EnableHalloweenEvent = "啟用萬聖節活動",
+    Sandbox_MailOrderCatalogs_OnlyOctober = "萬聖節活動僅在遊戲內十月期間舉行",
 }

@@ -1,7 +1,8 @@
 -- MailOrderCatalogs_DeliveryQueue
 local DeliveryQueue = {}
-DeliveryQueue.queued = {}
-DeliveryQueue.queuedFluids = {}
+DeliveryQueue.queued = DeliveryQueue.queued or {}
+DeliveryQueue.queuedFluids = DeliveryQueue.queuedFluids or {}
+DeliveryQueue.queuedZombies = DeliveryQueue.queuedZombies or {}
 
 function DeliveryQueue.addDelivery(x, y, z, item)
     local key = string.format("%d_%d_%d", x, y, z)
@@ -9,7 +10,7 @@ function DeliveryQueue.addDelivery(x, y, z, item)
         DeliveryQueue.queued[key] = {}
     end
     table.insert(DeliveryQueue.queued[key], item)
-    print(string.format("[MailOrderCatalogs] Queued item '%s' for %s", item, key))
+    print(string.format("[MailOrderCatalogs] Debug: Queued item '%s' for %s", item, key))
 end
 
 function DeliveryQueue.addFluidDelivery(x, y, z, fluidData)
@@ -18,8 +19,17 @@ function DeliveryQueue.addFluidDelivery(x, y, z, fluidData)
         DeliveryQueue.queuedFluids[key] = {}
     end
     table.insert(DeliveryQueue.queuedFluids[key], fluidData)
-    print(string.format("[MailOrderCatalogs] Queued fluid item '%s' with RGB (%0.2f, %0.2f, %0.2f) for %s",
+    print(string.format("[MailOrderCatalogs] Debug: Queued fluid item '%s' with RGB (%0.2f, %0.2f, %0.2f) for %s",
         fluidData.item, fluidData.r, fluidData.g, fluidData.b, key))
+end
+
+function DeliveryQueue.addZombieDelivery(x, y, z, loc)
+    local key = string.format("%d_%d_%d", x, y, z)
+    if not DeliveryQueue.queuedZombies[key] then
+        DeliveryQueue.queuedZombies[key] = {}
+    end
+    table.insert(DeliveryQueue.queuedZombies[key], loc)
+    print(string.format("[MailOrderCatalogs] Debug: Queued zombies for %s", key))
 end
 
 function DeliveryQueue.tryDeliver(square)
@@ -64,6 +74,15 @@ function DeliveryQueue.tryDeliver(square)
         DeliveryQueue.queued[key] = nil -- clear delivered items
     end
     DeliveryQueue.tryDeliverFluids(square)
+
+    if DeliveryQueue.queuedZombies[key] and type(DeliveryQueue.queuedZombies[key]) == "table" then
+        for _, loc in ipairs(DeliveryQueue.queuedZombies[key]) do
+            if loc and loc.x and loc.y and loc.z then
+                sendClientCommand("MailOrderCatalogs", "SpawnHalloweenZombies", loc)
+            end
+        end
+        DeliveryQueue.queuedZombies[key] = nil
+    end
 end
 
 function DeliveryQueue.tryDeliverFluids(square)

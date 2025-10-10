@@ -7,4 +7,6 @@ Sandbox_ES = {
     Sandbox_MailOrderCatalogs_PriceMultiplier_option1 = "Mitad",
     Sandbox_MailOrderCatalogs_PriceMultiplier_option2 = "Normal",
     Sandbox_MailOrderCatalogs_PriceMultiplier_option3 = "Doble",
+    Sandbox_MailOrderCatalogs_EnableHalloweenEvent = "Activar evento de Halloween",
+    Sandbox_MailOrderCatalogs_OnlyOctober = "Evento de Halloween solo durante octubre en el juego",
 }

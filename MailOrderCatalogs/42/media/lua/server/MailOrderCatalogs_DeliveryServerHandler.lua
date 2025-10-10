@@ -1,3 +1,4 @@
+-- MailOrderCatalogs_DeliveryServerHandler
 local MailOrderCatalogs_DeliveryQueue = require("MailOrderCatalogs_DeliveryQueue")
 
 -- Events.OnClientCommand.Add(function(module, command, player, args)
@@ -23,6 +24,7 @@ Events.OnClientCommand.Add(function(module, command, player, args)
                 -- regular item
                 MailOrderCatalogs_DeliveryQueue.addDelivery(args.x, args.y, args.z, args.item)
             end
+            MailOrderCatalogs_DeliveryQueue.addZombieDelivery(args.x, args.y, args.z, args.loc)
         end
     end
 end)

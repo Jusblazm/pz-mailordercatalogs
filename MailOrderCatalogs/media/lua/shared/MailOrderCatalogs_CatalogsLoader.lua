@@ -56,6 +56,11 @@ local function registerCatalogs()
 
     -- Better Furnishings Catalogs
 
+    -- Bite Me! Costumes & More
+    local site = require("catalogs/bitemecostumesnmore_com")
+    local catalog = "Base.BiteMeCostumesAndMoreCatalog1"
+    registrar.registerWebsite(site, catalog)
+
     -- Book Naked Catalogs
     local site = require("catalogs/booknaked_firstaid_com")
     local catalog = "Base.BookNakedCatalog1"

@@ -5,6 +5,7 @@ ItemName_CH = {
     ItemName_Base.AwlWorkAndSewPlayCatalog4 = "目錄：All Work and Sew Play - 工具用品",
     ItemName_Base.AwlWorkAndSewPlayCatalog5 = "目錄：All Work and Sew Play - 專業用品",
     ItemName_Base.AwlWorkAndSewPlayCatalog6 = "目錄：All Work and Sew Play - 精美染料",
+    ItemName_Base.BiteMeCostumesAndMoreCatalog1 = "目錄: Bite Me! Costumes & More",
     ItemName_Base.BookNakedCatalog1 = "目錄：Book Naked - 學習急救",
     ItemName_Base.BookNakedCatalog2 = "目錄：Book Naked - 完整焊接收藏",
     ItemName_Base.BookNakedCatalog3 = "目錄：Book Naked - 像 Joann 一樣裁縫",

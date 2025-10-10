@@ -5,6 +5,7 @@ ItemName_PTBR = {
     ItemName_Base.AwlWorkAndSewPlayCatalog4 = "Catálogo: All Work and Sew Play - Suprimentos de Ferramentas",
     ItemName_Base.AwlWorkAndSewPlayCatalog5 = "Catálogo: All Work and Sew Play - Suprimentos Profissionais",
     ItemName_Base.AwlWorkAndSewPlayCatalog6 = "Catálogo: All Work and Sew Play - Corantes Gloriosos",
+    ItemName_Base.BiteMeCostumesAndMoreCatalog1 = "Catálogo: Bite Me! Costumes & More",
     ItemName_Base.BookNakedCatalog1 = "Catálogo: Book Naked - Aprender Primeiros Socorros",
     ItemName_Base.BookNakedCatalog2 = "Catálogo: Book Naked - Coleção Completa de Soldagem",
     ItemName_Base.BookNakedCatalog3 = "Catálogo: Book Naked - Costure Como a Joann",

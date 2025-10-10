@@ -38,7 +38,7 @@ function MailOrderCatalogs_Delivery.findNearestDeliveryPoint(radius)
         for y = py - radius, py + radius do
             local square = cell:getGridSquare(x, y, pz)
             if square then
-                for i = 0, square:getSpecialObjects():size() - 1 do
+                for i=0, square:getSpecialObjects():size()-1 do
                     local obj = square:getSpecialObjects():get(i)
                     if obj:getModData() and obj:getModData().isDeliveryPoint then
                         local dx = x - px
@@ -126,17 +126,27 @@ function MailOrderCatalogs_Delivery.deliverItem(itemName, player)
             else
                 print("[MailOrderCatalogs] Error: Delivery object found but container missing.")
             end
+            local sq = obj:getSquare()
+            if sq then
+                sendClientCommand("MailOrderCatalogs", "SpawnHalloweenZombies", {
+                    x = obj:getX(),
+                    y = obj:getY(),
+                    z = obj:getZ()
+                })
+            end
         elseif result.type == "location" then
             -- queue delivery to be spawned server-side
             sendClientCommand("MailOrderCatalogs", "QueueDelivery", {
                 x = result.location.x,
                 y = result.location.y,
                 z = result.location.z,
+                loc = result.location,
                 item = itemName
             })
             print(string.format("[MailOrderCatalogs] Debug: Queued delivery of '%s' to fallback location (%d, %d, %d)",
                 itemName, result.location.x, result.location.y, result.location.z))
                 player:Say(getText("IGUI_MailOrderCatalogs_PlayerText_PackagePostOffice"))
+            -- sendClientCommand("MailOrderCatalogs", "QueueZombieDelivery", result.location)
         end
     else
         print("[MailOrderCatalogs] Error: No delivery point found nearby or in fallback locations.")

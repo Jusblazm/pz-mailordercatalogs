@@ -9,6 +9,7 @@ local catalogs = {
     "Base.AwlWorkAndSewPlayCatalog4",
     "Base.AwlWorkAndSewPlayCatalog5",
     "Base.AwlWorkAndSewPlayCatalog6",
+    "Base.BiteMeCostumesAndMoreCatalog1",
     "Base.BookNakedCatalog1",
     "Base.BookNakedCatalog2",
     "Base.BookNakedCatalog3",

@@ -7,4 +7,6 @@ Sandbox_RU = {
     Sandbox_MailOrderCatalogs_PriceMultiplier_option1 = "Полцены",
     Sandbox_MailOrderCatalogs_PriceMultiplier_option2 = "Нормально",
     Sandbox_MailOrderCatalogs_PriceMultiplier_option3 = "Вдвое дороже",
+    Sandbox_MailOrderCatalogs_EnableHalloweenEvent = "Включить событие Хэллоуин",
+    Sandbox_MailOrderCatalogs_OnlyOctober = "Событие Хэллоуин только в октябре в игре",
 }

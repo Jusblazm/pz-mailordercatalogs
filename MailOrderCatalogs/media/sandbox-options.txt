@@ -16,3 +16,19 @@ option MailOrderCatalogs.PriceMultiplier
     page = MailOrderCatalogs,
     translation = MailOrderCatalogs_PriceMultiplier,
 }
+
+option MailOrderCatalogs.EnableHalloweenEvent
+{
+    type = boolean,
+    default = true,
+    page = MailOrderCatalogs,
+    translation = MailOrderCatalogs_EnableHalloweenEvent,
+}
+
+option MailOrderCatalogs.OnlyOctober
+{
+    type = boolean,
+    default = false,
+    page = MailOrderCatalogs,
+    translation = MailOrderCatalogs_OnlyOctober,
+}

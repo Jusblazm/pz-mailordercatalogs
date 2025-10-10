@@ -7,4 +7,6 @@ Sandbox_JP = {
     Sandbox_MailOrderCatalogs_PriceMultiplier_option1 = "半額",
     Sandbox_MailOrderCatalogs_PriceMultiplier_option2 = "通常",
     Sandbox_MailOrderCatalogs_PriceMultiplier_option3 = "2倍",
+    Sandbox_MailOrderCatalogs_EnableHalloweenEvent = "ハロウィンイベントを有効化",
+    Sandbox_MailOrderCatalogs_OnlyOctober = "ハロウィンイベントはゲーム内10月のみ実施",
 }

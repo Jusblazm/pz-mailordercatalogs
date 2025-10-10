@@ -7,4 +7,7 @@ Sandbox_NL = {
     Sandbox_MailOrderCatalogs_PriceMultiplier_option1 = "Half",
     Sandbox_MailOrderCatalogs_PriceMultiplier_option2 = "Normaal",
     Sandbox_MailOrderCatalogs_PriceMultiplier_option3 = "Dubbel",
+    Sandbox_MailOrderCatalogs_EnableHalloweenEvent = "Halloween-evenement inschakelen",
+    Sandbox_MailOrderCatalogs_OnlyOctober = "Halloween-evenement alleen in oktober in het spel",
+
 }

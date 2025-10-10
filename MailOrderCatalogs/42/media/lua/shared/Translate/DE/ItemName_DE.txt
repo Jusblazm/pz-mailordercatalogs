@@ -5,6 +5,7 @@ ItemName_DE = {
     ItemName_Base.AwlWorkAndSewPlayCatalog4 = "Katalog: All Work and Sew Play - Werkzeugbedarf",
     ItemName_Base.AwlWorkAndSewPlayCatalog5 = "Katalog: All Work and Sew Play - Professioneller Bedarf",
     ItemName_Base.AwlWorkAndSewPlayCatalog6 = "Katalog: All Work and Sew Play - Herrliche Farbstoffe",
+    ItemName_Base.BiteMeCostumesAndMoreCatalog1 = "Katalog: Bite Me! Costumes & More",
     ItemName_Base.BookNakedCatalog1 = "Katalog: Book Naked - Erste Hilfe lernen",
     ItemName_Base.BookNakedCatalog2 = "Katalog: Book Naked - Komplette Schweißsammlung",
     ItemName_Base.BookNakedCatalog3 = "Katalog: Book Naked - Schneidern wie Joann",
