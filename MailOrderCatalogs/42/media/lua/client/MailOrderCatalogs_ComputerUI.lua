@@ -57,15 +57,22 @@ function MailOrderCatalogs_ComputerUI.ComputerWindow:populateAvailableWebsites()
     self.leftScrollPanel:clear()
 
     local player = self:getPlayer()
-    local inventory = player and player:getInventory()
+    if not player then return end
 
     local unlockedSites = {}
 
-    if inventory then
-        local items = inventory:getItems()
-        for i = 0, items:size()-1 do
+    local function checkInventory(container)
+        if not container then return end
+
+        local items = container:getItems()
+        for i=0, items:size()-1 do
             local item = items:get(i)
             if item then
+                if item:IsInventoryContainer() then
+                    local subInv = item:getInventory()
+                    checkInventory(subInv)
+                end
+
                 -- option 1: check modData
                 local modData = item:getModData()
                 local siteID = modData and modData.websiteURL
@@ -83,6 +90,28 @@ function MailOrderCatalogs_ComputerUI.ComputerWindow:populateAvailableWebsites()
                 end
             end
         end
+    end
+
+    checkInventory(player:getInventory())
+
+    local wornItems = player:getWornItems()
+    if wornItems then
+        for i=0, wornItems:size()-1 do
+            local wornItems = wornItems:get(i):getItem()
+            if wornItem and wornItem:IsInventoryContainer() then
+                checkInventory(wornItem:getInventory())
+            end
+        end
+    end
+
+    local primary = player:getPrimaryHandItem()
+    if primary and primary:IsInventoryContainer() then
+        checkInventory(primary:getInventory())
+    end
+
+    local secondary = player:getSecondaryHandItem()
+    if secondary and secondary:IsInventoryContainer() then
+        checkInventory(secondary:getInventory())
     end
 
     -- now populate the quick access panel with sites the player has access to
