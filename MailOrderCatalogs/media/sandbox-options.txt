@@ -28,7 +28,7 @@ option MailOrderCatalogs.EnableHalloweenEvent
 option MailOrderCatalogs.OnlyOctober
 {
     type = boolean,
-    default = false,
+    default = true,
     page = MailOrderCatalogs,
     translation = MailOrderCatalogs_OnlyOctober,
 }
