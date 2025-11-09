@@ -7,6 +7,11 @@ Sandbox_UA = {
     Sandbox_MailOrderCatalogs_PriceMultiplier_option1 = "Половина",
     Sandbox_MailOrderCatalogs_PriceMultiplier_option2 = "Нормальна",
     Sandbox_MailOrderCatalogs_PriceMultiplier_option3 = "Подвоєно",
+    Sandbox_MailOrderCatalogs_DeliverySpeed = "Швидкість доставки замовлень",
+    Sandbox_MailOrderCatalogs_DeliverySpeed_tooltip = "Налаштовує швидкість доставки всіх замовлень з поштових каталогів.",
+    Sandbox_MailOrderCatalogs_DeliverySpeed_option1 = "Миттєво",
+    Sandbox_MailOrderCatalogs_DeliverySpeed_option2 = "1 день",
+    Sandbox_MailOrderCatalogs_DeliverySpeed_option3 = "3 дні",
     Sandbox_MailOrderCatalogs_EnableHalloweenEvent = "Увімкнути подію Хелловін",
     Sandbox_MailOrderCatalogs_OnlyOctober = "Подія Хелловін лише у жовтні в грі",
 }

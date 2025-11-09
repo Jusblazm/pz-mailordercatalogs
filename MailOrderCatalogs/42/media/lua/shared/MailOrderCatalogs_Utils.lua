@@ -222,19 +222,19 @@ function MailOrderCatalogs_Utils.isATMPowered(obj)
     return isNearbySquarePowered(square, 3)
 end
 
-local function collectAllItems(container, results)
-    if not container then return end
-    local items = container:getItems()
-    for i=0, items:size()-1 do
-        local item = items:get(i)
-        table.insert(results, item)
-        if item:IsInventoryContainer() then
-            collectAllItems(item:getInventory(), results)
+function MailOrderCatalogs_Utils.getAllCreditCards(player)
+    local function collectAllItems(container, results)
+        if not container then return end
+        local items = container:getItems()
+        for i=0, items:size()-1 do
+            local item = items:get(i)
+            table.insert(results, item)
+            if item:IsInventoryContainer() then
+                collectAllItems(item:getInventory(), results)
+            end
         end
     end
-end
-
-function MailOrderCatalogs_Utils.getAllCreditCards(player)
+    
     local cards = {}
     local allItems = {}
     collectAllItems(player:getInventory(), allItems)
@@ -317,6 +317,15 @@ end
 
 function MailOrderCatalogs_Utils.isAutomaticOwnerPINEnabled()
     return SandboxVars.MailOrderCatalogs and SandboxVars.MailOrderCatalogs.OwnerPIN == true
+end
+
+function MailOrderCatalogs_Utils.getDeliverySpeed()
+    local setting = SandboxVars.MailOrderCatalogs and SandboxVars.MailOrderCatalogs.DeliverySpeed
+
+    if setting == 1 then return 0 end
+    if setting == 2 then return 24 end
+    if setting == 3 then return 24 * 3 end
+    return 0 -- in case of error, instant delivery
 end
 
 function MailOrderCatalogs_Utils.getItemPrice(item)

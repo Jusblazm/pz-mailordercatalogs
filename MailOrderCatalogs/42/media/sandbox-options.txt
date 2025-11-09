@@ -17,6 +17,15 @@ option MailOrderCatalogs.PriceMultiplier
     translation = MailOrderCatalogs_PriceMultiplier,
 }
 
+option MailOrderCatalogs.DeliverySpeed
+{
+    type = enum,
+    default = 2,
+    numValues = 3,
+    page = MailOrderCatalogs,
+    translation = MailOrderCatalogs_DeliverySpeed,
+}
+
 option MailOrderCatalogs.EnableHalloweenEvent
 {
     type = boolean,

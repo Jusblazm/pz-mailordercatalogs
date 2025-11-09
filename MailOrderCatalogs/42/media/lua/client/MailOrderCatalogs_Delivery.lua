@@ -1,5 +1,6 @@
 -- MailOrderCatalogs_Delivery
 local MailOrderCatalogs_DeliveryLocations = require("MailOrderCatalogs_DeliveryLocations")
+local MailOrderCatalogs_Utils = require("MailOrderCatalogs_Utils")
 local MailOrderCatalogs_Delivery = {}
 
 function MailOrderCatalogs_Delivery.spawnDeliveryPoint()
@@ -120,9 +121,21 @@ function MailOrderCatalogs_Delivery.deliverItem(itemName, player)
             -- immediate delivery
             local obj = result.object
             if obj and obj:getContainer() then
-                obj:getContainer():AddItem(itemName)
-                print("[MailOrderCatalogs] Debug: Delivered " .. itemName .. " to the nearest delivery box.")
-                player:Say(getText("IGUI_MailOrderCatalogs_PlayerText_PackageNearby"))
+                local delayHours = MailOrderCatalogs_Utils.getDeliverySpeed()
+                if delayHours == 0 then
+                    obj:getContainer():AddItem(itemName)
+                    print("[MailOrderCatalogs] Debug: Delivered " .. itemName .. " to the nearest delivery box.")
+                    player:Say(getText("IGUI_MailOrderCatalogs_PlayerText_PackageNearby"))
+                else
+                    local deliveryTime = getGameTime():getWorldAgeHours() + delayHours
+                    sendClientCommand("MailOrderCatalogs", "QueueDelivery", {
+                        x = obj:getX(),
+                        y = obj:getY(),
+                        z = obj:getZ(),
+                        item = itemName,
+                        deliverAt = deliveryTime
+                    })
+                end
             else
                 print("[MailOrderCatalogs] Error: Delivery object found but container missing.")
             end
@@ -135,13 +148,16 @@ function MailOrderCatalogs_Delivery.deliverItem(itemName, player)
                 })
             end
         elseif result.type == "location" then
+            local delayHours = MailOrderCatalogs_Utils.getDeliverySpeed()
+            local deliveryTime = getGameTime():getWorldAgeHours() + delayHours
             -- queue delivery to be spawned server-side
             sendClientCommand("MailOrderCatalogs", "QueueDelivery", {
                 x = result.location.x,
                 y = result.location.y,
                 z = result.location.z,
                 loc = result.location,
-                item = itemName
+                item = itemName,
+                deliverAt = deliveryTime
             })
             print(string.format("[MailOrderCatalogs] Debug: Queued delivery of '%s' to fallback location (%d, %d, %d)",
                 itemName, result.location.x, result.location.y, result.location.z))
