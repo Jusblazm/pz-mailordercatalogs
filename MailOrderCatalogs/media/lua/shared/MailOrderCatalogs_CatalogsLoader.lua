@@ -6,6 +6,8 @@ local function registerCatalogs()
     registrar.registerWebsite(site)
     local site = require("catalogs/projectzomboid_com")
     registrar.registerWebsite(site)
+    local site = require("catalogs/cdc_hazmat_gov")
+    registrar.registerWebsite(site)
     -- Sky Blue Banking
     -- competitor eventually?
     local site = require("catalogs/knoxbank_com")
@@ -20,6 +22,15 @@ local function registerCatalogs()
     -- doesn't sell stuff
 
     -- American Tire Catalogs
+    local site = require("catalogs/americantire_used_com")
+    local catalog = "Base.AmericanTireCatalog1"
+    registrar.registerWebsite(site, catalog)
+    local site = require("catalogs/americantire_new_com")
+    local catalog = "Base.AmericanTireCatalog2"
+    registrar.registerWebsite(site, catalog)
+    local site = require("catalogs/americantire_premium_com")
+    local catalog = "Base.AmericanTireCatalog3"
+    registrar.registerWebsite(site, catalog)
 
     -- Army Surplus Store Catalogs
     -- surplus stores wouldn't deliver goods
@@ -78,6 +89,9 @@ local function registerCatalogs()
     -- Cally's Gifts Catalogs
 
     -- Car Fix-Ation Catalogs
+    local site = require("catalogs/carfixation_window_com")
+    local catalog = "Base.CarFixationCatalog1"
+    registrar.registerWebsite(site, catalog)
 
     -- Dressed to the 90s Catalogs
     local site = require("catalogs/dressedtothe90s_shellsuits_com")
@@ -126,6 +140,11 @@ local function registerCatalogs()
 
     -- Genteel-y Used Catalogs
     -- used clothes store wouldn't deliver goods
+
+    -- GigaMart
+    local site = require("catalogs/gigamart_school_com")
+    local catalog = "Base.GigaMartCatalog1"
+    registrar.registerWebsite(site, catalog)
 
     -- Go Flash Catalogs
     -- photography, probably not
@@ -177,6 +196,12 @@ local function registerCatalogs()
     -- Olympia Department Store Catalogs
 
     -- Optima Eyes Catalogs
+    local site = require("catalogs/optimaeyes_prescription_com")
+    local catalog = "Base.OptimaEyesCatalog1"
+    registrar.registerWebsite(site, catalog)
+    local site = require("catalogs/optimaeyes_prescription_com")
+    local catalog = "Base.OptimaEyesCatalog2"
+    registrar.registerWebsite(site, catalog)
 
     -- Palette Pop Art Supplies Catalogs
 
@@ -193,6 +218,12 @@ local function registerCatalogs()
     -- Purple + Black Catalogs
 
     -- Purrfect Barkner Pet Supplies Catalogs
+    local site = require("catalogs/purrfectbarkner_food_com")
+    local catalog = "Base.PurrfectBarknerPetSuppliesCatalog1"
+    registrar.registerWebsite(site, catalog)
+    local site = require("catalogs/purrfectbarkner_accessories_com")
+    local catalog = "Base.PurrfectBarknerPetSuppliesCatalog2"
+    registrar.registerWebsite(site, catalog)
 
     -- Seat Yourself Furniture Catalogs
 
@@ -296,6 +327,9 @@ local function registerCatalogs()
     -- West Point DIY Catalogs
 
     -- Window Catalogs
+    local site = require("catalogs/window_com")
+    local catalog = "Base.WindowCatalog"
+    registrar.registerWebsite(site, catalog)
 
     -- Worm of Books Catalogs
     local site = require("catalogs/wormofbooks_learn_com")

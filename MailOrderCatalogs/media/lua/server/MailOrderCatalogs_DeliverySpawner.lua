@@ -41,7 +41,4 @@ Events.LoadGridsquare.Add(function(square)
             end
         end
     end
-    
-    -- attempt to deliver any queued items
-    DeliveryQueue.tryDeliver(square)
 end)

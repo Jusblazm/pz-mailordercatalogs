@@ -1042,7 +1042,6 @@ function MailOrderCatalogs_ComputerUI.openComputerUI(object, player)
     if not card then
         print("[MailOrderCatalogs] General: No Credit Card found.")
         -- return
-
     end
 
     local defaultWidth, defaultHeight = 1200, 800

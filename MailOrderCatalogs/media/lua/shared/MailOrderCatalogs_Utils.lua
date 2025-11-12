@@ -223,11 +223,44 @@ function MailOrderCatalogs_Utils.isATMPowered(obj)
 end
 
 function MailOrderCatalogs_Utils.getAllCreditCards(player)
+    local function collectAllItems(container, results)
+        if not container then return end
+        local items = container:getItems()
+        for i=0, items:size()-1 do
+            local item = items:get(i)
+            table.insert(results, item)
+            if item:IsInventoryContainer() then
+                collectAllItems(item:getInventory(), results)
+            end
+        end
+    end
+    
     local cards = {}
-    local inv = player:getInventory():getItems()
-    for i=0, inv:size()-1 do
-        local item = inv:get(i)
-        if item:getType() == "CreditCard" then
+    local allItems = {}
+    collectAllItems(player:getInventory(), allItems)
+
+    local worn = player:getWornItems()
+    if worn then
+        for i=0, worn:size()-1 do
+            local wormItem = worn:get(i):getItem()
+            if wornItem and wornItem:IsInventoryContainer() then
+                collectAllItems(wornItem:getInventory(), allItems)
+            end
+        end
+    end
+
+    local primary = player:getPrimaryHandItem()
+    if primary and primary:IsInventoryContainer() then
+        collectAllItems(primary:getInventory(), allItems)
+    end
+
+    local secondary = player:getSecondaryHandItem()
+    if secondary and secondary:IsInventoryContainer() then
+        collectAllItems(secondary:getInventory(), allItems)
+    end
+
+    for _, item in ipairs(allItems) do
+        if item and item:getType() == "CreditCard" then
             table.insert(cards, item)
         end
     end
@@ -237,29 +270,20 @@ end
 function MailOrderCatalogs_Utils.getPlayerCard(player)
     local descriptor = player:getDescriptor()
     local fullName = descriptor:getForename() .. " " .. descriptor:getSurname()
+    local cards = MailOrderCatalogs_Utils.getAllCreditCards(player)
 
-    local inv = player:getInventory():getItems()
-    for i=0, inv:size()-1 do
-        local item = inv:get(i)
-        if item:getType() == "CreditCard" then
-            local modData = item:getModData()
-            if modData and modData.owner == fullName then
-                return item
-            end
+    for _, item in ipairs(cards) do
+        local modData = item:getModData()
+        if modData and modData.owner == fullName then
+            return item
         end
     end
     return nil
 end
 
 function MailOrderCatalogs_Utils.getCard(player)
-    local inv = player:getInventory():getItems()
-    for i=0, inv:size()-1 do
-        local item = inv:get(i)
-        if item:getType() == "CreditCard" then
-            return item
-        end
-    end
-    return nil
+    local cards = MailOrderCatalogs_Utils.getAllCreditCards(player)
+    return cards[1] or nil
 end
 
 function MailOrderCatalogs_Utils.generateRandomPIN()
@@ -293,6 +317,15 @@ end
 
 function MailOrderCatalogs_Utils.isAutomaticOwnerPINEnabled()
     return SandboxVars.MailOrderCatalogs and SandboxVars.MailOrderCatalogs.OwnerPIN == true
+end
+
+function MailOrderCatalogs_Utils.getDeliverySpeed()
+    local setting = SandboxVars.MailOrderCatalogs and SandboxVars.MailOrderCatalogs.DeliverySpeed
+
+    if setting == 1 then return 0 end
+    if setting == 2 then return 24 end
+    if setting == 3 then return 24 * 3 end
+    return 0 -- in case of error, instant delivery
 end
 
 function MailOrderCatalogs_Utils.getItemPrice(item)

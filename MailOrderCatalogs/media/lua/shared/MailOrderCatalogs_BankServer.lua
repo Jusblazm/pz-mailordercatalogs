@@ -37,13 +37,13 @@ function MailOrderCatalogs_BankServer.getOrCreateAccount(player)
     return bankData.accounts[id]
 end
 
-function MailOrderCatalogs_BankServer.getOrCreateAccountByID(card)
+function MailOrderCatalogs_BankServer.getOrCreateAccountByID(modData)
     local bankData = MailOrderCatalogs_BankServer.ensureData()
-    local id = card.accountID
-    local owner = card.owner
-    local pin = card.pin
-    local isStolen = card.isStolen
-    local attempts = card.attempts
+    local id = modData.accountID
+    local owner = modData.owner
+    local pin = modData.pin
+    local isStolen = modData.isStolen
+    local attempts = modData.attempts
     if not bankData.accounts[id] then
         local isFakeCard = id:sub(1, 5) == "FAKE_"
         local startingBalance = isFakeCard and ZombRand(5, 501) or 0
@@ -51,14 +51,14 @@ function MailOrderCatalogs_BankServer.getOrCreateAccountByID(card)
         bankData.accounts[id] = {
             accountID = id,
             balance = startingBalance,
-            pin = pin or "Unknown",
+            pin = pin or 11,
             owner = owner or "Unknown",
             isStolen = isStolen or false,
             attempts = attempts or 0
         }
         ModData.transmit("BankAccounts")
     else
-        bankData.accounts[id].pin = card.pin or "Unknown"
+        bankData.accounts[id].pin = modData.pin or 11
     end
     return bankData.accounts[id]
 end
@@ -68,10 +68,10 @@ function MailOrderCatalogs_BankServer.getAccountByID(id)
     return bankData.accounts[id]
 end
 
-function MailOrderCatalogs_BankServer.deposit(accountID, amount)
+function MailOrderCatalogs_BankServer.deposit(id, amount)
     if not amount or amount <= 0 then return false end
 
-    local account = MailOrderCatalogs_BankServer.getAccountByID(accountID)
+    local account = MailOrderCatalogs_BankServer.getAccountByID(id)
     if not account then return false end
 
     account.balance = account.balance + amount
@@ -79,10 +79,10 @@ function MailOrderCatalogs_BankServer.deposit(accountID, amount)
     return true
 end
 
-function MailOrderCatalogs_BankServer.withdraw(accountID, amount)
+function MailOrderCatalogs_BankServer.withdraw(id, amount)
     if not amount or amount <= 0 then return false end
 
-    local account = MailOrderCatalogs_BankServer.getAccountByID(accountID)
+    local account = MailOrderCatalogs_BankServer.getAccountByID(id)
     if not account then return false end
     if account.balance < amount then return false end
 
@@ -91,26 +91,25 @@ function MailOrderCatalogs_BankServer.withdraw(accountID, amount)
     return true
 end
 
-function MailOrderCatalogs_BankServer.getBalance(card)
-    local account = MailOrderCatalogs_BankServer.getOrCreateAccountByID(card)
+function MailOrderCatalogs_BankServer.getBalance(modData)
+    local account = MailOrderCatalogs_BankServer.getOrCreateAccountByID(modData)
     return account.balance or 0
 end
 
-function MailOrderCatalogs_BankServer.setBalance(card, newBalance)
-    local account = MailOrderCatalogs_BankServer.getOrCreateAccountByID(card)
+function MailOrderCatalogs_BankServer.setBalance(modData, newBalance)
+    local account = MailOrderCatalogs_BankServer.getOrCreateAccountByID(modData)
     account.balance = newBalance
     ModData.transmit("BankAccounts")
     return true
 end
 
-
-function MailOrderCatalogs_BankServer.getPIN(card)
-    local account = MailOrderCatalogs_BankServer.getOrCreateAccountByID(card)
+function MailOrderCatalogs_BankServer.getPIN(modData)
+    local account = MailOrderCatalogs_BankServer.getOrCreateAccountByID(modData)
     return account.pin or "Unknown"
 end
 
-function MailOrderCatalogs_BankServer.setPIN(card, newPin)
-    local account = MailOrderCatalogs_BankServer.getOrCreateAccountByID(card)
+function MailOrderCatalogs_BankServer.setPIN(modData, newPin)
+    local account = MailOrderCatalogs_BankServer.getOrCreateAccountByID(modData)
     account.pin = newPin
     ModData.transmit("BankAccounts")
 end

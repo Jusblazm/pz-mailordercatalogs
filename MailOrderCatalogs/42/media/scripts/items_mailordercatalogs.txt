@@ -7,6 +7,51 @@ module Base
 
 	/******* LITERATURE - CATALOGS *******/
 
+	item AmericanTireCatalog1
+	{
+		DisplayName         = Catalog: American Tire - Used Tires,
+		DisplayCategory     = Literature,
+		Type                = Literature,
+		Weight              = 0.5,
+		Icon                = AmericanTireCatalog,
+		BoredomChange       = -10,
+		StressChange        = -10,
+		StaticModel         = Magazine,
+		WorldStaticModel    = MagazineGround,
+		Tags                = Magazine,
+		OnCreate			= SpecialLootSpawns.OnCreateCatalog,
+	}
+
+	item AmericanTireCatalog2
+	{
+		DisplayName         = Catalog: American Tire - New Tires,
+		DisplayCategory     = Literature,
+		Type                = Literature,
+		Weight              = 0.5,
+		Icon                = AmericanTireCatalog,
+		BoredomChange       = -10,
+		StressChange        = -10,
+		StaticModel         = Magazine,
+		WorldStaticModel    = MagazineGround,
+		Tags                = Magazine,
+		OnCreate			= SpecialLootSpawns.OnCreateCatalog,
+	}
+
+	item AmericanTireCatalog3
+	{
+		DisplayName         = Catalog: American Tire - Premium Tires,
+		DisplayCategory     = Literature,
+		Type                = Literature,
+		Weight              = 0.5,
+		Icon                = AmericanTireCatalog,
+		BoredomChange       = -10,
+		StressChange        = -10,
+		StaticModel         = Magazine,
+		WorldStaticModel    = MagazineGround,
+		Tags                = Magazine,
+		OnCreate			= SpecialLootSpawns.OnCreateCatalog,
+	}
+
 	item AwlWorkAndSewPlayCatalog1
 	{
 		DisplayName         = Catalog: All Work and Sew Play - Beginner's Tools,
@@ -157,6 +202,21 @@ module Base
 		OnCreate			= SpecialLootSpawns.OnCreateCatalog,
 	}
 
+    item CarFixationCatalog1
+	{
+		DisplayName         = Catalog: Car Fix-Ation - Easy Window Repair,
+		DisplayCategory     = Literature,
+		Type                = Literature,
+		Weight              = 0.5,
+		Icon                = Magazine,
+		BoredomChange       = -10,
+		StressChange        = -10,
+		StaticModel         = Magazine,
+		WorldStaticModel    = MagazineGround,
+		Tags                = Magazine,
+		OnCreate			= SpecialLootSpawns.OnCreateCatalog,
+	}
+
 	item DressedToThe90sCatalog1
 	{
 		DisplayName         = Catalog: Dressed to the 90s - Shellsuits,
@@ -178,7 +238,7 @@ module Base
 		DisplayCategory     = Literature,
 		Type                = Literature,
 		Weight              = 0.5,
-		Icon                = Magazine,
+		Icon                = EPToolsCatalog,
 		BoredomChange       = -10,
 		StressChange        = -10,
 		StaticModel         = Magazine,
@@ -193,7 +253,7 @@ module Base
 		DisplayCategory     = Literature,
 		Type                = Literature,
 		Weight              = 0.5,
-		Icon                = Magazine,
+		Icon                = EPToolsCatalog,
 		BoredomChange       = -10,
 		StressChange        = -10,
 		StaticModel         = Magazine,
@@ -208,7 +268,7 @@ module Base
 		DisplayCategory     = Literature,
 		Type                = Literature,
 		Weight              = 0.5,
-		Icon                = Magazine,
+		Icon                = EPToolsCatalog,
 		BoredomChange       = -10,
 		StressChange        = -10,
 		StaticModel         = Magazine,
@@ -292,6 +352,21 @@ module Base
 		OnCreate			= SpecialLootSpawns.OnCreateCatalog,
 	}
 
+	item GigaMartCatalog1
+	{
+		DisplayName         = Catalog: GigaMart - Back To School,
+		DisplayCategory     = Literature,
+		Type                = Literature,
+		Weight              = 0.5,
+		Icon                = Magazine,
+		BoredomChange       = -10,
+		StressChange        = -10,
+		StaticModel         = Magazine,
+		WorldStaticModel    = MagazineGround,
+		Tags                = Magazine,
+		OnCreate			= SpecialLootSpawns.OnCreateCatalog,
+	}
+
 	item LouisvilleBruiserCatalog
 	{
 		DisplayName         = Catalog: Louisville Bruiser Baseball Bats,
@@ -322,9 +397,69 @@ module Base
 		OnCreate			= SpecialLootSpawns.OnCreateCatalog,
 	}
 
+	item OptimaEyesCatalog1
+	{
+		DisplayName         = Catalog: Optima Eyes - Prescription Glasses,
+		DisplayCategory     = Literature,
+		Type                = Literature,
+		Weight              = 0.5,
+		Icon                = Magazine,
+		BoredomChange       = -10,
+		StressChange        = -10,
+		StaticModel         = Magazine,
+		WorldStaticModel    = MagazineGround,
+		Tags                = Magazine,
+		OnCreate			= SpecialLootSpawns.OnCreateCatalog,
+	}
+
+	item OptimaEyesCatalog2
+	{
+		DisplayName         = Catalog: Optima Eyes - Summer Collection,
+		DisplayCategory     = Literature,
+		Type                = Literature,
+		Weight              = 0.5,
+		Icon                = Magazine,
+		BoredomChange       = -10,
+		StressChange        = -10,
+		StaticModel         = Magazine,
+		WorldStaticModel    = MagazineGround,
+		Tags                = Magazine,
+		OnCreate			= SpecialLootSpawns.OnCreateCatalog,
+	}
+
 	item PharmahugCatalog1
 	{
 		DisplayName         = Catalog: Pharmahug,
+		DisplayCategory     = Literature,
+		Type                = Literature,
+		Weight              = 0.5,
+		Icon                = Magazine,
+		BoredomChange       = -10,
+		StressChange        = -10,
+		StaticModel         = Magazine,
+		WorldStaticModel    = MagazineGround,
+		Tags                = Magazine,
+		OnCreate			= SpecialLootSpawns.OnCreateCatalog,
+	}
+
+	item PurrfectBarknerPetSuppliesCatalog1
+	{
+		DisplayName         = Catalog: Purrfect Barkner - Foods,
+		DisplayCategory     = Literature,
+		Type                = Literature,
+		Weight              = 0.5,
+		Icon                = Magazine,
+		BoredomChange       = -10,
+		StressChange        = -10,
+		StaticModel         = Magazine,
+		WorldStaticModel    = MagazineGround,
+		Tags                = Magazine,
+		OnCreate			= SpecialLootSpawns.OnCreateCatalog,
+	}
+
+	item PurrfectBarknerPetSuppliesCatalog2
+	{
+		DisplayName         = Catalog: Purrfect Barkner - Accessories,
 		DisplayCategory     = Literature,
 		Type                = Literature,
 		Weight              = 0.5,
@@ -433,7 +568,7 @@ module Base
 		DisplayCategory     = Literature,
 		Type                = Literature,
 		Weight              = 0.5,
-		Icon                = Magazine,
+		Icon                = ThumbsOfGreenCatalog,
 		BoredomChange       = -10,
 		StressChange        = -10,
 		StaticModel         = Magazine,
@@ -448,7 +583,7 @@ module Base
 		DisplayCategory     = Literature,
 		Type                = Literature,
 		Weight              = 0.5,
-		Icon                = Magazine,
+		Icon                = ThumbsOfGreenCatalog,
 		BoredomChange       = -10,
 		StressChange        = -10,
 		StaticModel         = Magazine,
@@ -463,7 +598,7 @@ module Base
 		DisplayCategory     = Literature,
 		Type                = Literature,
 		Weight              = 0.5,
-		Icon                = Magazine,
+		Icon                = ThumbsOfGreenCatalog,
 		BoredomChange       = -10,
 		StressChange        = -10,
 		StaticModel         = Magazine,
@@ -478,7 +613,7 @@ module Base
 		DisplayCategory     = Literature,
 		Type                = Literature,
 		Weight              = 0.5,
-		Icon                = Magazine,
+		Icon                = ThumbsOfGreenCatalog,
 		BoredomChange       = -10,
 		StressChange        = -10,
 		StaticModel         = Magazine,
@@ -493,7 +628,7 @@ module Base
 		DisplayCategory     = Literature,
 		Type                = Literature,
 		Weight              = 0.5,
-		Icon                = Magazine,
+		Icon                = ThumbsOfGreenCatalog,
 		BoredomChange       = -10,
 		StressChange        = -10,
 		StaticModel         = Magazine,
@@ -508,7 +643,7 @@ module Base
 		DisplayCategory     = Literature,
 		Type                = Literature,
 		Weight              = 0.5,
-		Icon                = Magazine,
+		Icon                = ThumbsOfGreenCatalog,
 		BoredomChange       = -10,
 		StressChange        = -10,
 		StaticModel         = Magazine,
@@ -523,7 +658,7 @@ module Base
 		DisplayCategory     = Literature,
 		Type                = Literature,
 		Weight              = 0.5,
-		Icon                = Magazine,
+		Icon                = ThumbsOfGreenCatalog,
 		BoredomChange       = -10,
 		StressChange        = -10,
 		StaticModel         = Magazine,
@@ -538,7 +673,7 @@ module Base
 		DisplayCategory     = Literature,
 		Type                = Literature,
 		Weight              = 0.5,
-		Icon                = Magazine,
+		Icon                = ThumbsOfGreenCatalog,
 		BoredomChange       = -10,
 		StressChange        = -10,
 		StaticModel         = Magazine,
@@ -553,7 +688,7 @@ module Base
 		DisplayCategory     = Literature,
 		Type                = Literature,
 		Weight              = 0.5,
-		Icon                = Magazine,
+		Icon                = ThumbsOfGreenCatalog,
 		BoredomChange       = -10,
 		StressChange        = -10,
 		StaticModel         = Magazine,
@@ -568,7 +703,7 @@ module Base
 		DisplayCategory     = Literature,
 		Type                = Literature,
 		Weight              = 0.5,
-		Icon                = Magazine,
+		Icon                = ThumbsOfGreenCatalog,
 		BoredomChange       = -10,
 		StressChange        = -10,
 		StaticModel         = Magazine,
@@ -583,7 +718,7 @@ module Base
 		DisplayCategory     = Literature,
 		Type                = Literature,
 		Weight              = 0.5,
-		Icon                = Magazine,
+		Icon                = ThumbsOfGreenCatalog,
 		BoredomChange       = -10,
 		StressChange        = -10,
 		StaticModel         = Magazine,
@@ -598,7 +733,7 @@ module Base
 		DisplayCategory     = Literature,
 		Type                = Literature,
 		Weight              = 0.5,
-		Icon                = Magazine,
+		Icon                = ThumbsOfGreenCatalog,
 		BoredomChange       = -10,
 		StressChange        = -10,
 		StaticModel         = Magazine,
@@ -613,7 +748,7 @@ module Base
 		DisplayCategory     = Literature,
 		Type                = Literature,
 		Weight              = 0.5,
-		Icon                = Magazine,
+		Icon                = ThumbsOfGreenCatalog,
 		BoredomChange       = -10,
 		StressChange        = -10,
 		StaticModel         = Magazine,
@@ -628,7 +763,22 @@ module Base
 		DisplayCategory     = Literature,
 		Type                = Literature,
 		Weight              = 0.5,
-		Icon                = Magazine,
+		Icon                = ThumbsOfGreenCatalog,
+		BoredomChange       = -10,
+		StressChange        = -10,
+		StaticModel         = Magazine,
+		WorldStaticModel    = MagazineGround,
+		Tags                = Magazine,
+		OnCreate			= SpecialLootSpawns.OnCreateCatalog,
+	}
+
+	item WindowCatalog
+	{
+		DisplayName         = Catalog: Window,
+		DisplayCategory     = Literature,
+		Type                = Literature,
+		Weight              = 0.5,
+		Icon                = WindowCatalog,
 		BoredomChange       = -10,
 		StressChange        = -10,
 		StaticModel         = Magazine,

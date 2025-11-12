@@ -7,6 +7,51 @@ module Base
 
 	/******* LITERATURE - CATALOGS *******/
 
+	item AmericanTireCatalog1
+	{
+		DisplayName         = Catalog: American Tire - Used Tires,
+		DisplayCategory     = Literature,
+		Type                = Literature,
+		Weight              = 0.5,
+		Icon                = AmericanTireCatalog,
+		BoredomChange       = -10,
+		StressChange        = -10,
+		StaticModel         = Magazine,
+		WorldStaticModel    = MagazineGround,
+		Tags                = Magazine,
+		OnCreate			= SpecialLootSpawns.OnCreateCatalog,
+	}
+
+	item AmericanTireCatalog2
+	{
+		DisplayName         = Catalog: American Tire - New Tires,
+		DisplayCategory     = Literature,
+		Type                = Literature,
+		Weight              = 0.5,
+		Icon                = AmericanTireCatalog,
+		BoredomChange       = -10,
+		StressChange        = -10,
+		StaticModel         = Magazine,
+		WorldStaticModel    = MagazineGround,
+		Tags                = Magazine,
+		OnCreate			= SpecialLootSpawns.OnCreateCatalog,
+	}
+
+	item AmericanTireCatalog3
+	{
+		DisplayName         = Catalog: American Tire - Premium Tires,
+		DisplayCategory     = Literature,
+		Type                = Literature,
+		Weight              = 0.5,
+		Icon                = AmericanTireCatalog,
+		BoredomChange       = -10,
+		StressChange        = -10,
+		StaticModel         = Magazine,
+		WorldStaticModel    = MagazineGround,
+		Tags                = Magazine,
+		OnCreate			= SpecialLootSpawns.OnCreateCatalog,
+	}
+
 	item AwlWorkAndSewPlayCatalog1
 	{
 		DisplayName         = Catalog: All Work and Sew Play - Beginner's Tools,
@@ -19,6 +64,7 @@ module Base
 		StaticModel         = Magazine,
 		WorldStaticModel    = MagazineGround,
 		Tags                = Magazine,
+		OnCreate			= SpecialLootSpawns.OnCreateCatalog,
 	}
 
 	item AwlWorkAndSewPlayCatalog2
@@ -33,6 +79,7 @@ module Base
 		StaticModel         = Magazine,
 		WorldStaticModel    = MagazineGround,
 		Tags                = Magazine,
+		OnCreate			= SpecialLootSpawns.OnCreateCatalog,
 	}
 
 	item AwlWorkAndSewPlayCatalog3
@@ -47,6 +94,7 @@ module Base
 		StaticModel         = Magazine,
 		WorldStaticModel    = MagazineGround,
 		Tags                = Magazine,
+		OnCreate			= SpecialLootSpawns.OnCreateCatalog,
 	}
 
 	item AwlWorkAndSewPlayCatalog4
@@ -61,6 +109,7 @@ module Base
 		StaticModel         = Magazine,
 		WorldStaticModel    = MagazineGround,
 		Tags                = Magazine,
+		OnCreate			= SpecialLootSpawns.OnCreateCatalog,
 	}
 
 	item AwlWorkAndSewPlayCatalog5
@@ -75,6 +124,7 @@ module Base
 		StaticModel         = Magazine,
 		WorldStaticModel    = MagazineGround,
 		Tags                = Magazine,
+		OnCreate			= SpecialLootSpawns.OnCreateCatalog,
 	}
 
     item AwlWorkAndSewPlayCatalog6
@@ -89,6 +139,7 @@ module Base
 		StaticModel         = Magazine,
 		WorldStaticModel    = MagazineGround,
 		Tags                = Magazine,
+		OnCreate			= SpecialLootSpawns.OnCreateCatalog,
 	}
 
 	item BiteMeCostumesAndMoreCatalog1
@@ -103,6 +154,7 @@ module Base
 		StaticModel         = Magazine,
 		WorldStaticModel    = MagazineGround,
 		Tags                = Magazine,
+		OnCreate			= SpecialLootSpawns.OnCreateCatalog,
 	}
 
     item BookNakedCatalog1
@@ -117,6 +169,7 @@ module Base
 		StaticModel         = Magazine,
 		WorldStaticModel    = MagazineGround,
 		Tags                = Magazine,
+		OnCreate			= SpecialLootSpawns.OnCreateCatalog,
 	}
 
     item BookNakedCatalog2
@@ -131,6 +184,7 @@ module Base
 		StaticModel         = Magazine,
 		WorldStaticModel    = MagazineGround,
 		Tags                = Magazine,
+		OnCreate			= SpecialLootSpawns.OnCreateCatalog,
 	}
 
     item BookNakedCatalog3
@@ -145,6 +199,22 @@ module Base
 		StaticModel         = Magazine,
 		WorldStaticModel    = MagazineGround,
 		Tags                = Magazine,
+		OnCreate			= SpecialLootSpawns.OnCreateCatalog,
+	}
+
+    item CarFixationCatalog1
+	{
+		DisplayName         = Catalog: Car Fix-Ation - Easy Window Repair,
+		DisplayCategory     = Literature,
+		Type                = Literature,
+		Weight              = 0.5,
+		Icon                = Magazine,
+		BoredomChange       = -10,
+		StressChange        = -10,
+		StaticModel         = Magazine,
+		WorldStaticModel    = MagazineGround,
+		Tags                = Magazine,
+		OnCreate			= SpecialLootSpawns.OnCreateCatalog,
 	}
 
 	item DressedToThe90sCatalog1
@@ -159,6 +229,7 @@ module Base
 		StaticModel         = Magazine,
 		WorldStaticModel    = MagazineGround,
 		Tags                = Magazine,
+		OnCreate			= SpecialLootSpawns.OnCreateCatalog,
 	}
 
 	item EPToolsCatalog1
@@ -167,12 +238,13 @@ module Base
 		DisplayCategory     = Literature,
 		Type                = Literature,
 		Weight              = 0.5,
-		Icon                = Magazine,
+		Icon                = EPToolsCatalog,
 		BoredomChange       = -10,
 		StressChange        = -10,
 		StaticModel         = Magazine,
 		WorldStaticModel    = MagazineGround,
 		Tags                = Magazine,
+		OnCreate			= SpecialLootSpawns.OnCreateCatalog,
 	}
 
 	item EPToolsCatalog2
@@ -181,12 +253,13 @@ module Base
 		DisplayCategory     = Literature,
 		Type                = Literature,
 		Weight              = 0.5,
-		Icon                = Magazine,
+		Icon                = EPToolsCatalog,
 		BoredomChange       = -10,
 		StressChange        = -10,
 		StaticModel         = Magazine,
 		WorldStaticModel    = MagazineGround,
 		Tags                = Magazine,
+		OnCreate			= SpecialLootSpawns.OnCreateCatalog,
 	}
 
 	item EPToolsCatalog3
@@ -195,12 +268,13 @@ module Base
 		DisplayCategory     = Literature,
 		Type                = Literature,
 		Weight              = 0.5,
-		Icon                = Magazine,
+		Icon                = EPToolsCatalog,
 		BoredomChange       = -10,
 		StressChange        = -10,
 		StaticModel         = Magazine,
 		WorldStaticModel    = MagazineGround,
 		Tags                = Magazine,
+		OnCreate			= SpecialLootSpawns.OnCreateCatalog,
 	}
 
 	item EnigmaBooksCatalog1
@@ -215,6 +289,7 @@ module Base
 		StaticModel         = Magazine,
 		WorldStaticModel    = MagazineGround,
 		Tags                = Magazine,
+		OnCreate			= SpecialLootSpawns.OnCreateCatalog,
 	}
 
 	item FamilyFashionCatalog1
@@ -229,6 +304,7 @@ module Base
 		StaticModel         = Magazine,
 		WorldStaticModel    = MagazineGround,
 		Tags                = Magazine,
+		OnCreate			= SpecialLootSpawns.OnCreateCatalog,
 	}
 
 	item FarmingAndRuralSupplyCatalog1
@@ -243,6 +319,7 @@ module Base
 		StaticModel         = Magazine,
 		WorldStaticModel    = MagazineGround,
 		Tags                = Magazine,
+		OnCreate			= SpecialLootSpawns.OnCreateCatalog,
 	}
 
 	item FarmingAndRuralSupplyCatalog2
@@ -257,6 +334,7 @@ module Base
 		StaticModel         = Magazine,
 		WorldStaticModel    = MagazineGround,
 		Tags                = Magazine,
+		OnCreate			= SpecialLootSpawns.OnCreateCatalog,
 	}
 
 	item FiligreeFashionsCatalog1
@@ -271,6 +349,22 @@ module Base
 		StaticModel         = Magazine,
 		WorldStaticModel    = MagazineGround,
 		Tags                = Magazine,
+		OnCreate			= SpecialLootSpawns.OnCreateCatalog,
+	}
+
+	item GigaMartCatalog1
+	{
+		DisplayName         = Catalog: GigaMart - Back To School,
+		DisplayCategory     = Literature,
+		Type                = Literature,
+		Weight              = 0.5,
+		Icon                = Magazine,
+		BoredomChange       = -10,
+		StressChange        = -10,
+		StaticModel         = Magazine,
+		WorldStaticModel    = MagazineGround,
+		Tags                = Magazine,
+		OnCreate			= SpecialLootSpawns.OnCreateCatalog,
 	}
 
 	item LouisvilleBruiserCatalog
@@ -285,6 +379,7 @@ module Base
 		StaticModel         = Magazine,
 		WorldStaticModel    = MagazineGround,
 		Tags                = Magazine,
+		OnCreate			= SpecialLootSpawns.OnCreateCatalog,
 	}
 
 	item MedUWellCatalog1
@@ -299,6 +394,37 @@ module Base
 		StaticModel         = Magazine,
 		WorldStaticModel    = MagazineGround,
 		Tags                = Magazine,
+		OnCreate			= SpecialLootSpawns.OnCreateCatalog,
+	}
+
+	item OptimaEyesCatalog1
+	{
+		DisplayName         = Catalog: Optima Eyes - Prescription Glasses,
+		DisplayCategory     = Literature,
+		Type                = Literature,
+		Weight              = 0.5,
+		Icon                = Magazine,
+		BoredomChange       = -10,
+		StressChange        = -10,
+		StaticModel         = Magazine,
+		WorldStaticModel    = MagazineGround,
+		Tags                = Magazine,
+		OnCreate			= SpecialLootSpawns.OnCreateCatalog,
+	}
+
+	item OptimaEyesCatalog2
+	{
+		DisplayName         = Catalog: Optima Eyes - Summer Collection,
+		DisplayCategory     = Literature,
+		Type                = Literature,
+		Weight              = 0.5,
+		Icon                = Magazine,
+		BoredomChange       = -10,
+		StressChange        = -10,
+		StaticModel         = Magazine,
+		WorldStaticModel    = MagazineGround,
+		Tags                = Magazine,
+		OnCreate			= SpecialLootSpawns.OnCreateCatalog,
 	}
 
 	item PharmahugCatalog1
@@ -313,6 +439,37 @@ module Base
 		StaticModel         = Magazine,
 		WorldStaticModel    = MagazineGround,
 		Tags                = Magazine,
+		OnCreate			= SpecialLootSpawns.OnCreateCatalog,
+	}
+
+	item PurrfectBarknerPetSuppliesCatalog1
+	{
+		DisplayName         = Catalog: Purrfect Barkner - Foods,
+		DisplayCategory     = Literature,
+		Type                = Literature,
+		Weight              = 0.5,
+		Icon                = Magazine,
+		BoredomChange       = -10,
+		StressChange        = -10,
+		StaticModel         = Magazine,
+		WorldStaticModel    = MagazineGround,
+		Tags                = Magazine,
+		OnCreate			= SpecialLootSpawns.OnCreateCatalog,
+	}
+
+	item PurrfectBarknerPetSuppliesCatalog2
+	{
+		DisplayName         = Catalog: Purrfect Barkner - Accessories,
+		DisplayCategory     = Literature,
+		Type                = Literature,
+		Weight              = 0.5,
+		Icon                = Magazine,
+		BoredomChange       = -10,
+		StressChange        = -10,
+		StaticModel         = Magazine,
+		WorldStaticModel    = MagazineGround,
+		Tags                = Magazine,
+		OnCreate			= SpecialLootSpawns.OnCreateCatalog,
 	}
 
 	item SaucyCatalog1
@@ -327,6 +484,7 @@ module Base
 		StaticModel         = Magazine,
 		WorldStaticModel    = MagazineGround,
 		Tags                = Magazine,
+		OnCreate			= SpecialLootSpawns.OnCreateCatalog,
 	}
 
 	item TheExquisitePearlCatalog1
@@ -341,6 +499,7 @@ module Base
 		StaticModel         = Magazine,
 		WorldStaticModel    = MagazineGround,
 		Tags                = Magazine,
+		OnCreate			= SpecialLootSpawns.OnCreateCatalog,
 	}
 
 	item TheExquisitePearlCatalog2
@@ -355,6 +514,7 @@ module Base
 		StaticModel         = Magazine,
 		WorldStaticModel    = MagazineGround,
 		Tags                = Magazine,
+		OnCreate			= SpecialLootSpawns.OnCreateCatalog,
 	}
 
 	item TheExquisitePearlCatalog3
@@ -369,6 +529,7 @@ module Base
 		StaticModel         = Magazine,
 		WorldStaticModel    = MagazineGround,
 		Tags                = Magazine,
+		OnCreate			= SpecialLootSpawns.OnCreateCatalog,
 	}
 
 	item TheExquisitePearlCatalog4
@@ -383,6 +544,7 @@ module Base
 		StaticModel         = Magazine,
 		WorldStaticModel    = MagazineGround,
 		Tags                = Magazine,
+		OnCreate			= SpecialLootSpawns.OnCreateCatalog,
 	}
 
 	item TheExquisitePearlCatalog5
@@ -397,6 +559,7 @@ module Base
 		StaticModel         = Magazine,
 		WorldStaticModel    = MagazineGround,
 		Tags                = Magazine,
+		OnCreate			= SpecialLootSpawns.OnCreateCatalog,
 	}
 
 	item ThumbsOfGreenCatalog1
@@ -405,12 +568,13 @@ module Base
 		DisplayCategory     = Literature,
 		Type                = Literature,
 		Weight              = 0.5,
-		Icon                = Magazine,
+		Icon                = ThumbsOfGreenCatalog,
 		BoredomChange       = -10,
 		StressChange        = -10,
 		StaticModel         = Magazine,
 		WorldStaticModel    = MagazineGround,
 		Tags                = Magazine,
+		OnCreate			= SpecialLootSpawns.OnCreateCatalog,
 	}
 
 	item ThumbsOfGreenCatalog2
@@ -419,12 +583,13 @@ module Base
 		DisplayCategory     = Literature,
 		Type                = Literature,
 		Weight              = 0.5,
-		Icon                = Magazine,
+		Icon                = ThumbsOfGreenCatalog,
 		BoredomChange       = -10,
 		StressChange        = -10,
 		StaticModel         = Magazine,
 		WorldStaticModel    = MagazineGround,
 		Tags                = Magazine,
+		OnCreate			= SpecialLootSpawns.OnCreateCatalog,
 	}
 
 	item ThumbsOfGreenCatalog3
@@ -433,12 +598,13 @@ module Base
 		DisplayCategory     = Literature,
 		Type                = Literature,
 		Weight              = 0.5,
-		Icon                = Magazine,
+		Icon                = ThumbsOfGreenCatalog,
 		BoredomChange       = -10,
 		StressChange        = -10,
 		StaticModel         = Magazine,
 		WorldStaticModel    = MagazineGround,
 		Tags                = Magazine,
+		OnCreate			= SpecialLootSpawns.OnCreateCatalog,
 	}
 
 	item ThumbsOfGreenCatalog4
@@ -447,12 +613,13 @@ module Base
 		DisplayCategory     = Literature,
 		Type                = Literature,
 		Weight              = 0.5,
-		Icon                = Magazine,
+		Icon                = ThumbsOfGreenCatalog,
 		BoredomChange       = -10,
 		StressChange        = -10,
 		StaticModel         = Magazine,
 		WorldStaticModel    = MagazineGround,
 		Tags                = Magazine,
+		OnCreate			= SpecialLootSpawns.OnCreateCatalog,
 	}
 
 	item ThumbsOfGreenCatalog5
@@ -461,12 +628,13 @@ module Base
 		DisplayCategory     = Literature,
 		Type                = Literature,
 		Weight              = 0.5,
-		Icon                = Magazine,
+		Icon                = ThumbsOfGreenCatalog,
 		BoredomChange       = -10,
 		StressChange        = -10,
 		StaticModel         = Magazine,
 		WorldStaticModel    = MagazineGround,
 		Tags                = Magazine,
+		OnCreate			= SpecialLootSpawns.OnCreateCatalog,
 	}
 
 	item ThumbsOfGreenCatalog6
@@ -475,12 +643,13 @@ module Base
 		DisplayCategory     = Literature,
 		Type                = Literature,
 		Weight              = 0.5,
-		Icon                = Magazine,
+		Icon                = ThumbsOfGreenCatalog,
 		BoredomChange       = -10,
 		StressChange        = -10,
 		StaticModel         = Magazine,
 		WorldStaticModel    = MagazineGround,
 		Tags                = Magazine,
+		OnCreate			= SpecialLootSpawns.OnCreateCatalog,
 	}
 
 	item ThumbsOfGreenCatalog7
@@ -489,12 +658,13 @@ module Base
 		DisplayCategory     = Literature,
 		Type                = Literature,
 		Weight              = 0.5,
-		Icon                = Magazine,
+		Icon                = ThumbsOfGreenCatalog,
 		BoredomChange       = -10,
 		StressChange        = -10,
 		StaticModel         = Magazine,
 		WorldStaticModel    = MagazineGround,
 		Tags                = Magazine,
+		OnCreate			= SpecialLootSpawns.OnCreateCatalog,
 	}
 
 	item ThumbsOfGreenCatalog8
@@ -503,12 +673,13 @@ module Base
 		DisplayCategory     = Literature,
 		Type                = Literature,
 		Weight              = 0.5,
-		Icon                = Magazine,
+		Icon                = ThumbsOfGreenCatalog,
 		BoredomChange       = -10,
 		StressChange        = -10,
 		StaticModel         = Magazine,
 		WorldStaticModel    = MagazineGround,
 		Tags                = Magazine,
+		OnCreate			= SpecialLootSpawns.OnCreateCatalog,
 	}
 
 	item ThumbsOfGreenCatalog9
@@ -517,12 +688,13 @@ module Base
 		DisplayCategory     = Literature,
 		Type                = Literature,
 		Weight              = 0.5,
-		Icon                = Magazine,
+		Icon                = ThumbsOfGreenCatalog,
 		BoredomChange       = -10,
 		StressChange        = -10,
 		StaticModel         = Magazine,
 		WorldStaticModel    = MagazineGround,
 		Tags                = Magazine,
+		OnCreate			= SpecialLootSpawns.OnCreateCatalog,
 	}
 
 	item ThumbsOfGreenCatalog10
@@ -531,12 +703,13 @@ module Base
 		DisplayCategory     = Literature,
 		Type                = Literature,
 		Weight              = 0.5,
-		Icon                = Magazine,
+		Icon                = ThumbsOfGreenCatalog,
 		BoredomChange       = -10,
 		StressChange        = -10,
 		StaticModel         = Magazine,
 		WorldStaticModel    = MagazineGround,
 		Tags                = Magazine,
+		OnCreate			= SpecialLootSpawns.OnCreateCatalog,
 	}
 
 	item ThumbsOfGreenCatalog11
@@ -545,12 +718,13 @@ module Base
 		DisplayCategory     = Literature,
 		Type                = Literature,
 		Weight              = 0.5,
-		Icon                = Magazine,
+		Icon                = ThumbsOfGreenCatalog,
 		BoredomChange       = -10,
 		StressChange        = -10,
 		StaticModel         = Magazine,
 		WorldStaticModel    = MagazineGround,
 		Tags                = Magazine,
+		OnCreate			= SpecialLootSpawns.OnCreateCatalog,
 	}
 
 	item ThumbsOfGreenCatalog12
@@ -559,12 +733,13 @@ module Base
 		DisplayCategory     = Literature,
 		Type                = Literature,
 		Weight              = 0.5,
-		Icon                = Magazine,
+		Icon                = ThumbsOfGreenCatalog,
 		BoredomChange       = -10,
 		StressChange        = -10,
 		StaticModel         = Magazine,
 		WorldStaticModel    = MagazineGround,
 		Tags                = Magazine,
+		OnCreate			= SpecialLootSpawns.OnCreateCatalog,
 	}
 
 	item ThumbsOfGreenCatalog13
@@ -573,12 +748,13 @@ module Base
 		DisplayCategory     = Literature,
 		Type                = Literature,
 		Weight              = 0.5,
-		Icon                = Magazine,
+		Icon                = ThumbsOfGreenCatalog,
 		BoredomChange       = -10,
 		StressChange        = -10,
 		StaticModel         = Magazine,
 		WorldStaticModel    = MagazineGround,
 		Tags                = Magazine,
+		OnCreate			= SpecialLootSpawns.OnCreateCatalog,
 	}
 
 	item ThumbsOfGreenCatalog14
@@ -587,12 +763,28 @@ module Base
 		DisplayCategory     = Literature,
 		Type                = Literature,
 		Weight              = 0.5,
-		Icon                = Magazine,
+		Icon                = ThumbsOfGreenCatalog,
 		BoredomChange       = -10,
 		StressChange        = -10,
 		StaticModel         = Magazine,
 		WorldStaticModel    = MagazineGround,
 		Tags                = Magazine,
+		OnCreate			= SpecialLootSpawns.OnCreateCatalog,
+	}
+
+	item WindowCatalog
+	{
+		DisplayName         = Catalog: Window,
+		DisplayCategory     = Literature,
+		Type                = Literature,
+		Weight              = 0.5,
+		Icon                = WindowCatalog,
+		BoredomChange       = -10,
+		StressChange        = -10,
+		StaticModel         = Magazine,
+		WorldStaticModel    = MagazineGround,
+		Tags                = Magazine,
+		OnCreate			= SpecialLootSpawns.OnCreateCatalog,
 	}
 
 	item WormOfBooksCatalog1
@@ -607,6 +799,7 @@ module Base
 		StaticModel         = Magazine,
 		WorldStaticModel    = MagazineGround,
 		Tags                = Magazine,
+		OnCreate			= SpecialLootSpawns.OnCreateCatalog,
 	}
 
 	item YourClosetCatalog1
@@ -621,6 +814,7 @@ module Base
 		StaticModel         = Magazine,
 		WorldStaticModel    = MagazineGround,
 		Tags                = Magazine,
+		OnCreate			= SpecialLootSpawns.OnCreateCatalog,
 	}
 
 	item YourClosetCatalog2
@@ -635,6 +829,7 @@ module Base
 		StaticModel         = Magazine,
 		WorldStaticModel    = MagazineGround,
 		Tags                = Magazine,
+		OnCreate			= SpecialLootSpawns.OnCreateCatalog,
 	}
 
 	item ZacsHardwareCatalog1
@@ -649,6 +844,7 @@ module Base
 		StaticModel         = Magazine,
 		WorldStaticModel    = MagazineGround,
 		Tags                = Magazine,
+		OnCreate			= SpecialLootSpawns.OnCreateCatalog,
 	}
 
 	item ZacsHardwareCatalog2
@@ -663,6 +859,7 @@ module Base
 		StaticModel         = Magazine,
 		WorldStaticModel    = MagazineGround,
 		Tags                = Magazine,
+		OnCreate			= SpecialLootSpawns.OnCreateCatalog,
 	}
 
 	/******* MOVEABLES - BOXES *******/

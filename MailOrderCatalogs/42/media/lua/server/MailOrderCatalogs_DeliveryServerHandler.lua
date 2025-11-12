@@ -1,14 +1,6 @@
 -- MailOrderCatalogs_DeliveryServerHandler
 local MailOrderCatalogs_DeliveryQueue = require("MailOrderCatalogs_DeliveryQueue")
 
--- Events.OnClientCommand.Add(function(module, command, player, args)
---     if module == "MailOrderCatalogs" and command == "QueueDelivery" then
---         if args and args.item then
---             MailOrderCatalogs_DeliveryQueue.addDelivery(args.x, args.y, args.z, args.item)
---         end
---     end
--- end)
-
 Events.OnClientCommand.Add(function(module, command, player, args)
     if module == "MailOrderCatalogs" and command == "QueueDelivery" then
         local deliverAt = args.deliverAt or 0
