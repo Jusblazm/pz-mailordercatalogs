@@ -18,6 +18,7 @@ module Base
 		StressChange        = -10,
 		StaticModel         = Magazine,
 		WorldStaticModel    = MagazineGround,
-		Tags                = Magazine,	
+		Tags                = Magazine,
+		OnCreate			= SpecialLootSpawns.OnCreateCatalog,
 	}
 }
