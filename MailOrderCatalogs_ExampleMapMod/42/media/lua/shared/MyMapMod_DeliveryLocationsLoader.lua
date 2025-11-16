@@ -1,5 +1,4 @@
 -- MyMapMod_DeliveryLocationsLoader
-local DeliveryData = require("MailOrderCatalogs_DeliveryLocations")
 local gameVersion = getCore():getVersionNumber()
 local MailOrderCatalogsVersion = nil
 
@@ -10,6 +9,7 @@ else
 end
 
 if getActivatedMods():contains(MailOrderCatalogsVersion) then
+    local DeliveryData = require("MailOrderCatalogs_DeliveryLocations")
     if DeliveryData then
         MailOrderCatalogs.RegisterDeliveryLocation(1111, 2222, 0) -- x, y, z
     end
