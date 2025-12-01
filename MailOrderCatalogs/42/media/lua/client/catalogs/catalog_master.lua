@@ -13,6 +13,11 @@ return {
         --[[
             ITEMS_MAILORDERCATALOGS
         ]]
+        {
+            name = "Base.HanukkahGelt",
+            price = 1,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_HanukkahGelt"),
+        },
 
         --[[
             CLOTHING_BAGS_CRAFTED
@@ -1752,8 +1757,8 @@ return {
         },
         {
             name = "Base.Gloves_LongWomenGloves",
-            price = 0,
-            description = "debug",
+            price = 14,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_Gloves_LongWomenGloves"),
         },
         {
             name = "Base.Gloves_WhiteTINT",
@@ -2120,8 +2125,8 @@ return {
         },
         {
             name = "Base.Hat_SantaHat",
-            price = 0,
-            description = "debug",
+            price = 15,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_Hat_SantaHat"),
         },
         {
             name = "Base.Animal_BowtieGold",
@@ -2140,8 +2145,8 @@ return {
         },
         {
             name = "Base.Hat_SantaHatGreen",
-            price = 0,
-            description = "debug",
+            price = 15,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_Hat_SantaHatGreen"),
         },
         {
             name = "Base.Hat_ShowerCap",
@@ -2185,18 +2190,18 @@ return {
         },
         {
             name = "Base.Hat_WinterHat",
-            price = 0,
-            description = "debug",
+            price = 31,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_Hat_WinterHat"),
         },
         {
             name = "Base.Hat_WinterHat_SheepSkin",
-            price = 0,
-            description = "debug",
+            price = 48,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_Hat_WinterHat_SheepSkin"),
         },
         {
             name = "Base.Hat_WoolyHat",
-            price = 0,
-            description = "debug",
+            price = 20,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_Hat_WoolyHat"),
         },
         {
             name = "Base.Hat_BucketHat",
@@ -2644,6 +2649,136 @@ return {
         --[[
             CLOTHING_JACKET_CRAFTED
         ]]
+        {
+            name = "Base.Jacket_Hide",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.JacketLong_Hide",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.Hoodie_Hide_DOWN",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.Hoodie_Hide_UP",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.PonchoGarbageBag",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.PonchoGarbageBagDOWN",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.PonchoTarp",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.PonchoTarpDOWN",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.LongCoat_Hide",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.JacketLong_CowHide",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.JacketLong_AngusHide",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.JacketLong_AngusCalfHide",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.JacketLong_HolsteinHide",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.JacketLong_HolsteinCalfHide",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.JacketLong_SimmentalHide",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.JacketLong_SimmentalCalfHide",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.Jacket_CowHide",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.Jacket_AngusHide",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.Jacket_AngusCalfHide",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.Jacket_DeerHide",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.Jacket_HolsteinHide",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.Jacket_HolsteinCalfHide",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.Jacket_SimmentalHide",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.Jacket_SimmentalCalfHide",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.Jacket_SheepSkin",
+            price = 80,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_Jacket_SheepSkin"),
+        },
+        {
+            name = "Base.JacketLong_SheepSkin",
+            price = 95,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_JacketLong_SheepSkin"),
+        },
 
         --[[
             CLOTHING_JACKET
@@ -3649,23 +3784,23 @@ return {
         },
         {
             name = "Base.Scarf_White",
-            price = 0,
-            description = "debug",
+            price = 12,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_Scarf_White"),
         },
         {
             name = "Base.Scarf_StripeBlackWhite",
-            price = 0,
-            description = "debug",
+            price = 16,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_Scarf_StripeBlackWhite"),
         },
         {
             name = "Base.Scarf_StripeBlueWhite",
-            price = 0,
-            description = "debug",
+            price = 16,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_Scarf_StripeBlueWhite"),
         },
         {
             name = "Base.Scarf_StripeRedWhite",
-            price = 0,
-            description = "debug",
+            price = 16,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_Scarf_StripeRedWhite"),
         },
         {
             name = "Base.Bikini_TINT",
@@ -3736,6 +3871,121 @@ return {
         --[[
             CLOTHING_PANTS_CRAFTED
         ]]
+                {
+            name = "Base.Trousers_Crafted_Burlap",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.Trousers_Crafted_Cotton",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.Trousers_Crafted_Denim",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.Trousers_Crafted_DenimLight",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.Trousers_Crafted_DenimBlack",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.Trousers_Crafted_DenimRandom",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.LongJohns_Bottoms_Crafted_Burlap",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.LongJohns_Bottoms_Crafted_Cotton",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.Skirt_Knees_Crafted_Burlap",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.Skirt_Knees_Crafted_Cotton",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.Skirt_Knees_Crafted_Denim",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.Skirt_Knees_Crafted_DenimBlack",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.Skirt_Knees_Crafted_DenimLight",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.Skirt_Long_Crafted_Burlap",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.Skirt_Long_Crafted_Cotton",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.Skirt_Long_Crafted_Denim",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.Skirt_Long_Crafted_DenimBlack",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.Skirt_Long_Crafted_DenimLight",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.Trousers_DeerHide",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.Trousers_FaunHide",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.Trousers_Hide",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.Trousers_LeatherCrafted",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.Trousers_SheepSkin",
+            price = 65,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_Trousers_SheepSkin"),
+        },
 
         --[[
             CLOTHING_PANTS
@@ -3952,8 +4202,8 @@ return {
         },
         {
             name = "Base.Trousers_Padded",
-            price = 0,
-            description = "debug",
+            price = 45,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_Trousers_Padded"),
         },
         {
             name = "Base.Trousers_Padded_HuntingCamo",
@@ -3987,13 +4237,13 @@ return {
         },
         {
             name = "Base.Trousers_Santa",
-            price = 0,
-            description = "debug",
+            price = 40,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_Trousers_Santa"),
         },
         {
             name = "Base.Trousers_SantaGreen",
-            price = 0,
-            description = "debug",
+            price = 40,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_Trousers_SantaGreen"),
         },
         {
             name = "Base.Trousers_Scrubs",
@@ -5127,7 +5377,7 @@ return {
         },
         {
             name = "Base.Socks_LegWarmers",
-            price = 18,
+            price = 14,
             description = getText("UI_MailOrderCatalogs_ItemDescription_Socks_LegWarmers"),
         },
         {
@@ -5570,6 +5820,51 @@ return {
         --[[
             CLOTHING_VESTS_CRAFTED
         ]]
+                {
+            name = "Base.Vest_Garbage",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.Vest_DeerHide",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.Vest_FawnHide",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.Vest_Hide",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.Vest_AngusHide",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.Vest_HolsteinHide",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.Vest_SimmentalHide",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.Vest_Tarp",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.Vest_SheepSkin",
+            price = 55,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_Vest_SheepSkin"),
+        },
 
         --[[
             CLOTHING_VESTS
@@ -7759,58 +8054,58 @@ return {
         ]]
         {
             name = "Base.ChristmasHanging",
-            price = 0,
-            description = "debug",
+            price = 10,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_ChristmasHanging"),
         },
         {
             name = "Base.ChristmasOrnament_Gold1",
-            price = 0,
-            description = "debug",
+            price = 5,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_ChristmasOrnament_Gold1"),
         },
         {
             name = "Base.ChristmasOrnament_Gold2",
-            price = 0,
-            description = "debug",
+            price = 5,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_ChristmasOrnament_Gold2"),
         },
         {
             name = "Base.ChristmasOrnament_Gold3",
-            price = 0,
-            description = "debug",
+            price = 5,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_ChristmasOrnament_Gold3"),
         },
         {
             name = "Base.ChristmasOrnament_Green1",
-            price = 0,
-            description = "debug",
+            price = 5,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_ChristmasOrnament_Green1"),
         },
         {
             name = "Base.ChristmasOrnament_Green2",
-            price = 0,
-            description = "debug",
+            price = 5,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_ChristmasOrnament_Green2"),
         },
         {
             name = "Base.ChristmasOrnament_Green3",
-            price = 0,
-            description = "debug",
+            price = 5,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_ChristmasOrnament_Green3"),
         },
         {
             name = "Base.ChristmasOrnament_Red1",
-            price = 0,
-            description = "debug",
+            price = 5,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_ChristmasOrnament_Red1"),
         },
         {
             name = "Base.ChristmasOrnament_Red2",
-            price = 0,
-            description = "debug",
+            price = 5,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_ChristmasOrnament_Red1"),
         },
         {
             name = "Base.ChristmasOrnament_Red3",
-            price = 0,
-            description = "debug",
+            price = 5,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_ChristmasOrnament_Red1"),
         },
         {
             name = "Base.ChristmasWreath",
-            price = 0,
-            description = "debug",
+            price = 12,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_ChristmasWreath"),
         },
 
         --[[
@@ -9881,8 +10176,8 @@ return {
         },
         {
             name = "Base.SnowGlobe",
-            price = 0,
-            description = "debug",
+            price = 15,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_SnowGlobe"),
         },
         {
             name = "Base.TarotCardDeck",

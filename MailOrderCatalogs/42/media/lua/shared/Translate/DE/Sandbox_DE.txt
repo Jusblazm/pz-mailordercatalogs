@@ -14,4 +14,6 @@ Sandbox_DE = {
     Sandbox_MailOrderCatalogs_DeliverySpeed_option3 = "3 Tage",
     Sandbox_MailOrderCatalogs_EnableHalloweenEvent = "Halloween-Event aktivieren",
     Sandbox_MailOrderCatalogs_OnlyOctober = "Halloween-Event nur während des Oktober im Spiel",
+    Sandbox_MailOrderCatalogs_EnableChristmasEvent = "Weihnachts-Event aktivieren",
+    Sandbox_MailOrderCatalogs_OnlyDecember = "Weihnachts-Event nur während des Dezembers im Spiel",
 }

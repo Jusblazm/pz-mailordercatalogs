@@ -16,7 +16,7 @@ Events.OnClientCommand.Add(function(module, command, player, args)
                 -- regular item
                 MailOrderCatalogs_DeliveryQueue.addDelivery(args.x, args.y, args.z, args.item, deliverAt)
             end
-            if args.loc then
+            if args.loc and not args.suppressEvents then
                 MailOrderCatalogs_DeliveryQueue.addZombieDelivery(args.x, args.y, args.z, deliverAt)
             end
         end

@@ -7,6 +7,21 @@ module Base
 
 	/******* LITERATURE - CATALOGS *******/
 
+	item AARonHuntingSupplyCatalog1
+	{
+		DisplayName         = Catalog: A.A.Ron Hunting Supply - Sheepskin Wear,
+		DisplayCategory     = Literature,
+		Type                = Literature,
+		Weight              = 0.5,
+		Icon                = Magazine,
+		BoredomChange       = -10,
+		StressChange        = -10,
+		StaticModel         = Magazine,
+		WorldStaticModel    = MagazineGround,
+		Tags                = Magazine,
+		OnCreate			= SpecialLootSpawns.OnCreateCatalog,
+	}
+
 	item AmericanTireCatalog1
 	{
 		DisplayName         = Catalog: American Tire - Used Tires,
@@ -389,6 +404,21 @@ module Base
 		Type                = Literature,
 		Weight              = 0.5,
 		Icon                = Magazine,
+		BoredomChange       = -10,
+		StressChange        = -10,
+		StaticModel         = Magazine,
+		WorldStaticModel    = MagazineGround,
+		Tags                = Magazine,
+		OnCreate			= SpecialLootSpawns.OnCreateCatalog,
+	}
+
+	item MenorahManiaCatalog1
+	{
+		DisplayName         = Catalog: Menorah Mania,
+		DisplayCategory     = Literature,
+		Type                = Literature,
+		Weight              = 0.5,
+		Icon                = MenorahManiaCatalog,
 		BoredomChange       = -10,
 		StressChange        = -10,
 		StaticModel         = Magazine,
@@ -832,6 +862,51 @@ module Base
 		OnCreate			= SpecialLootSpawns.OnCreateCatalog,
 	}
 
+	item YourClosetCatalog3
+	{
+		DisplayName         = Catalog: Your Closet - Winter Wear,
+		DisplayCategory     = Literature,
+		Type                = Literature,
+		Weight              = 0.5,
+		Icon                = Magazine,
+		BoredomChange       = -10,
+		StressChange        = -10,
+		StaticModel         = Magazine,
+		WorldStaticModel    = MagazineGround,
+		Tags                = Magazine,
+		OnCreate			= SpecialLootSpawns.OnCreateCatalog,
+	}
+
+	item YuleBeSorryCatalog1
+	{
+		DisplayName         = Catalog: Yule Be Sorry,
+		DisplayCategory     = Literature,
+		Type                = Literature,
+		Weight              = 0.5,
+		Icon                = YuleBeSorryCatalog,
+		BoredomChange       = -10,
+		StressChange        = -10,
+		StaticModel         = Magazine,
+		WorldStaticModel    = MagazineGround,
+		Tags                = Magazine,
+		OnCreate			= SpecialLootSpawns.OnCreateCatalog,
+	}
+
+	item YuriDesignCatalog1
+	{
+		DisplayName         = Catalog: Yuri Design - Cold Wear,
+		DisplayCategory     = Literature,
+		Type                = Literature,
+		Weight              = 0.5,
+		Icon                = Magazine,
+		BoredomChange       = -10,
+		StressChange        = -10,
+		StaticModel         = Magazine,
+		WorldStaticModel    = MagazineGround,
+		Tags                = Magazine,
+		OnCreate			= SpecialLootSpawns.OnCreateCatalog,
+	}
+
 	item ZacsHardwareCatalog1
 	{
 		DisplayName         = Catalog: Zac's Hardware - Tools,
@@ -874,4 +949,35 @@ module Base
 		WorldObjectSprite 	= trashcontainers_01_25,
 		Tags 				= DeliveryDropbox,
 	}
+
+	/******* HOLIDAY - MISC *******/
+
+	item ChristmasCoal
+	{
+		DisplayName			= Coal,
+		DisplayCategory 	= Material,
+		Weight 				= 0.8,
+		Type 				= Normal,
+		Icon 				= Charcoal,
+		WorldStaticModel 	= Charcoal_Ground,
+		Tags 				= Charcoal;IsFireFuel,
+		FireFuelRatio 		= 3.0,
+	}
+
+	item HanukkahGelt
+    {
+		DisplayName 		= Hanukkah Gelt,
+		DisplayCategory 	= Food,
+		Type 				= Food,
+		Weight 				= 0.1,
+		FoodType			= Candy,
+		HungerChange 		= -5.0,
+		UnhappyChange		= -10,
+		Calories			= 40.0,
+		Carbohydrates		= 10.0,
+		Lipids 				= 0.5,
+		Proteins			= 0.0,
+		Icon 				= Coin_Gold,
+		WorldStaticModel 	= GoldCoin,
+    }
 }

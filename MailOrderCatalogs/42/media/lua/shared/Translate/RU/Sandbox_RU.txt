@@ -14,4 +14,6 @@ Sandbox_RU = {
     Sandbox_MailOrderCatalogs_DeliverySpeed_option3 = "3 дня",
     Sandbox_MailOrderCatalogs_EnableHalloweenEvent = "Включить событие Хэллоуин",
     Sandbox_MailOrderCatalogs_OnlyOctober = "Событие Хэллоуин только в октябре в игре",
+    Sandbox_MailOrderCatalogs_EnableChristmasEvent = "Включить событие Рождество",
+    Sandbox_MailOrderCatalogs_OnlyDecember = "Событие Рождество только в декабре в игре",
 }

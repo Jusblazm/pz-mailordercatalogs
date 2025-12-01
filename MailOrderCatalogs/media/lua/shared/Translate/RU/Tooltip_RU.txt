@@ -1,10 +1,10 @@
 Tooltip_RU = {
-    Tooltip_MailOrderCatalogs_ATMUI_PinEntry_Normal = "Р’РІРµРґРёС‚Рµ PIN",
-    Tooltip_MailOrderCatalogs_ATMUI_PinEntry_Error = "PIN РґРѕР»Р¶РµРЅ Р±С‹С‚СЊ РёР· 2 С†РёС„СЂ",
-    Tooltip_MailOrderCatalogs_ATMUI_PinEntry_Incorrect = "РќРµРІРµСЂРЅС‹Р№ PIN. РџРѕРїС‹С‚РєРё: ",
-    Tooltip_MailOrderCatalogs_ATMUI_AmountEntry_Normal = "Р’РІРµРґРёС‚Рµ СЃСѓРјРјСѓ",
-    Tooltip_MailOrderCatalogs_ATMUI_AmountEntry_NoMoney = "РќРµРґРѕСЃС‚Р°С‚РѕС‡РЅРѕ РґРµРЅРµРі РґР»СЏ РІРЅРµСЃРµРЅРёСЏ",
-    Tooltip_MailOrderCatalogs_ATMUI_AmountEntry_Insufficient = "РќРµРґРѕСЃС‚Р°С‚РѕС‡РЅРѕ СЃСЂРµРґСЃС‚РІ",
+    Tooltip_MailOrderCatalogs_ATMUI_PinEntry_Normal = "Введите PIN",
+    Tooltip_MailOrderCatalogs_ATMUI_PinEntry_Error = "PIN должен быть из 2 цифр",
+    Tooltip_MailOrderCatalogs_ATMUI_PinEntry_Incorrect = "Неверный PIN. Попытки: ",
+    Tooltip_MailOrderCatalogs_ATMUI_AmountEntry_Normal = "Введите сумму",
+    Tooltip_MailOrderCatalogs_ATMUI_AmountEntry_NoMoney = "Недостаточно денег для внесения",
+    Tooltip_MailOrderCatalogs_ATMUI_AmountEntry_Insufficient = "Недостаточно средств",
 
-    Tooltip_MailOrderCatalogs_ComputerUI_URLBar = "Р’РІРµРґРёС‚Рµ URL РІРµР±-СЃР°Р№С‚Р° Р·РґРµСЃСЊ",
+    Tooltip_MailOrderCatalogs_ComputerUI_URLBar = "Введите URL веб-сайта здесь",
 }

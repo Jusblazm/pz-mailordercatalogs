@@ -719,9 +719,16 @@ function MailOrderCatalogs_ComputerUI.ComputerWindow:createChildren()
 
         -- deliver items
         local player = self:getPlayer()
+        player:getModData().lastPurchaseAmount = totalCost
+        -- print("Last purchase amount is " .. totalCost)
+        player:transmitModData()
+
+        local first = true
+
         for name, data in pairs(self.shoppingCart) do
             for i=1, data.count do
-                MailOrderCatalogs_Delivery.deliverItem(name, player)
+                MailOrderCatalogs_Delivery.deliverItem(name, player, not first)
+                first = false
                 -- PREP FOR FLUID CONTAINERS
 
                 -- if data.rgb then

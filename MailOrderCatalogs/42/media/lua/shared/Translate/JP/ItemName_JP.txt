@@ -25,6 +25,7 @@ ItemName_JP = {
     ItemName_Base.GigaMartCatalog1 = "カタログ：GigaMart - 新学期特集",
     ItemName_Base.LouisvilleBruiserCatalog = "カタログ：Louisville Bruiser - 野球バット",
     ItemName_Base.MedUWellCatalog1 = "カタログ：Med U Well",
+    ItemName_Base.MenorahManiaCatalog1 = "カタログ：Menorah Mania",
     ItemName_Base.OptimaEyesCatalog1 = "カタログ：Optima Eyes - 度付きメガネ",
     ItemName_Base.OptimaEyesCatalog2 = "カタログ：Optima Eyes - 夏コレクション",
     ItemName_Base.PharmahugCatalog1 = "カタログ：Pharmahug",
@@ -54,8 +55,11 @@ ItemName_JP = {
     ItemName_Base.WormOfBooksCatalog1 = "カタログ：Worm of Books - スキルを学ぶ",
     ItemName_Base.YourClosetCatalog1 = "カタログ：Your Closet - 下着",
     ItemName_Base.YourClosetCatalog2 = "カタログ：Your Closet - スポーツウェア",
+    ItemName_Base.YuleBeSorryCatalog1 = "カタログ：Yule Be Sorry",
     ItemName_Base.ZacsHardwareCatalog1 = "カタログ：Zac's Hardware - ツール",
     ItemName_Base.ZacsHardwareCatalog2 = "カタログ：Zac's Hardware - 保護具",
     
     ItemName_Base.Mov_DeliveryDropbox = "配達用ドロップボックス",
+    ItemName_Base.ChristmasCoal = "石炭",
+    ItemName_Base.HanukkahGelt = "ハヌカ・ゲルト",
 }

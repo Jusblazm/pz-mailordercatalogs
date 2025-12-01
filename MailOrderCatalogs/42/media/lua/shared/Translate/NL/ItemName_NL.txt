@@ -25,6 +25,7 @@ ItemName_NL = {
     ItemName_Base.GigaMartCatalog1 = "Catalogus: GigaMart - Terug naar School",
     ItemName_Base.LouisvilleBruiserCatalog = "Catalogus: Louisville Bruiser Honkbalknuppels",
     ItemName_Base.MedUWellCatalog1 = "Catalogus: Med U Well",
+    ItemName_Base.MenorahManiaCatalog1 = "Catalogus: Menorah Mania",
     ItemName_Base.OptimaEyesCatalog1 = "Catalogus: Optima Eyes - Brillen op Sterkte",
     ItemName_Base.OptimaEyesCatalog2 = "Catalogus: Optima Eyes - Zomercollectie",
     ItemName_Base.PharmahugCatalog1 = "Catalogus: Pharmahug",
@@ -54,8 +55,11 @@ ItemName_NL = {
     ItemName_Base.WormOfBooksCatalog1 = "Catalogus: Worm of Books - Leer een vaardigheid",
     ItemName_Base.YourClosetCatalog1 = "Catalogus: Your Closet - Lingerie",
     ItemName_Base.YourClosetCatalog2 = "Catalogus: Your Closet - Sportkleding",
+    ItemName_Base.YuleBeSorryCatalog1 = "Catalogus: Yule Be Sorry",
     ItemName_Base.ZacsHardwareCatalog1 = "Catalogus: Zac's Hardware - Gereedschap",
     ItemName_Base.ZacsHardwareCatalog2 = "Catalogus: Zac's Hardware - Beschermende uitrusting",
     
     ItemName_Base.Mov_DeliveryDropbox = "Afleverkluis",
+    ItemName_Base.ChristmasCoal = "Kolen",
+    ItemName_Base.HanukkahGelt = "Chanoekageld",
 }
