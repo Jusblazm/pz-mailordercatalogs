@@ -113,7 +113,7 @@ function MailOrderCatalogs_Delivery.deliverColoredFluidItem(itemName, rgb, playe
     end
 end
 
-function MailOrderCatalogs_Delivery.deliverItem(itemName, player)
+function MailOrderCatalogs_Delivery.deliverItem(itemName, player, suppressEvents)
     local result = MailOrderCatalogs_Delivery.findNearestDeliveryPoint(50)
 
     if result then
@@ -125,7 +125,9 @@ function MailOrderCatalogs_Delivery.deliverItem(itemName, player)
                 if delayHours == 0 then
                     obj:getContainer():AddItem(itemName)
                     print("[MailOrderCatalogs] Debug: Delivered " .. itemName .. " to the nearest delivery box.")
-                    player:Say(getText("IGUI_MailOrderCatalogs_PlayerText_PackageNearby"))
+                    if not suppressEvents then
+                        player:Say(getText("IGUI_MailOrderCatalogs_PlayerText_PackageNearby"))
+                    end
                 else
                     local deliveryTime = getGameTime():getWorldAgeHours() + delayHours
                     sendClientCommand("MailOrderCatalogs", "QueueDelivery", {
@@ -133,19 +135,32 @@ function MailOrderCatalogs_Delivery.deliverItem(itemName, player)
                         y = obj:getY(),
                         z = obj:getZ(),
                         item = itemName,
-                        deliverAt = deliveryTime
+                        deliverAt = deliveryTime,
+                        player = player
                     })
+                    if not suppressEvents then
+                        player:Say(getText("IGUI_MailOrderCatalogs_PlayerText_PackageNearbyFuture"))
+                    end
                 end
             else
                 print("[MailOrderCatalogs] Error: Delivery object found but container missing.")
             end
-            local sq = obj:getSquare()
-            if sq then
-                sendClientCommand("MailOrderCatalogs", "SpawnHalloweenZombies", {
-                    x = obj:getX(),
-                    y = obj:getY(),
-                    z = obj:getZ()
-                })
+            if not suppressEvents then
+                local sq = obj:getSquare()
+                if sq then
+                    sendClientCommand("MailOrderCatalogs", "SpawnHalloweenZombies", {
+                        x = obj:getX(),
+                        y = obj:getY(),
+                        z = obj:getZ()
+                    })
+                    sendClientCommand("MailOrderCatalogs", "SpawnChristmasEvent", {
+                        x = obj:getX(),
+                        y = obj:getY(),
+                        z = obj:getZ(),
+                        player = player,
+                        forceQueued = false
+                    })
+                end
             end
         elseif result.type == "location" then
             local delayHours = MailOrderCatalogs_Utils.getDeliverySpeed()
@@ -157,12 +172,25 @@ function MailOrderCatalogs_Delivery.deliverItem(itemName, player)
                 z = result.location.z,
                 loc = result.location,
                 item = itemName,
-                deliverAt = deliveryTime
+                deliverAt = deliveryTime,
+                player = player,
+                suppressEvents = suppressEvents
             })
+            
+            if not suppressEvents then
+                sendClientCommand("MailOrderCatalogs", "SpawnChristmasEvent", {
+                    x = result.location.x,
+                    y = result.location.y,
+                    z = result.location.z,
+                    player = player,
+                    forceQueued = true
+                })
+            end
             print(string.format("[MailOrderCatalogs] Debug: Queued delivery of '%s' to fallback location (%d, %d, %d)",
                 itemName, result.location.x, result.location.y, result.location.z))
+            if not suppressEvents then
                 player:Say(getText("IGUI_MailOrderCatalogs_PlayerText_PackagePostOffice"))
-            -- sendClientCommand("MailOrderCatalogs", "QueueZombieDelivery", result.location)
+            end
         end
     else
         print("[MailOrderCatalogs] Error: No delivery point found nearby or in fallback locations.")

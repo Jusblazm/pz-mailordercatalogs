@@ -25,6 +25,7 @@ ItemName_IT = {
     ItemName_Base.GigaMartCatalog1 = "Catalogo: GigaMart - Ritorno a Scuola",
     ItemName_Base.LouisvilleBruiserCatalog = "Catalogo: Louisville Bruiser - Mazze da Baseball",
     ItemName_Base.MedUWellCatalog1 = "Catalogo: Med U Well",
+    ItemName_Base.MenorahManiaCatalog1 = "Catalogo: Menorah Mania",
     ItemName_Base.OptimaEyesCatalog1 = "Catalogo: Optima Eyes - Occhiali da Vista",
     ItemName_Base.OptimaEyesCatalog2 = "Catalogo: Optima Eyes - Collezione Estiva",
     ItemName_Base.PharmahugCatalog1 = "Catalogo: Pharmahug",
@@ -54,8 +55,11 @@ ItemName_IT = {
     ItemName_Base.WormOfBooksCatalog1 = "Catalogo: Worm of Books - Impara un’Abilità",
     ItemName_Base.YourClosetCatalog1 = "Catalogo: Your Closet - Intimo",
     ItemName_Base.YourClosetCatalog2 = "Catalogo: Your Closet - Abbigliamento Sportivo",
+    ItemName_Base.YuleBeSorryCatalog1 = "Catalogo: Yule Be Sorry",
     ItemName_Base.ZacsHardwareCatalog1 = "Catalogo: Zac's Hardware - Attrezzi",
     ItemName_Base.ZacsHardwareCatalog2 = "Catalogo: Zac's Hardware - Equipaggiamento Protettivo",
     
     ItemName_Base.Mov_DeliveryDropbox = "Cassetta di Consegna",
+    ItemName_Base.ChristmasCoal = "Carbone",
+    ItemName_Base.HanukkahGelt = "Gelt di Hanukkah",
 }

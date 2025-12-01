@@ -3,6 +3,7 @@ require "Items/ProceduralDistributions"
 require "Items/SuburbsDistributions"
 
 local catalogs = {
+    "Base.AARonHuntingSupplyCatalog1",
     "Base.AmericanTireCatalog1",
     "Base.AmericanTireCatalog2",
     "Base.AmericanTireCatalog3",
@@ -29,6 +30,7 @@ local catalogs = {
     "Base.GigaMartCatalog1",
     "Base.LouisvilleBruiserCatalog",
     "Base.MedUWellCatalog1",
+    "Base.MenorahManiaCatalog1",
     "Base.OptimaEyesCatalog1",
     "Base.OptimaEyesCatalog2",
     "Base.PharmahugCatalog1",
@@ -58,6 +60,9 @@ local catalogs = {
     "Base.WormOfBooksCatalog1",
     "Base.YourClosetCatalog1",
     "Base.YourClosetCatalog2",
+    "Base.YourClosetCatalog3",
+    "Base.YuleBeSorryCatalog1",
+    "Base.YuriDesignCatalog1",
     "Base.ZacsHardwareCatalog1",
     "Base.ZacsHardwareCatalog2"
 }
@@ -121,7 +126,7 @@ for location, multiplier in pairs(locationMultipliers) do
 end
 
 ----------------------------------------
--- Distributions: Mailbox
+-- Mailbox Distributions
 ----------------------------------------
 
 local postboxWeight = 2
@@ -131,5 +136,32 @@ if distro and distro.all and distro.all.postbox and distro.all.postbox.items the
     for _, catalog in ipairs(catalogs) do
         table.insert(items, catalog)
         table.insert(items, postboxWeight)
+    end
+end
+
+----------------------------------------
+-- Holiday Item Distributions
+----------------------------------------
+
+local candyTable = {
+    "CandyStoreSnacks",
+    "GasStorageCombo",
+    "GigamartCandy",
+    "GroceryStorageCrate1",
+    "SafehouseFood",
+    "StoreShelfCombo",
+    "StoreShelfSnacks",
+    "UniversitySideTable"
+}
+
+local hanukkahItem = "Base.HanukkahGelt"
+local hanukkahWeight = 5
+
+for _, location in ipairs(candyTable) do
+    local dist = ProceduralDistributions.list[location]
+    if dist and dist.items then
+        local items = dist.items
+        table.insert(items, hanukkahItem)
+        table.insert(items, hanukkahWeight)
     end
 end

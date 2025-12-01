@@ -14,4 +14,6 @@ Sandbox_CH = {
     Sandbox_MailOrderCatalogs_DeliverySpeed_option3 = "3 天",
     Sandbox_MailOrderCatalogs_EnableHalloweenEvent = "啟用萬聖節活動",
     Sandbox_MailOrderCatalogs_OnlyOctober = "萬聖節活動僅在遊戲內十月期間舉行",
+    Sandbox_MailOrderCatalogs_EnableChristmasEvent = "啟用聖誕節活動",
+    Sandbox_MailOrderCatalogs_OnlyDecember = "聖誕節活動僅在遊戲內十二月期間舉行",
 }

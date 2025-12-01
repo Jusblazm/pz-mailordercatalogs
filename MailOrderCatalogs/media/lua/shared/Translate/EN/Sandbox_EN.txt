@@ -7,6 +7,13 @@ Sandbox_EN = {
     Sandbox_MailOrderCatalogs_PriceMultiplier_option1 = "Half",
     Sandbox_MailOrderCatalogs_PriceMultiplier_option2 = "Normal",
     Sandbox_MailOrderCatalogs_PriceMultiplier_option3 = "Double",
+    Sandbox_MailOrderCatalogs_DeliverySpeed = "Delivery speed of orders",
+    Sandbox_MailOrderCatalogs_DeliverySpeed_tooltip = "Adjusts the speed of all mail order catalog deliveries.",
+    Sandbox_MailOrderCatalogs_DeliverySpeed_option1 = "Instant",
+    Sandbox_MailOrderCatalogs_DeliverySpeed_option2 = "1 Day",
+    Sandbox_MailOrderCatalogs_DeliverySpeed_option3 = "3 Day",
     Sandbox_MailOrderCatalogs_EnableHalloweenEvent = "Enable Halloween Event",
     Sandbox_MailOrderCatalogs_OnlyOctober = "Halloween Event only during October in-game",
+    Sandbox_MailOrderCatalogs_EnableChristmasEvent = "Enable Christmas Event",
+    Sandbox_MailOrderCatalogs_OnlyDecember = "Christmas Event only during December in-game",
 }

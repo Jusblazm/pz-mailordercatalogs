@@ -41,3 +41,19 @@ option MailOrderCatalogs.OnlyOctober
     page = MailOrderCatalogs,
     translation = MailOrderCatalogs_OnlyOctober,
 }
+
+option MailOrderCatalogs.EnableChristmasEvent
+{
+    type = boolean,
+    default = true,
+    page = MailOrderCatalogs,
+    translation = MailOrderCatalogs_EnableChristmasEvent,
+}
+
+option MailOrderCatalogs.OnlyDecember
+{
+    type = boolean,
+    default = false,
+    page = MailOrderCatalogs,
+    translation = MailOrderCatalogs_OnlyDecember,
+}

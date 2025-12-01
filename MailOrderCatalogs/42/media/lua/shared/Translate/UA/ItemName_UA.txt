@@ -25,6 +25,7 @@ ItemName_UA = {
     ItemName_Base.GigaMartCatalog1 = "Каталог: GigaMart - Повернення до школи",
     ItemName_Base.LouisvilleBruiserCatalog = "Каталог: Louisville Bruiser - Бейсбольні бити",
     ItemName_Base.MedUWellCatalog1 = "Каталог: Med U Well",
+    ItemName_Base.MenorahManiaCatalog1 = "Каталог: Menorah Mania",
     ItemName_Base.OptimaEyesCatalog1 = "Каталог: Optima Eyes - Окуляри за рецептом",
     ItemName_Base.OptimaEyesCatalog2 = "Каталог: Optima Eyes - Літня колекція",
     ItemName_Base.PharmahugCatalog1 = "Каталог: Pharmahug",
@@ -54,8 +55,11 @@ ItemName_UA = {
     ItemName_Base.WormOfBooksCatalog1 = "Каталог: Worm of Books - Вивчення навику",
     ItemName_Base.YourClosetCatalog1 = "Каталог: Your Closet - Нижня білизна",
     ItemName_Base.YourClosetCatalog2 = "Каталог: Your Closet - Спортивний одяг",
+    ItemName_Base.YuleBeSorryCatalog1 = "Каталог: Yule Be Sorry",
     ItemName_Base.ZacsHardwareCatalog1 = "Каталог: Zac's Hardware - Інструменти",
     ItemName_Base.ZacsHardwareCatalog2 = "Каталог: Zac's Hardware - Захисне спорядження",
     
     ItemName_Base.Mov_DeliveryDropbox = "Поштовий ящик для доставки",
+    ItemName_Base.ChristmasCoal = "Вугілля",
+    ItemName_Base.HanukkahGelt = "Гельт (Ханука)",
 }

@@ -17,6 +17,15 @@ option MailOrderCatalogs.PriceMultiplier
     translation = MailOrderCatalogs_PriceMultiplier,
 }
 
+option MailOrderCatalogs.DeliverySpeed
+{
+    type = enum,
+    default = 2,
+    numValues = 3,
+    page = MailOrderCatalogs,
+    translation = MailOrderCatalogs_DeliverySpeed,
+}
+
 option MailOrderCatalogs.EnableHalloweenEvent
 {
     type = boolean,
@@ -31,4 +40,20 @@ option MailOrderCatalogs.OnlyOctober
     default = true,
     page = MailOrderCatalogs,
     translation = MailOrderCatalogs_OnlyOctober,
+}
+
+option MailOrderCatalogs.EnableChristmasEvent
+{
+    type = boolean,
+    default = true,
+    page = MailOrderCatalogs,
+    translation = MailOrderCatalogs_EnableChristmasEvent,
+}
+
+option MailOrderCatalogs.OnlyDecember
+{
+    type = boolean,
+    default = false,
+    page = MailOrderCatalogs,
+    translation = MailOrderCatalogs_OnlyDecember,
 }

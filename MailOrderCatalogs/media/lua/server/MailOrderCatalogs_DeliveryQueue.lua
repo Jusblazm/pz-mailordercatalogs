@@ -3,6 +3,7 @@ local DeliveryQueue = {}
 DeliveryQueue.queued = DeliveryQueue.queued or {}
 DeliveryQueue.queuedFluids = DeliveryQueue.queuedFluids or {}
 DeliveryQueue.queuedZombies = DeliveryQueue.queuedZombies or {}
+DeliveryQueue.queuedChristmas = DeliveryQueue.queuedChristmas or {}
 
 local function makeKey(x, y, z)
     return string.format("%d_%d_%d", x, y, z)
@@ -37,12 +38,37 @@ function DeliveryQueue.addZombieDelivery(x, y, z, deliverAt)
         DeliveryQueue.queuedZombies[key] = {}
     end
     table.insert(DeliveryQueue.queuedZombies[key], {
-        x = x,
-        y = y,
-        z = z,
+        x=x, y=y, z=z,
         deliverAt = deliverAt or 0
-    } )
+    })
     print(string.format("[MailOrderCatalogs] Debug: Queued zombies at %s for %0.2f hours", key, deliverAt))
+end
+
+function DeliveryQueue.addChristmasItem(x, y, z, item, deliverAt)
+    local key = makeKey(x, y, z)
+    if not DeliveryQueue.queuedChristmas[key] then
+        DeliveryQueue.queuedChristmas[key] = {}
+    end
+    table.insert(DeliveryQueue.queuedChristmas[key], {
+        x=x, y=y, z=z,
+        item = item,
+        deliverAt = deliverAt or 0
+    })
+    print(string.format("[MailOrderCatalogs] Debug: Queued Christmas item '%s' for %s at %0.2f hours", item, key, deliverAt))
+end
+
+function DeliveryQueue.addChristmasRefund(x, y, z, amount, deliverAt)
+    local key = makeKey(x, y, z)
+    if not DeliveryQueue.queuedChristmas[key] then
+        DeliveryQueue.queuedChristmas[key] = {}
+    end
+    
+    table.insert(DeliveryQueue.queuedChristmas[key], {
+        x=x, y=y, z=z,
+        refund = amount,
+        deliverAt = deliverAt or 0
+    })
+    print(string.format("[MailOrderCatalogs] Debug: Queued Christmas refund of %s for %s at %0.2f hours", amount, key, deliverAt))
 end
 
 function DeliveryQueue.spawnItem(x, y, z, itemFullType)
@@ -54,6 +80,18 @@ function DeliveryQueue.spawnItem(x, y, z, itemFullType)
 
     container:getContainer():AddItem(itemFullType)
     print(string.format("[MailOrderCatalogs] General: Delivered %s to %d, %d, %d", itemFullType, x, y, z))
+    return true
+end
+
+function DeliveryQueue.spawnItems(x, y, z, itemFullType, amount)
+    local square = getCell():getGridSquare(x, y, z)
+    if not square then return false end
+
+    local container = DeliveryQueue.getOrCreateDropbox(square)
+    if not container then return false end
+
+    container:getContainer():AddItems(itemFullType, amount)
+    print(string.format("[MailOrderCatalogs] General: Delivered %d %s to %d, %d, %d", amount, itemFullType, x, y, z))
     return true
 end
 
@@ -73,11 +111,19 @@ function DeliveryQueue.spawnFluidItem(x, y, z, fluid)
     return true
 end
 
-local function SpawnHalloweenZombies(x, y, z)
+local function spawnHalloweenZombies(x, y, z)
     local square = getCell():getGridSquare(x, y, z)
     if not square then return false end
 
     sendClientCommand("MailOrderCatalogs", "SpawnHalloweenZombies", { x=x, y=y, z=z })
+    return true
+end
+
+local function spawnChristmasEvent(x, y, z, player)
+    local square = getCell():getGridSquare(x, y, z)
+    if not square then return false end
+    
+    sendClientCommand("MailOrderCatalogs", "SpawnChristmasEvent", { x=x, y=y, z=z, player })
     return true
 end
 
@@ -93,10 +139,13 @@ function DeliveryQueue.getOrCreateDropbox(square)
     end
 
     local container = IsoThumpable.new(cell, square, sprite, false, nil)
+    local deliveryColor = { r = 1.0, g = 0.6, b = 0.2, a = 1.0 }
     container:setIsContainer(true)
     container:getModData().isDeliveryPoint = true
     container:getModData().CustomName = "Delivery Dropbox"
     container:setName("Delivery Dropbox")
+    container:setCustomColor(deliveryColor.r, deliveryColor.g, deliveryColor.b, deliveryColor.a)
+    container:getModData().deliveryColor = deliveryColor
     square:AddSpecialObject(container)
     square:RecalcProperties()
 
@@ -141,12 +190,31 @@ local function processQueue()
         for i = #list, 1, -1 do
             local entry = list[i]
             if now >= entry.deliverAt then
-                if SpawnHalloweenZombies(entry.x, entry.y, entry.z) then
+                if spawnHalloweenZombies(entry.x, entry.y, entry.z) then
                     table.remove(list, i)
                 end
             end
         end
         if #list == 0 then DeliveryQueue.queuedZombies[key] = nil end
+    end
+
+    -- christmas item and refund
+    for key, list in pairs(DeliveryQueue.queuedChristmas) do
+        for i = #list, 1, -1 do
+            local entry = list[i]
+            if now >= entry.deliverAt then
+                local x, y, z = key:match("(%d+)_(%d+)_(%d+)")
+                x, y, z = tonumber(x), tonumber(y), tonumber(z)
+                if entry.refund then
+                    DeliveryQueue.spawnItems(x, y, z, "Base.Money", entry.refund)
+                    table.remove(list, i)
+                else
+                    DeliveryQueue.spawnItem(x, y, z, entry.item)
+                    table.remove(list, i)
+                end
+            end
+        end
+        if #list == 0 then DeliveryQueue.queuedChristmas[key] = nil end 
     end
 end
 

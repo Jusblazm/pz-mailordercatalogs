@@ -6,5 +6,5 @@ Tooltip_IT = {
     Tooltip_MailOrderCatalogs_ATMUI_AmountEntry_NoMoney = "Fondi insufficienti per il deposito",
     Tooltip_MailOrderCatalogs_ATMUI_AmountEntry_Insufficient = "Fondi insufficienti",
 
-    Tooltip_MailOrderCatalogs_ComputerUI_URLBar = "Inserisci qui lâ€™URL del sito",
+    Tooltip_MailOrderCatalogs_ComputerUI_URLBar = "Inserisci qui l’URL del sito",
 }

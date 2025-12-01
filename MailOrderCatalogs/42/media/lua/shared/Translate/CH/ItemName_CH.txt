@@ -25,6 +25,7 @@ ItemName_CH = {
     ItemName_Base.GigaMartCatalog1 = "目錄：GigaMart - 開學季",
     ItemName_Base.LouisvilleBruiserCatalog = "目錄：Louisville Bruiser 棒球棒",
     ItemName_Base.MedUWellCatalog1 = "目錄：Med U Well",
+    ItemName_Base.MenorahManiaCatalog1 = "目錄：Menorah Mania",
     ItemName_Base.OptimaEyesCatalog1 = "目錄：Optima Eyes - 度數眼鏡",
     ItemName_Base.OptimaEyesCatalog2 = "目錄：Optima Eyes - 夏季系列",
     ItemName_Base.PharmahugCatalog1 = "目錄：Pharmahug",
@@ -54,8 +55,11 @@ ItemName_CH = {
     ItemName_Base.WormOfBooksCatalog1 = "目錄：Worm of Books - 學習技能",
     ItemName_Base.YourClosetCatalog1 = "目錄：Your Closet - 內衣",
     ItemName_Base.YourClosetCatalog2 = "目錄：Your Closet - 運動服",
+    ItemName_Base.YuleBeSorryCatalog1 = "目錄：Yule Be Sorry",
     ItemName_Base.ZacsHardwareCatalog1 = "目錄：Zac's Hardware - 工具",
     ItemName_Base.ZacsHardwareCatalog2 = "目錄：Zac's Hardware - 防護裝備",
     
     ItemName_Base.Mov_DeliveryDropbox = "投遞箱",
+    ItemName_Base.ChristmasCoal = "煤炭",
+    ItemName_Base.HanukkahGelt = "光明節巧克力幣",
 }

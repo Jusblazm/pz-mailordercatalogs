@@ -17,6 +17,9 @@ local function registerCatalogs()
     -- probably not
 
     -- A.A.Ron Hunting Supply Catalogs
+    local site = require("catalogs/aaronhuntingsupply_sheepskin_com")
+    local catalog = "Base.AARonHuntingSupplyCatalog1"
+    registrar.registerWebsite(site, catalog)
 
     -- Al's Auto Shop Catalogs
     -- doesn't sell stuff
@@ -185,6 +188,11 @@ local function registerCatalogs()
     local catalog = "Base.MedUWellCatalog1"
     registrar.registerWebsite(site, catalog)
 
+    -- Menorah Mania
+    local site = require("catalogs/menorahmania_com")
+    local catalog = "Base.MenorahManiaCatalog1"
+    registrar.registerWebsite(site, catalog)
+
     -- Morris' Bait Shop Catalogs
 
     -- Nails & Nuts Tool Store Catalogs
@@ -343,8 +351,19 @@ local function registerCatalogs()
     local site = require("catalogs/yourcloset_sportswear_com")
     local catalog = "Base.YourClosetCatalog2"
     registrar.registerWebsite(site, catalog)
+    local site = require("catalogs/yourcloset_winterwear_com")
+    local catalog = "Base.YourClosetCatalog3"
+    registrar.registerWebsite(site, catalog)
+
+    -- Yule Be Sorry
+    local site = require("catalogs/yulebesorry_com")
+    local catalog = "Base.YuleBeSorryCatalog1"
+    registrar.registerWebsite(site, catalog)
 
     -- Yuri Design Catalogs
+    local site = require("catalogs/yuridesign_coldwear_com")
+    local catalog = "Base.YuriDesignCatalog1"
+    registrar.registerWebsite(site, catalog)
 
     -- Zac's Hardware Catalogs
     local site = require("catalogs/zacshardware_tools_com")
