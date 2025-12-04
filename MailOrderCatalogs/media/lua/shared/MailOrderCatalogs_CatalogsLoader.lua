@@ -12,6 +12,8 @@ local function registerCatalogs()
     -- competitor eventually?
     local site = require("catalogs/knoxbank_com")
     registrar.registerWebsite(site)
+    local site = require("catalogs/knoxbank_account_com")
+    registrar.registerWebsite(site)
 
     -- 5 Bux or Less
     -- probably not

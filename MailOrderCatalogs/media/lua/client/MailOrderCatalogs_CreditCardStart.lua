@@ -35,7 +35,7 @@ local function giveCreditCardOnStart(playerIndex, playerObj)
         modData.pin = "11"
         modData.isStolen = false
         modData.attempts = 0
-        modData.websiteURL = "knoxbank.com"
+        modData.websiteURL = "knoxbank.com/account"
 
         MailOrderCatalogs_BankServer.getOrCreateAccount(playerObj)
     end
