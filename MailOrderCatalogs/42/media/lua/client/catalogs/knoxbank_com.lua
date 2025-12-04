@@ -4,14 +4,11 @@ return {
     siteName = "knoxbank.com",
     description = getText("UI_MailOrderCatalogs_SiteDescription_KnoxBankCom"),
     customRender = function(self, siteID, player, card)
+        
         local padding = 20
         local labelSpacing = 4
+        local btnW, btnH = 200, 25
         local y = padding
-
-        local modData = card:getModData()
-        local account = MailOrderCatalogs_BankServer.getOrCreateAccountByID(modData)
-        local balance = tonumber(account.balance) or 0
-        local formatBalance = string.format("%.2f", balance)
 
         local function addLabel(text)
             local label = ISLabel:new(padding, y, 20, text, 1, 1, 1, 1, UIFont.Small, true)
@@ -22,46 +19,53 @@ return {
 
         addLabel(getText("UI_MailOrderCatalogs_KnoxBank_Welcome"))
         addLabel("-----------------------------")
-        addLabel(getText("UI_MailOrderCatalogs_KnoxBank_YourCard") .. " **** **** **** " .. tostring(modData.last4))
-        addLabel(getText("UI_MailOrderCatalogs_KnoxBank_Balance") .. formatBalance)
-        local currentPinLabel = ISLabel:new(padding, y, 20, getText("UI_MailOrderCatalogs_KnoxBank_CurrentPIN") .. tostring(account.pin), 1, 1, 1, 1, UIFont.Small, true)
-        currentPinLabel:initialise()
-        self.rightPanel:addChild(currentPinLabel)
-        y = y + currentPinLabel:getHeight() + labelSpacing
-        addLabel(getText("UI_MailOrderCatalogs_KnoxBank_SetPIN"))
 
-        local pinEntry = ISTextEntryBox:new("", padding, y, 100, 25)
-        pinEntry:initialise()
-        self.rightPanel:addChild(pinEntry)
-        y = y + 30
+        local btnSignup = ISButton:new(padding, y, btnW, btnH, getText("UI_MailOrderCatalogs_KnoxBank_SignUp"), self, function()
+            -- placeholder for creating a new account
+        end)
+        btnSignup:initialise()
+        btnSignup.enable = false
+        self.rightPanel:addChild(btnSignup)
+        y = y + btnH + 10
 
-        local pinErrorLabel = ISLabel:new(padding, y, 20, getText("UI_MailOrderCatalogs_KnoxBank_PINError"), 1, 0.2, 0.2, 1, UIFont.Small, true)
-        pinErrorLabel:initialise()
-        pinErrorLabel:setVisible(false)
-        self.rightPanel:addChild(pinErrorLabel)
-        y = y + pinErrorLabel:getHeight() + labelSpacing
+        local btnAccess = ISButton:new(padding, y, btnW, btnH, getText("UI_MailOrderCatalogs_KnoxBank_AccessAccount"), self, function()
+            self:loadWebsite("knoxbank.com/account")
+        end)
+        btnAccess:initialise()
+        btnAccess.enable = (card ~= nil)
+        btnAccess:setTooltip(getText("Tooltip_MailOrderCatalogs_KnoxBank_AccessAccount"))
+        self.rightPanel:addChild(btnAccess)
+        y = y + btnH + 10
 
-        local submitButton = ISButton:new(padding, y, 100, 25, getText("UI_MailOrderCatalogs_KnoxBank_UpdatePIN"), self, function()
-            local newPin = pinEntry:getInternalText()
-            if #newPin ~= 2 or not tonumber(newPin) then
-                pinErrorLabel:setVisible(true)
-                return
+        local btnOrderCard = ISButton:new(padding, y, btnW, btnH, getText("UI_MailOrderCatalogs_KnoxBank_OrderCard"), self, function()
+            print("[MailOrderCatalogs] General: New credit card ordered for " .. tostring(player))
+            if not player or player:isDead() then return end
+
+            local inv = player:getInventory()
+            local item = inv:AddItem("Base.CreditCard")
+            
+            local owner = nil
+            local desc = player:getDescriptor()
+            if desc then
+                owner = desc:getForename() .. " " .. desc:getSurname()
+                item:setName("Credit Card: " .. owner)
             end
-            pinErrorLabel:setVisible(false)
-            modData.pin = newPin
-            MailOrderCatalogs_BankServer.setPIN(modData, newPin)
-            currentPinLabel:setName(getText("UI_MailOrderCatalogs_KnoxBank_CurrentPIN") .. tostring(MailOrderCatalogs_BankServer.getPIN(modData)))
-        end)
-        submitButton:initialise()
-        self.rightPanel:addChild(submitButton)
-        y = y + 30
+            local modData = item:getModData()
+            modData.owner = owner
+            modData.accountID = player:getSteamID() .. "_" .. owner
+            modData.last4 = tostring(ZombRand(1000, 9999))
+            modData.pin = "11"
+            modData.isStolen = false
+            modData.attempts = 0
+            modData.websiteURL = "knoxbank.com/account"
 
-        local reportButton = ISButton:new(padding, y, 150, 25, getText("UI_MailOrderCatalogs_KnoxBank_ReportStolen"), self, function()
-            -- placeholder for card stolen logic
-            print("[MailOrderCatalogs] Debug: Card has been reported stolen!")
+            MailOrderCatalogs_BankServer.getOrCreateAccount(player)
+            self:setCard(item)
+            self:loadWebsite("knoxbank.com")
         end)
-        reportButton:initialise()
-        reportButton.enable = false
-        self.rightPanel:addChild(reportButton)
+        btnOrderCard:initialise()
+        btnOrderCard:setTooltip(getText("Tooltip_MailOrderCatalogs_KnoxBank_OrderCard"))
+        self.rightPanel:addChild(btnOrderCard)
+        y = y + btnH + 10
     end
 }

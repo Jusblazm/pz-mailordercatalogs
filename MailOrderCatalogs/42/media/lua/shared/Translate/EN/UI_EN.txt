@@ -89,6 +89,9 @@ UI_EN = {
     UI_MailOrderCatalogs_KnoxBank_PINError = "PIN must be 2 digits",
     UI_MailOrderCatalogs_KnoxBank_UpdatePIN = "Update PIN",
     UI_MailOrderCatalogs_KnoxBank_ReportStolen = "Report Card Stolen",
+    UI_MailOrderCatalogs_KnoxBank_SignUp = "Sign Up for a New Account",
+    UI_MailOrderCatalogs_KnoxBank_AccessAccount = "Access Your Account",
+    UI_MailOrderCatalogs_KnoxBank_OrderCard = "Order a New Card",
 
     UI_MailOrderCatalogs_ItemDescription_NotAnItem = "Not a real item.",
     UI_MailOrderCatalogs_ItemDescription_SkillMagazine = "You might be able to learn something from this.",
