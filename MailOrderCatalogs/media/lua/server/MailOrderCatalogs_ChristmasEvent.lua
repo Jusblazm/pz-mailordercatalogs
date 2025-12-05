@@ -41,13 +41,13 @@ local function spawnChristmasReward(x, y, z, player, forceQueued)
                 MailOrderCatalogs_DeliveryQueue.addChristmasItem(x, y, z, "Base.Candycane", deliveryTime)
             end
         elseif goodRoll < 70 then
+            local count = ZombRand(1, 4)
             if not shouldQueue then
-                local count = ZombRand(1, 4)
                 MailOrderCatalogs_DeliveryQueue.spawnItem(x, y, z, "Base.Milk")
                 MailOrderCatalogs_DeliveryQueue.spawnItems(x, y, z, "Base.CookieChocolateChip", count)
             else
                 MailOrderCatalogs_DeliveryQueue.addChristmasItem(x, y, z, "Base.Milk", deliveryTime)
-                MailOrderCatalogs_DeliveryQueue.addChristmasItem(x, y, z, "Base.CookieChocolateChip", deliveryTime)
+                MailOrderCatalogs_DeliveryQueue.addChristmasItems(x, y, z, "Base.CookieChocolateChip", count, deliveryTime)
             end
         else
             local amount = tonumber(modData.lastPurchaseAmount) or 0

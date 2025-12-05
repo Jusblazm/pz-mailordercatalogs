@@ -57,6 +57,24 @@ function DeliveryQueue.addChristmasItem(x, y, z, item, deliverAt)
     print(string.format("[MailOrderCatalogs] Debug: Queued Christmas item '%s' for %s at %0.2f hours", item, key, deliverAt))
 end
 
+function DeliveryQueue.addChristmasItems(x, y, z, item, count, deliverAt)
+    local key = makeKey(x, y, z)
+    if not DeliveryQueue.queuedChristmas[key] then
+        DeliveryQueue.queuedChristmas[key] = {}
+    end
+
+    count = count or 1
+
+    for i=1, count do
+        table.insert(DeliveryQueue.queuedChristmas[key], {
+            x=x, y=y, z=z,
+            item = item,
+            deliverAt = deliverAt or 0
+        })
+    end
+    print(string.format("[MailOrderCatalogs] Debug: Queued Christmas item '%s' x%d for %s at %0.2f hours", item, count, key, deliverAt))
+end
+
 function DeliveryQueue.addChristmasRefund(x, y, z, amount, deliverAt)
     local key = makeKey(x, y, z)
     if not DeliveryQueue.queuedChristmas[key] then

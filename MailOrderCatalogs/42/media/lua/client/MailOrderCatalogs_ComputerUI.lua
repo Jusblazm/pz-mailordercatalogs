@@ -94,10 +94,10 @@ function MailOrderCatalogs_ComputerUI.ComputerWindow:populateAvailableWebsites()
 
     checkInventory(player:getInventory())
 
-    local wornItems = player:getWornItems()
-    if wornItems then
-        for i=0, wornItems:size()-1 do
-            local wornItems = wornItems:get(i):getItem()
+    local worn = player:getWornItems()
+    if worn then
+        for i=0, worn:size()-1 do
+            local wornItem = worn:get(i):getItem()
             if wornItem and wornItem:IsInventoryContainer() then
                 checkInventory(wornItem:getInventory())
             end
