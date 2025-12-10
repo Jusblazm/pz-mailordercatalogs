@@ -9,6 +9,24 @@ local function makeKey(x, y, z)
     return string.format("%d_%d_%d", x, y, z)
 end
 
+local function saveQueue()
+    local data = ModData.getOrCreate("MailOrderCatalogs_Delivery")
+
+    data.queued = DeliveryQueue.queued
+    data.queuedFluids = DeliveryQueue.queuedFluids
+    data.queuedZombies = DeliveryQueue.queuedZombies
+    data.queuedChristmas = DeliveryQueue.queuedChristmas
+end
+
+local function loadQueue()
+    local data = ModData.getOrCreate("MailOrderCatalogs_Delivery")
+
+    DeliveryQueue.queued = data.queued or {}
+    DeliveryQueue.queuedFluids = data.queuedFluids or {}
+    DeliveryQueue.queuedZombies = data.queuedZombies or {}
+    DeliveryQueue.queuedChristmas = data.queuedChristmas or {}
+end
+
 function DeliveryQueue.addDelivery(x, y, z, item, deliverAt)
     local key = makeKey(x, y, z)
     if not DeliveryQueue.queued[key] then
@@ -18,6 +36,7 @@ function DeliveryQueue.addDelivery(x, y, z, item, deliverAt)
          item = item,
          deliverAt = deliverAt or 0
     })
+    saveQueue()
     print(string.format("[MailOrderCatalogs] Debug: Queued item '%s' for %s at %0.2f hours", item, key, deliverAt))
 end
 
@@ -28,6 +47,7 @@ function DeliveryQueue.addFluidDelivery(x, y, z, fluidData, deliverAt)
     end
     fluidData.deliverAt = deliverAt or 0
     table.insert(DeliveryQueue.queuedFluids[key], fluidData)
+    saveQueue()
     print(string.format("[MailOrderCatalogs] Debug: Queued fluid item '%s' with RGB (%0.2f, %0.2f, %0.2f) for %s at %0.2f hours",
         fluidData.item, fluidData.r, fluidData.g, fluidData.b, key, deliverAt))
 end
@@ -41,6 +61,7 @@ function DeliveryQueue.addZombieDelivery(x, y, z, deliverAt)
         x=x, y=y, z=z,
         deliverAt = deliverAt or 0
     })
+    saveQueue()
     print(string.format("[MailOrderCatalogs] Debug: Queued zombies at %s for %0.2f hours", key, deliverAt))
 end
 
@@ -54,6 +75,7 @@ function DeliveryQueue.addChristmasItem(x, y, z, item, deliverAt)
         item = item,
         deliverAt = deliverAt or 0
     })
+    saveQueue()
     print(string.format("[MailOrderCatalogs] Debug: Queued Christmas item '%s' for %s at %0.2f hours", item, key, deliverAt))
 end
 
@@ -72,6 +94,7 @@ function DeliveryQueue.addChristmasItems(x, y, z, item, count, deliverAt)
             deliverAt = deliverAt or 0
         })
     end
+    saveQueue()
     print(string.format("[MailOrderCatalogs] Debug: Queued Christmas item '%s' x%d for %s at %0.2f hours", item, count, key, deliverAt))
 end
 
@@ -86,6 +109,7 @@ function DeliveryQueue.addChristmasRefund(x, y, z, amount, deliverAt)
         refund = amount,
         deliverAt = deliverAt or 0
     })
+    saveQueue()
     print(string.format("[MailOrderCatalogs] Debug: Queued Christmas refund of %s for %s at %0.2f hours", amount, key, deliverAt))
 end
 
@@ -234,8 +258,10 @@ local function processQueue()
         end
         if #list == 0 then DeliveryQueue.queuedChristmas[key] = nil end 
     end
+    saveQueue()
 end
 
 Events.EveryHours.Add(processQueue)
+Events.OnInitGlobalModData.Add(loadQueue)
 
 return DeliveryQueue
