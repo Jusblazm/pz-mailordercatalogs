@@ -5,4 +5,6 @@ poster=poster.png
 icon=icon.png
 author=Jusblazm
 url=https://github.com/Jusblazm/pz-mailordercatalogs
-modversion=1.7.3
+versionMin=42.0
+versionMax=42.12
+modversion=1.7.4
