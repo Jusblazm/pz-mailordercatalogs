@@ -1,3 +1,6 @@
 Tooltip_ES = {
     Tooltip_MailOrderCatalogs_ComputerUI_URLBar = "Introduce aquí la URL del sitio web",
+    
+    Tooltip_MailOrderCatalogs_KnoxBank_AccessAccount = "Requiere tarjeta de crédito en el inventario",
+    Tooltip_MailOrderCatalogs_KnoxBank_OrderCard = "¿Perdiste tu tarjeta? ¡Consigue una nueva!",
 }
