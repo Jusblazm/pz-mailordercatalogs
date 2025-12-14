@@ -26,10 +26,6 @@ You do **not** need to repack or include this mod to use them.
 
 ### Available Functions
 ``` lua
-MailOrderCatalogs.RegisterATM(spriteName, facingDir)
--- Registers an ATM in the world.
--- facingDir: 0 = North, 1 = East, 2 = South, 3 = West.
-
 MailOrderCatalogs.RegisterDeliveryLocation(x, y, z)
 -- Registers a delivery location at the given coordinates.
 -- Useful for map makers who want to define new drop-off points.
