@@ -1,0 +1,5 @@
+UI_EN = {
+    UI_ExampleCatalogMod_SiteDescription_SiteOneNet = "Example Site #1",
+    UI_ExampleCatalogMod_ItemDescription_Belt2 = "Good for keeping your pants up.",
+    UI_ExampleCatalogMod_ItemDescription_MeatCleaver = "This is our standard Meat Cleaver.",
+}
