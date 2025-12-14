@@ -1,6 +1,6 @@
 local lfs = require("lfs")
 
-local BASE_DIR = "MailOrderCatalogs/42/media/lua/shared/Translate"
+local BASE_DIR = "MailOrderCatalogs/42.13/media/lua/shared/Translate"
 local README_PATH = "README.md"
 local LANGUAGES = {
     EN = "🇺🇸 English",
