@@ -100,7 +100,7 @@ function MailOrderCatalogs_ATMUI.ATMWindow:onSubmitPIN()
         local hackingLevel = 0
         local pinRange = 0
         if HackingSkill and Perks.Hacking then
-            hackingLevel = HackingSkill.getLevel(player)
+            hackingLevel = HackingSkill_API.getLevel(player)
             pinRange = math.floor(hackingLevel * 2)
         end
 
@@ -127,7 +127,7 @@ function MailOrderCatalogs_ATMUI.ATMWindow:onSubmitPIN()
         self.pinEntry:setTooltip(getText("Tooltip_MailOrderCatalogs_ATMUI_PinEntry_Incorrect") .. tostring(modData.attempts) .. "/3")
 
         if HackingSkill and Perks.Hacking then
-            HackingSkill.addXP(player, 2)
+            HackingSkill_API.addXP(player, 2)
         end
 
         if modData.attempts >= 3 then
