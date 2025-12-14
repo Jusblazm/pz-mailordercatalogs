@@ -1,0 +1,3 @@
+ContextMenu_JP = {
+    ContextMenu_MailOrderCatalogs_Computer_AccessComputer = "コンピュータにアクセスする",
+}

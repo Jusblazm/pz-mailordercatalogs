@@ -1,0 +1,3 @@
+Tooltip_IT = {
+    Tooltip_MailOrderCatalogs_ComputerUI_URLBar = "Inserisci qui l’URL del sito",
+}

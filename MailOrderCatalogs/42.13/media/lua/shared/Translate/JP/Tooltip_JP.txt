@@ -1,0 +1,3 @@
+Tooltip_JP = {
+    Tooltip_MailOrderCatalogs_ComputerUI_URLBar = "ウェブサイトのURLを入力してください",
+}

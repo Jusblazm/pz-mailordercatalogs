@@ -1,0 +1,33 @@
+-- thumbsofgreen_nightshades_com
+
+return {
+    siteName = "thumbsofgreen.com/nightshades",
+    description = getText("UI_MailOrderCatalogs_SiteDescription_ThumbsOfGreenCom"),
+    items = {
+        {
+            name = "Base.TomatoBagSeed2",
+            price = 3,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_SeedPacket"),
+        },
+        {
+            name = "Base.BellPepperBagSeed",
+            price = 3,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_SeedPacket"),
+        },
+        {
+            name = "Base.HabaneroBagSeed",
+            price = 3,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_SeedPacket"),
+        },
+        {
+            name = "Base.JalapenoBagSeed",
+            price = 3,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_SeedPacket"),
+        },
+        {
+            name = "Base.PotatoBagSeed2",
+            price = 3,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_SeedPacket"),
+        }
+    }
+}

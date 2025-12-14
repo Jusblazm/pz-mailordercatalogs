@@ -1,0 +1,3 @@
+Tooltip_RU = {
+    Tooltip_MailOrderCatalogs_ComputerUI_URLBar = "Введите URL веб-сайта здесь",
+}
