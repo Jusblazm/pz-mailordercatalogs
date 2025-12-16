@@ -1,0 +1,6 @@
+Tooltip_JP = {
+    Tooltip_MailOrderCatalogs_ComputerUI_URLBar = "ウェブサイトのURLを入力してください",
+
+    Tooltip_MailOrderCatalogs_KnoxBank_AccessAccount = "インベントリにクレジットカードが必要です",
+    Tooltip_MailOrderCatalogs_KnoxBank_OrderCard = "カードを紛失しましたか？新しいカードを入手しましょう！",
+}

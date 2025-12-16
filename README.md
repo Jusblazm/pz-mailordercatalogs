@@ -5,16 +5,12 @@ If found elsewhere, please report.
 
 ## What This Mod Does
 * Adds working computers with limited functionality.
-* Adds functional ATMs.
-* Adds an ATM hacking minigame.
-* Adds new traits.
 * Adds new items: Shopping Catalogs. All prefixed with `Catalog:`.
 * Adds delivery points to each Post Office in game.
-* Integrates with [Hacking Skill](https://steamcommunity.com/sharedfiles/filedetails/?id=3539339798).
 
 Please check the Steam Workshop page for full details.
 
-This is built as a **framework**. You can easily add new websites, new catalogs, and new ATMs, that will gain automatic functionality for Mail Order Catalogs. Computers are handled different due to having an on and off state. After a rewrite of how they are handled, you will be able to extend Mail Order Catalogs to your custom computers.
+This is built as a **framework**. You can easily add new websites and catalogs, that Mail Order Catalogs will automatically recognize and utilize. Being able to register modded computers is a work in progress. Once finished, you will be able to extend Mail Order Catalogs to your custom computers.
 
 ## Modders
 If you're a map maker, please check out the Example Map Mod for how to register a custom delivery location in your town (All of my predefined locations are inside Post Offices).\
@@ -26,10 +22,6 @@ You do **not** need to repack or include this mod to use them.
 
 ### Available Functions
 ``` lua
-MailOrderCatalogs.RegisterATM(spriteName, facingDir)
--- Registers an ATM in the world.
--- facingDir: 0 = North, 1 = East, 2 = South, 3 = West.
-
 MailOrderCatalogs.RegisterDeliveryLocation(x, y, z)
 -- Registers a delivery location at the given coordinates.
 -- Useful for map makers who want to define new drop-off points.
@@ -64,39 +56,39 @@ return {
     end
 }
 ```
-**NOTE:** Only the player's card is accessible in the Computer UI. This is so players can't bypass the ATM PIN cracking minigame and spend money from stolen cards.
+**NOTE:** Only the player's card is accessible in the Computer UI. This is so players can't bypass the ATM PIN cracking minigame from EZPZ Banking and spend money from stolen cards.
 
 ## 🌐 Translation Progress
 <!-- AUTO-GENERATED-TABLE:START -->
 | Language                | Progress      | Completed | Status        |
 |-------------------------|---------------|-----------|---------------|
-| 🇺🇸 English              | ██████████ 100% | 748/748     | ✅ Done      |
-| 🇦🇷 Argentina            | ░░░░░░░░░░ 0% | 0/748     | ❌ Not Started |
-| 🏴 Catalan             | ░░░░░░░░░░ 0% | 0/748     | ❌ Not Started |
-| 🇹🇼 Traditional Chinese  | ██░░░░░░░░ 19% | 144/748     | 🔃 In Progress |
-| 🇨🇳 Simplified Chinese   | ██░░░░░░░░ 19% | 144/748     | 🔃 In Progress |
-| 🇨🇿 Czech                | ░░░░░░░░░░ 0% | 0/748     | ❌ Not Started |
-| 🇩🇰 Danish               | ░░░░░░░░░░ 0% | 0/748     | ❌ Not Started |
-| 🇩🇪 German               | ██░░░░░░░░ 19% | 144/748     | 🔃 In Progress |
-| 🇪🇸 Spanish              | ██░░░░░░░░ 19% | 144/748     | 🔃 In Progress |
-| 🇫🇮 Finnish              | ░░░░░░░░░░ 0% | 0/748     | ❌ Not Started |
-| 🇫🇷 French               | ░░░░░░░░░░ 0% | 0/748     | ❌ Not Started |
-| 🇭🇺 Hungarian            | ░░░░░░░░░░ 0% | 0/748     | ❌ Not Started |
-| 🇮🇩 Indonesian           | ░░░░░░░░░░ 0% | 0/748     | ❌ Not Started |
-| 🇮🇹 Italian              | ██░░░░░░░░ 19% | 144/748     | 🔃 In Progress |
-| 🇯🇵 Japanese             | ██░░░░░░░░ 19% | 144/748     | 🔃 In Progress |
-| 🇰🇷 Korean               | ███░░░░░░░ 32% | 242/748     | 🔃 In Progress |
-| 🇳🇱 Dutch                | ██░░░░░░░░ 19% | 144/748     | 🔃 In Progress |
-| 🇳🇴 Norwegian            | ░░░░░░░░░░ 0% | 0/748     | ❌ Not Started |
-| 🇵🇭 Filipino             | ░░░░░░░░░░ 0% | 0/748     | ❌ Not Started |
-| 🇵🇱 Polish               | ░░░░░░░░░░ 0% | 0/748     | ❌ Not Started |
-| 🇵🇹 Portuguese           | ██░░░░░░░░ 19% | 144/748     | 🔃 In Progress |
-| 🇧🇷 Brazilian Portuguese | ██░░░░░░░░ 19% | 144/748     | 🔃 In Progress |
-| 🇷🇴 Romanian             | ░░░░░░░░░░ 0% | 0/748     | ❌ Not Started |
-| 🇷🇺 Russian              | ███████░░░ 70% | 526/748     | 🔃 In Progress |
-| 🇹🇭 Thai                 | ░░░░░░░░░░ 0% | 0/748     | ❌ Not Started |
-| 🇹🇷 Turkish              | ░░░░░░░░░░ 0% | 0/748     | ❌ Not Started |
-| 🇺🇦 Ukrainian            | ███████░░░ 70% | 526/748     | 🔃 In Progress |
+| 🇺🇸 English              | ██████████ 100% | 726/726     | ✅ Done      |
+| 🇦🇷 Argentina            | ░░░░░░░░░░ 0% | 0/726     | ❌ Not Started |
+| 🏴 Catalan             | ░░░░░░░░░░ 0% | 0/726     | ❌ Not Started |
+| 🇹🇼 Traditional Chinese  | ██░░░░░░░░ 17% | 124/726     | 🔃 In Progress |
+| 🇨🇳 Simplified Chinese   | ██░░░░░░░░ 17% | 124/726     | 🔃 In Progress |
+| 🇨🇿 Czech                | ░░░░░░░░░░ 0% | 0/726     | ❌ Not Started |
+| 🇩🇰 Danish               | ░░░░░░░░░░ 0% | 0/726     | ❌ Not Started |
+| 🇩🇪 German               | ██░░░░░░░░ 17% | 124/726     | 🔃 In Progress |
+| 🇪🇸 Spanish              | ██░░░░░░░░ 17% | 124/726     | 🔃 In Progress |
+| 🇫🇮 Finnish              | ░░░░░░░░░░ 0% | 0/726     | ❌ Not Started |
+| 🇫🇷 French               | ░░░░░░░░░░ 0% | 0/726     | ❌ Not Started |
+| 🇭🇺 Hungarian            | ░░░░░░░░░░ 0% | 0/726     | ❌ Not Started |
+| 🇮🇩 Indonesian           | ░░░░░░░░░░ 0% | 0/726     | ❌ Not Started |
+| 🇮🇹 Italian              | ██░░░░░░░░ 17% | 124/726     | 🔃 In Progress |
+| 🇯🇵 Japanese             | ██░░░░░░░░ 17% | 124/726     | 🔃 In Progress |
+| 🇰🇷 Korean               | ███░░░░░░░ 31% | 222/726     | 🔃 In Progress |
+| 🇳🇱 Dutch                | ██░░░░░░░░ 17% | 124/726     | 🔃 In Progress |
+| 🇳🇴 Norwegian            | ░░░░░░░░░░ 0% | 0/726     | ❌ Not Started |
+| 🇵🇭 Filipino             | ░░░░░░░░░░ 0% | 0/726     | ❌ Not Started |
+| 🇵🇱 Polish               | ░░░░░░░░░░ 0% | 0/726     | ❌ Not Started |
+| 🇵🇹 Portuguese           | ██░░░░░░░░ 17% | 124/726     | 🔃 In Progress |
+| 🇧🇷 Brazilian Portuguese | ██░░░░░░░░ 17% | 124/726     | 🔃 In Progress |
+| 🇷🇴 Romanian             | ░░░░░░░░░░ 0% | 0/726     | ❌ Not Started |
+| 🇷🇺 Russian              | ███████░░░ 70% | 506/726     | 🔃 In Progress |
+| 🇹🇭 Thai                 | ░░░░░░░░░░ 0% | 0/726     | ❌ Not Started |
+| 🇹🇷 Turkish              | ░░░░░░░░░░ 0% | 0/726     | ❌ Not Started |
+| 🇺🇦 Ukrainian            | ███████░░░ 70% | 506/726     | 🔃 In Progress |
 <!-- AUTO-GENERATED-TABLE:END -->
 
 ### Translation Notice
