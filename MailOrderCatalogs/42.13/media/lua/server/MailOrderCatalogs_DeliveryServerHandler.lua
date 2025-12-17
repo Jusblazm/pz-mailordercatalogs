@@ -31,7 +31,10 @@ Events.OnClientCommand.Add(function(module, command, player, args)
                 local containerObj = MailOrderCatalogs_DeliveryQueue.getOrCreateDropbox(square)
                 if containerObj then
                     local container = containerObj:getContainer()
-                    local item = container:AddItem(args.item)
+                    -- local item = container:AddItem(args.item)
+                    local item = instanceItem(args.item)
+                    container:AddItem(item)
+                    sendAddItemToContainer(container, item)
 
                     -- sendAddItemToContainer(container, item)
                     print(string.format("[MailOrderCatalogs] General: Delivered '%s' to %d, %d, %d", args.item, x, y, z))
