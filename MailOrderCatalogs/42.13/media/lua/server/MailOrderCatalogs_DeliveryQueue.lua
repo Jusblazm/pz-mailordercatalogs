@@ -117,22 +117,51 @@ function DeliveryQueue.spawnItem(x, y, z, itemFullType)
     local square = getCell():getGridSquare(x, y, z)
     if not square then return false end
 
-    local container = DeliveryQueue.getOrCreateDropbox(square)
-    if not container then return false end
+    local containerObj = DeliveryQueue.getOrCreateDropbox(square)
+    if not containerObj then return false end
 
-    container:getContainer():AddItem(itemFullType)
+    container = containerObj:getContainer()
+    local item = instanceItem(itemFullType)
+    container:AddItem(item)
+    sendAddItemToContainer(container, item)
     print(string.format("[MailOrderCatalogs] General: Delivered %s to %d, %d, %d", itemFullType, x, y, z))
     return true
 end
+
+-- function DeliveryQueue.spawnItems(x, y, z, itemFullType, amount)
+--     local square = getCell():getGridSquare(x, y, z)
+--     if not square then return false end
+
+--     local container = DeliveryQueue.getOrCreateDropbox(square)
+--     if not container then return false end
+
+--     container:getContainer():AddItems(itemFullType, amount)
+--     print(string.format("[MailOrderCatalogs] General: Delivered %d %s to %d, %d, %d", amount, itemFullType, x, y, z))
+--     return true
+-- end
 
 function DeliveryQueue.spawnItems(x, y, z, itemFullType, amount)
     local square = getCell():getGridSquare(x, y, z)
     if not square then return false end
 
-    local container = DeliveryQueue.getOrCreateDropbox(square)
-    if not container then return false end
+    local containerObj = DeliveryQueue.getOrCreateDropbox(square)
+    if not containerObj then return false end
 
-    container:getContainer():AddItems(itemFullType, amount)
+    local container = containerObj:getContainer()
+
+    local items = ArrayList.new()
+
+    for i=1, amount do
+        local item = instanceItem(itemFullType)
+        if item then
+            container:AddItem(item)
+            items:add(item)
+        end
+    end
+
+    if items:size() > 0 then
+        sendAddItemsToContainer(container, items)
+    end
     print(string.format("[MailOrderCatalogs] General: Delivered %d %s to %d, %d, %d", amount, itemFullType, x, y, z))
     return true
 end
