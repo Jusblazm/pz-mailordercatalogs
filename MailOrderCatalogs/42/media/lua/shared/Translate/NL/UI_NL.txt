@@ -1,19 +1,4 @@
 UI_NL = {
-    UI_trait_CreditCardThief = "Creditcarddief",
-    UI_trait_CreditCardThief_Description = "Je bent een doorgewinterde creditcarddief. +5 marge bij het raden van een pincode voor een gestolen creditcard aan een geldautomaat.",
-
-    UI_MailOrderCatalogs_ATMUI_SubmitButton = "Bevestigen",
-    UI_MailOrderCatalogs_ATMUI_NoCardFound = "Geen creditcard beschikbaar",
-    UI_MailOrderCatalogs_ATMUI_CardDestroyed = "Kaart vernietigd!",
-    UI_MailOrderCatalogs_ATMUI_Balance = "Saldo: $",
-    UI_MailOrderCatalogs_ATMUI_DepositButton = "Storten",
-    UI_MailOrderCatalogs_ATMUI_WithdrawButton = "Opnemen",
-    UI_MailOrderCatalogs_ATMUI_ATMTitle = "Knox Bank Geldautomaat",
-
-    UI_MailOrderCatalogs_CardSelectorUI_NoCardsFound = "Geen creditcards beschikbaar",
-    UI_MailOrderCatalogs_CardSelectorUI_Attempts = "Pogingen:",
-    UI_MailOrderCatalogs_CardSelectorUI_CardSelectorTitle = "Selecteer een creditcard",
-
     UI_MailOrderCatalogs_ComputerUI_CartEmpty = "Winkelwagen is leeg",
     UI_MailOrderCatalogs_ComputerUI_CartItems = "Winkelwagen:",
     UI_MailOrderCatalogs_ComputerUI_TotalPrice = "Totaal: ",

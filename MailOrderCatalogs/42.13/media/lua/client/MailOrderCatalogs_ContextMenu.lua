@@ -1,5 +1,4 @@
 -- MailOrderCatalogs_ContextMenu
--- local MailOrderCatalogs_ComputerUI = require("MailOrderCatalogs_ComputerUI")
 local MailOrderCatalogs_Utils = require("MailOrderCatalogs_Utils")
 
 local function onFillWorldObjectContextMenu(playerIndex, context, worldObjects, test)

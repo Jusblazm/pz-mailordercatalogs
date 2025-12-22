@@ -1,10 +1,5 @@
 -- MailOrderCatalogs_Main
 require "MailOrderCatalogs_ComputerUI"
-require "MailOrderCatalogs_ATMUI"
-require "MailOrderCatalogs_CardSelectorUI"
-
-local MailOrderCatalogs_Delivery = require("MailOrderCatalogs_Delivery")
-local MailOrderCatalogs_DeliveryLocations = require("MailOrderCatalogs_DeliveryLocations")
 
 -- unified ESC key handler
 local function onGlobalKeyPressed(key)

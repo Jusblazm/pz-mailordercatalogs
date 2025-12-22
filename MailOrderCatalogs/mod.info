@@ -5,4 +5,5 @@ poster=poster.png
 icon=icon.png
 author=Jusblazm
 url=https://github.com/Jusblazm/pz-mailordercatalogs
-modversion=2.3
+require=JusEZPZBanking
+modversion=2.4

@@ -1,4 +1,5 @@
 ItemName_IT = {
+    ItemName_Base.AARonHuntingSupplyCatalog1 = "Catalogo: A.A.Ron Hunting Supply - Abbigliamento in Pelle di Pecora",
     ItemName_Base.AmericanTireCatalog1 = "Catalogo: American Tire - Pneumatici Usati",
     ItemName_Base.AmericanTireCatalog2 = "Catalogo: American Tire - Pneumatici Nuovi",
     ItemName_Base.AmericanTireCatalog3 = "Catalogo: American Tire - Pneumatici Premium",
@@ -55,7 +56,9 @@ ItemName_IT = {
     ItemName_Base.WormOfBooksCatalog1 = "Catalogo: Worm of Books - Impara un’Abilità",
     ItemName_Base.YourClosetCatalog1 = "Catalogo: Your Closet - Intimo",
     ItemName_Base.YourClosetCatalog2 = "Catalogo: Your Closet - Abbigliamento Sportivo",
+    ItemName_Base.YourClosetCatalog3 = "Catalogo: Your Closet - Abbigliamento Invernale",
     ItemName_Base.YuleBeSorryCatalog1 = "Catalogo: Yule Be Sorry",
+    ItemName_Base.YuriDesignCatalog1 = "Catalogo: Yuri Design - Abbigliamento per il Freddo",
     ItemName_Base.ZacsHardwareCatalog1 = "Catalogo: Zac's Hardware - Attrezzi",
     ItemName_Base.ZacsHardwareCatalog2 = "Catalogo: Zac's Hardware - Equipaggiamento Protettivo",
     

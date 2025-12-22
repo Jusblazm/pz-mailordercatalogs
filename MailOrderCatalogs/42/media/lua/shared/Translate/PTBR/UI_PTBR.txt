@@ -1,19 +1,4 @@
 UI_PTBR = {
-    UI_trait_CreditCardThief = "Ladrão de Cartão de Crédito",
-    UI_trait_CreditCardThief_Description = "Você é um ladrão de cartões de crédito experiente. +5 de variação na sua tentativa ao digitar o PIN de um cartão roubado em um caixa eletrônico.",
-
-    UI_MailOrderCatalogs_ATMUI_SubmitButton = "Confirmar",
-    UI_MailOrderCatalogs_ATMUI_NoCardFound = "Nenhum cartão de crédito disponível",
-    UI_MailOrderCatalogs_ATMUI_CardDestroyed = "Cartão destruído!",
-    UI_MailOrderCatalogs_ATMUI_Balance = "Saldo: $",
-    UI_MailOrderCatalogs_ATMUI_DepositButton = "Depositar",
-    UI_MailOrderCatalogs_ATMUI_WithdrawButton = "Sacar",
-    UI_MailOrderCatalogs_ATMUI_ATMTitle = "Caixa Eletrônico do Banco Knox",
-
-    UI_MailOrderCatalogs_CardSelectorUI_NoCardsFound = "Nenhum cartão de crédito disponível",
-    UI_MailOrderCatalogs_CardSelectorUI_Attempts = "Tentativas:",
-    UI_MailOrderCatalogs_CardSelectorUI_CardSelectorTitle = "Selecione um cartão de crédito",
-
     UI_MailOrderCatalogs_ComputerUI_CartEmpty = "Carrinho vazio",
     UI_MailOrderCatalogs_ComputerUI_CartItems = "Carrinho:",
     UI_MailOrderCatalogs_ComputerUI_TotalPrice = "Total: ",
