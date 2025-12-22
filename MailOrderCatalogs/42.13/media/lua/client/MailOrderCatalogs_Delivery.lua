@@ -123,7 +123,6 @@ function MailOrderCatalogs_Delivery.deliverItem(itemName, player, suppressEvents
             if obj and obj:getContainer() then
                 local delayHours = MailOrderCatalogs_Utils.getDeliverySpeed()
                 if delayHours == 0 then
-                    -- obj:getContainer():AddItem(itemName)
                     sendClientCommand("MailOrderCatalogs", "InstantDelivery", {
                         x = obj:getX(),
                         y = obj:getY(),

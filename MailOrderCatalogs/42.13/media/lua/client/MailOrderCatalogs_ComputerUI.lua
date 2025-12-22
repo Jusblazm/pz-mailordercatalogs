@@ -705,7 +705,7 @@ function MailOrderCatalogs_ComputerUI.ComputerWindow:createChildren()
             return
         end
 
-        local balance = EZPZBanking_BankServer.getBalance(modData)
+        local balance = EZPZBanking_BankServer.getBalance(card)
         if balance < totalCost then
             self.insufficientFundsLabel:setName(getText("UI_MailOrderCatalogs_ComputerUI_NoMoney"))
             return

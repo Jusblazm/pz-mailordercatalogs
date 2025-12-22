@@ -1,4 +1,5 @@
 ItemName_UA = {
+    ItemName_Base.AARonHuntingSupplyCatalog1 = "Каталог: A.A.Ron Hunting Supply - Одяг з овчини",
     ItemName_Base.AmericanTireCatalog1 = "Каталог: American Tire - Вживані шини",
     ItemName_Base.AmericanTireCatalog2 = "Каталог: American Tire - Нові шини",
     ItemName_Base.AmericanTireCatalog3 = "Каталог: American Tire - Преміум шини",
@@ -55,7 +56,9 @@ ItemName_UA = {
     ItemName_Base.WormOfBooksCatalog1 = "Каталог: Worm of Books - Вивчення навику",
     ItemName_Base.YourClosetCatalog1 = "Каталог: Your Closet - Нижня білизна",
     ItemName_Base.YourClosetCatalog2 = "Каталог: Your Closet - Спортивний одяг",
+    ItemName_Base.YourClosetCatalog3 = "Каталог: Your Closet - Зимовий одяг",
     ItemName_Base.YuleBeSorryCatalog1 = "Каталог: Yule Be Sorry",
+    ItemName_Base.YuriDesignCatalog1 = "Каталог: Yuri Design - Теплий одяг",
     ItemName_Base.ZacsHardwareCatalog1 = "Каталог: Zac's Hardware - Інструменти",
     ItemName_Base.ZacsHardwareCatalog2 = "Каталог: Zac's Hardware - Захисне спорядження",
     

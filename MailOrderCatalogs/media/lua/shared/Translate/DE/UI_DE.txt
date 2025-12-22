@@ -1,19 +1,4 @@
 UI_DE = {
-    UI_trait_CreditCardThief = "Kreditkarten-Dieb",
-    UI_trait_CreditCardThief_Description = "Du bist ein erfahrener Kreditkarten-Dieb. +5 Spielraum bei deinen Versuchen, eine PIN für eine gestohlene Kreditkarte am Geldautomaten einzugeben.",
-
-    UI_MailOrderCatalogs_ATMUI_SubmitButton = "Bestätigen",
-    UI_MailOrderCatalogs_ATMUI_NoCardFound = "Keine Kreditkarte verfügbar",
-    UI_MailOrderCatalogs_ATMUI_CardDestroyed = "Karte zerstört!",
-    UI_MailOrderCatalogs_ATMUI_Balance = "Kontostand: $",
-    UI_MailOrderCatalogs_ATMUI_DepositButton = "Einzahlen",
-    UI_MailOrderCatalogs_ATMUI_WithdrawButton = "Abheben",
-    UI_MailOrderCatalogs_ATMUI_ATMTitle = "Knox Bank Geldautomat",
-
-    UI_MailOrderCatalogs_CardSelectorUI_NoCardsFound = "Keine Kreditkarten verfügbar",
-    UI_MailOrderCatalogs_CardSelectorUI_Attempts = "Versuche:",
-    UI_MailOrderCatalogs_CardSelectorUI_CardSelectorTitle = "Kreditkarte auswählen",
-
     UI_MailOrderCatalogs_ComputerUI_CartEmpty = "Warenkorb ist leer",
     UI_MailOrderCatalogs_ComputerUI_CartItems = "Warenkorb:",
     UI_MailOrderCatalogs_ComputerUI_TotalPrice = "Gesamt: ",

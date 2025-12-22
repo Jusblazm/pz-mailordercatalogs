@@ -6,6 +6,7 @@ MailOrderCatalogs_ComputerUI = {}
 local ISCollapsableWindow = ISCollapsableWindow
 
 local MailOrderCatalogs_Utils = require("MailOrderCatalogs_Utils")
+local EZPZBanking_Utils = require("EZPZBanking_Utils")
 local MailOrderCatalogs_CatalogRegistrar = require("MailOrderCatalogs_CatalogRegistrar")
 local MailOrderCatalogs_Delivery = require("MailOrderCatalogs_Delivery")
 
@@ -149,8 +150,6 @@ function MailOrderCatalogs_ComputerUI.ComputerWindow:renderWebsite(siteID)
     local currentPage = self.currentPage[siteID]
     local player = self:getPlayer()
     local card = self:getCard()
-    -- local modData = card:getModData()
-    -- local account = MailOrderCatalogs_BankServer.getOrCreateAccountByID(modData)
 
     local padding = 20
     local columnSpacing = 20
@@ -700,19 +699,19 @@ function MailOrderCatalogs_ComputerUI.ComputerWindow:createChildren()
         end
 
         local modData = card:getModData()
-        local account = MailOrderCatalogs_BankServer.getOrCreateAccountByID(modData)
+        local account = EZPZBanking_BankServer.getOrCreateAccountByID(modData)
         if not account then
             self.insufficientFundsLabel:setName(getText("UI_MailOrderCatalogs_ComputerUI_NoBank"))
             return
         end
 
-        local balance = MailOrderCatalogs_BankServer.getBalance(modData)
+        local balance = EZPZBanking_BankServer.getBalance(modData)
         if balance < totalCost then
             self.insufficientFundsLabel:setName(getText("UI_MailOrderCatalogs_ComputerUI_NoMoney"))
             return
         end
 
-        MailOrderCatalogs_BankServer.setBalance(modData, balance - totalCost)
+        EZPZBanking_BankServer.setBalance(modData, balance - totalCost)
 
         -- clear warning
         self.insufficientFundsLabel:setName("")
@@ -1045,7 +1044,7 @@ function MailOrderCatalogs_ComputerUI.openComputerUI(object, player)
     if MailOrderCatalogs_ComputerUI.instance and MailOrderCatalogs_ComputerUI.instance:isVisible() then
         return
     end
-    local card = MailOrderCatalogs_Utils.getPlayerCard(player)
+    local card = EZPZBanking_Utils.getPlayerCard(player)
     if not card then
         print("[MailOrderCatalogs] General: No Credit Card found.")
         -- return
@@ -1073,8 +1072,8 @@ function MailOrderCatalogs_ComputerUI.openComputerUI(object, player)
 
     if card then
         local modData = card:getModData()
-        MailOrderCatalogs_Utils.ensureCardHasData(card)
-        local account = MailOrderCatalogs_BankServer.getOrCreateAccountByID(modData)
+        EZPZBanking_Utils.ensureCardHasData(card)
+        local account = EZPZBanking_BankServer.getOrCreateAccountByID(modData)
 
         if isDebugEnabled() then
             print("[MailOrderCatalogs] Debug: Player: " .. tostring(player))

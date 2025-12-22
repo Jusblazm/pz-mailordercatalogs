@@ -1,4 +1,5 @@
 ItemName_CH = {
+    ItemName_Base.AARonHuntingSupplyCatalog1 = "目錄：A.A.Ron 狩獵用品 - 羊皮服飾",
     ItemName_Base.AmericanTireCatalog1 = "目錄：American Tire - 二手輪胎",
     ItemName_Base.AmericanTireCatalog2 = "目錄：American Tire - 新輪胎",
     ItemName_Base.AmericanTireCatalog3 = "目錄：American Tire - 高級輪胎",
@@ -55,7 +56,9 @@ ItemName_CH = {
     ItemName_Base.WormOfBooksCatalog1 = "目錄：Worm of Books - 學習技能",
     ItemName_Base.YourClosetCatalog1 = "目錄：Your Closet - 內衣",
     ItemName_Base.YourClosetCatalog2 = "目錄：Your Closet - 運動服",
+    ItemName_Base.YourClosetCatalog3 = "目錄：Your Closet - 冬季服裝",
     ItemName_Base.YuleBeSorryCatalog1 = "目錄：Yule Be Sorry",
+    ItemName_Base.YuriDesignCatalog1 = "目錄：Yuri Design - 禦寒服裝",
     ItemName_Base.ZacsHardwareCatalog1 = "目錄：Zac's Hardware - 工具",
     ItemName_Base.ZacsHardwareCatalog2 = "目錄：Zac's Hardware - 防護裝備",
     

@@ -31,28 +31,6 @@ function MailOrderCatalogs_Utils.getFrontSquareOfComputer(obj)
     return MailOrderCatalogs_Utils.getFrontSquareFromDirectionTable(obj, MailOrderCatalogs_Utils.ComputerFacingDirections)
 end
 
-MailOrderCatalogs_Utils.validATMSprites = {
-    ["location_business_bank_01_64"] = true, -- standalone
-    ["location_business_bank_01_65"] = true, -- standalone
-    ["location_business_bank_01_66"] = true, -- in wall
-    ["location_business_bank_01_67"] = true, -- in wall
-}
-
-MailOrderCatalogs_Utils.ATMFacingDirections = {
-    ["location_business_bank_01_64"] = 1, -- East
-    ["location_business_bank_01_65"] = 2, -- South
-    ["location_business_bank_01_66"] = 1, -- East
-    ["location_business_bank_01_67"] = 2, -- South
-}
-
-function MailOrderCatalogs_Utils.isValidATMSprite(spriteName)
-    return MailOrderCatalogs_Utils.validATMSprites[spriteName] == true
-end
-
-function MailOrderCatalogs_Utils.getFrontSquareOfATM(obj)
-    return MailOrderCatalogs_Utils.getFrontSquareFromDirectionTable(obj, MailOrderCatalogs_Utils.ATMFacingDirections)
-end
-
 function MailOrderCatalogs_Utils.getFrontSquareFromDirectionTable(obj, directionTable)
     local sprite = obj:getSprite()
     if not sprite then return nil end
@@ -192,131 +170,9 @@ local function isSquarePowered(square)
     )
 end
 
--- required for ATM outside of post office in Ekron
--- it's part of the building, but not defined as part of the building
-local function isNearbySquarePowered(square, radius)
-    if not square then return false end
-    radius = radius or 1
-
-    for dx = -radius, radius do
-        for dy = -radius, radius do
-            local checkSquare = getCell():getGridSquare(square:getX() + dx, square:getY() + dy, square:getZ())
-            if checkSquare and isSquarePowered(checkSquare) then
-                return true
-            end
-        end
-    end
-    return false
-end
-
 function MailOrderCatalogs_Utils.checkPower(square)
     if not square then return false end
     return isSquarePowered(square)
-end
-
-function MailOrderCatalogs_Utils.isATMPowered(obj)
-    if not obj then return false end
-    local square = obj:getSquare()
-    if not square then return false end
-    -- return isSquarePowered(square)
-    return isNearbySquarePowered(square, 3)
-end
-
-function MailOrderCatalogs_Utils.getAllCreditCards(player)
-    local function collectAllItems(container, results)
-        if not container then return end
-        local items = container:getItems()
-        for i=0, items:size()-1 do
-            local item = items:get(i)
-            table.insert(results, item)
-            if item:IsInventoryContainer() then
-                collectAllItems(item:getInventory(), results)
-            end
-        end
-    end
-    
-    local cards = {}
-    local allItems = {}
-    collectAllItems(player:getInventory(), allItems)
-
-    local worn = player:getWornItems()
-    if worn then
-        for i=0, worn:size()-1 do
-            local wormItem = worn:get(i):getItem()
-            if wornItem and wornItem:IsInventoryContainer() then
-                collectAllItems(wornItem:getInventory(), allItems)
-            end
-        end
-    end
-
-    local primary = player:getPrimaryHandItem()
-    if primary and primary:IsInventoryContainer() then
-        collectAllItems(primary:getInventory(), allItems)
-    end
-
-    local secondary = player:getSecondaryHandItem()
-    if secondary and secondary:IsInventoryContainer() then
-        collectAllItems(secondary:getInventory(), allItems)
-    end
-
-    for _, item in ipairs(allItems) do
-        if item and item:getType() == "CreditCard" then
-            table.insert(cards, item)
-        end
-    end
-    return cards
-end
-
-function MailOrderCatalogs_Utils.getPlayerCard(player)
-    local descriptor = player:getDescriptor()
-    local fullName = descriptor:getForename() .. " " .. descriptor:getSurname()
-    local cards = MailOrderCatalogs_Utils.getAllCreditCards(player)
-
-    for _, item in ipairs(cards) do
-        local modData = item:getModData()
-        if modData and modData.owner == fullName then
-            return item
-        end
-    end
-    return nil
-end
-
-function MailOrderCatalogs_Utils.getCard(player)
-    local cards = MailOrderCatalogs_Utils.getAllCreditCards(player)
-    return cards[1] or nil
-end
-
-function MailOrderCatalogs_Utils.generateRandomPIN()
-    local num = ZombRand(0, 100)
-    return string.format("%02d", num)
-end
-
-function MailOrderCatalogs_Utils.ensureCardHasData(card)
-    local modData = card:getModData()
-    if not modData.pin then
-        modData.pin = MailOrderCatalogs_Utils.generateRandomPIN()
-    end
-    if not modData.attempts then
-        modData.attempts = 0
-    end
-    if not modData.last4 then
-        modData.last4 = tostring(ZombRand(1000, 9999))
-    end
-    if not modData.owner then
-        local name = card:getName() or ""
-        local found = name:match("Credit Card[:%s]*(.+)")
-        modData.owner = found or "Unknown"
-    end
-    if not modData.accountID then
-        modData.accountID = "FAKE_" .. tostring(ZombRand(100000, 999999)) .. "_" .. modData.owner
-    end
-    if not modData.isStolen then
-        modData.isStolen = false
-    end
-end
-
-function MailOrderCatalogs_Utils.isAutomaticOwnerPINEnabled()
-    return SandboxVars.MailOrderCatalogs and SandboxVars.MailOrderCatalogs.OwnerPIN == true
 end
 
 function MailOrderCatalogs_Utils.getDeliverySpeed()

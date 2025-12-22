@@ -1,4 +1,5 @@
 ItemName_JP = {
+    ItemName_Base.AARonHuntingSupplyCatalog1 = "カタログ：A.A.Ron ハンティング用品 - 羊皮製ウェア",
     ItemName_Base.AmericanTireCatalog1 = "カタログ：American Tire - 中古タイヤ",
     ItemName_Base.AmericanTireCatalog2 = "カタログ：American Tire - 新品タイヤ",
     ItemName_Base.AmericanTireCatalog3 = "カタログ：American Tire - プレミアムタイヤ",
@@ -55,7 +56,9 @@ ItemName_JP = {
     ItemName_Base.WormOfBooksCatalog1 = "カタログ：Worm of Books - スキルを学ぶ",
     ItemName_Base.YourClosetCatalog1 = "カタログ：Your Closet - 下着",
     ItemName_Base.YourClosetCatalog2 = "カタログ：Your Closet - スポーツウェア",
+    ItemName_Base.YourClosetCatalog3 = "カタログ：Your Closet - 冬用ウェア",
     ItemName_Base.YuleBeSorryCatalog1 = "カタログ：Yule Be Sorry",
+    ItemName_Base.YuriDesignCatalog1 = "カタログ：Yuri Design - 防寒ウェア",
     ItemName_Base.ZacsHardwareCatalog1 = "カタログ：Zac's Hardware - ツール",
     ItemName_Base.ZacsHardwareCatalog2 = "カタログ：Zac's Hardware - 保護具",
     

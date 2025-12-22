@@ -1,4 +1,3 @@
 ContextMenu_JP = {
-    ContextMenu_MailOrderCatalogs_ATM_UseATM = "ATMを利用する",
     ContextMenu_MailOrderCatalogs_Computer_AccessComputer = "コンピュータにアクセスする",
 }

@@ -1,19 +1,4 @@
 UI_ES = {
-    UI_trait_CreditCardThief = "Ladrón de tarjetas de crédito",
-    UI_trait_CreditCardThief_Description = "Eres un ladrón de tarjetas de crédito experimentado. +5 de margen en tu intento al introducir un PIN de una tarjeta robada en un cajero automático.",
-
-    UI_MailOrderCatalogs_ATMUI_SubmitButton = "Confirmar",
-    UI_MailOrderCatalogs_ATMUI_NoCardFound = "No hay tarjeta de crédito disponible",
-    UI_MailOrderCatalogs_ATMUI_CardDestroyed = "¡Tarjeta destruida!",
-    UI_MailOrderCatalogs_ATMUI_Balance = "Saldo: $",
-    UI_MailOrderCatalogs_ATMUI_DepositButton = "Depositar",
-    UI_MailOrderCatalogs_ATMUI_WithdrawButton = "Retirar",
-    UI_MailOrderCatalogs_ATMUI_ATMTitle = "Cajero automático del Banco Knox",
-
-    UI_MailOrderCatalogs_CardSelectorUI_NoCardsFound = "No hay tarjetas de crédito disponibles",
-    UI_MailOrderCatalogs_CardSelectorUI_Attempts = "Intentos:",
-    UI_MailOrderCatalogs_CardSelectorUI_CardSelectorTitle = "Selecciona una tarjeta de crédito",
-
     UI_MailOrderCatalogs_ComputerUI_CartEmpty = "El carrito está vacío",
     UI_MailOrderCatalogs_ComputerUI_CartItems = "Carrito:",
     UI_MailOrderCatalogs_ComputerUI_TotalPrice = "Total: ",

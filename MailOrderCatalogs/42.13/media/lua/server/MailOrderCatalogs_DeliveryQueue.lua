@@ -128,18 +128,6 @@ function DeliveryQueue.spawnItem(x, y, z, itemFullType)
     return true
 end
 
--- function DeliveryQueue.spawnItems(x, y, z, itemFullType, amount)
---     local square = getCell():getGridSquare(x, y, z)
---     if not square then return false end
-
---     local container = DeliveryQueue.getOrCreateDropbox(square)
---     if not container then return false end
-
---     container:getContainer():AddItems(itemFullType, amount)
---     print(string.format("[MailOrderCatalogs] General: Delivered %d %s to %d, %d, %d", amount, itemFullType, x, y, z))
---     return true
--- end
-
 function DeliveryQueue.spawnItems(x, y, z, itemFullType, amount)
     local square = getCell():getGridSquare(x, y, z)
     if not square then return false end
