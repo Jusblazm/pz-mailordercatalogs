@@ -45,7 +45,7 @@ option MailOrderCatalogs.EnableChristmasEvent
 option MailOrderCatalogs.OnlyDecember
 {
     type = boolean,
-    default = false,
+    default = true,
     page = MailOrderCatalogs,
     translation = MailOrderCatalogs_OnlyDecember,
 }
