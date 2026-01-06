@@ -99,8 +99,8 @@ A hearty thank you to everyone who contributed to translations for Mail Order Ca
 🇷🇺 Russian and 🇺🇦 Ukrainian: [DXI344](https://steamcommunity.com/id/dzidio/)
 
 ## Support
-Come find me on discord! Be sure to grab the Project Zomboid Modding Role once you arrive.
+Come find me on discord! Be sure to grab the Project Zomboid Modding Role once you arrive.\
 [![Discord](https://raw.githubusercontent.com/Jusblazm/pz-archive/refs/heads/main/_imgs/discordinvite.png)](https://discord.gg/yqstRpuGXy)
 
-A simple like and a favorite is more than enough, but if you would like to do more:
-[![Ko-fi](https://i.imgur.com/PfRaUI3.png)](https://ko-fi.com/jusblazm)
+A simple like and a favorite is more than enough, but if you would like to do more:\
+[![Ko-fi](https://i.imgur.com/vs8dr3R.png)](https://ko-fi.com/jusblazm)
