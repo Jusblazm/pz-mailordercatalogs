@@ -22,7 +22,7 @@ You do **not** need to repack or include this mod to use them.
 
 ### Available Functions
 ``` lua
-MailOrderCatalogs.RegisterDeliveryLocation(x, y, z)
+MailOrderCatalogs_API.RegisterDeliveryLocation(x, y, z)
 -- Registers a delivery location at the given coordinates.
 -- Useful for map makers who want to define new drop-off points.
 ```
