@@ -1802,18 +1802,18 @@ return {
         },
         {
             name = "Base.Gloves_IceHockeyGloves_Black",
-            price = 0,
-            description = "debug",
+            price = 18,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_IceHockeyGloves_Black"),
         },
         {
             name = "Base.Gloves_IceHockeyGloves_Blue",
-            price = 0,
-            description = "debug",
+            price = 18,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_IceHockeyGloves_Blue"),
         },
         {
             name = "Base.Gloves_IceHockeyGloves_White",
-            price = 0,
-            description = "debug",
+            price = 18,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_IceHockeyGloves_White"),
         },
         {
             name = "Base.Gloves_HuntingCamo",
@@ -1915,13 +1915,13 @@ return {
         },
         {
             name = "Base.Hat_BaseballCap_LouisvilleBruiser",
-            price = 0,
-            description = "debug",
+            price = 16,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_Hat_BaseballCap_LouisvilleBruiser"),
         },
         {
             name = "Base.Hat_BaseballCap_LSU",
-            price = 0,
-            description = "debug",
+            price = 28,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_Hat_BaseballCap_LSU"),
         },
         {
             name = "Base.Hat_BaseballCap_MassGenfac",
@@ -2503,13 +2503,13 @@ return {
         },
         {
             name = "Base.Hat_HockeyHelmet",
-            price = 0,
-            description = "debug",
+            price = 35,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_HockeyHelmet"),
         },
         {
             name = "Base.Hat_HockeyHelmet_TINT",
-            price = 0,
-            description = "debug",
+            price = 38,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_HockeyHelmet_TINT"),
         },
         {
             name = "Base.Hat_JockeyHelmet01",
@@ -4363,27 +4363,27 @@ return {
         {
             name = "Base.Shorts_HockeyPants",
             price = 0,
-            description = "debug",
+            description = "debug - can be black, red, or white",
         },
         {
             name = "Base.Shorts_HockeyPants_Black",
-            price = 0,
-            description = "debug",
+            price = 28,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_HockeyPants_Black"),
         },
         {
             name = "Base.Shorts_HockeyPants_Red",
-            price = 0,
-            description = "debug",
+            price = 28,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_HockeyPants_Red"),
         },
         {
             name = "Base.Shorts_HockeyPants_UniBlue",
-            price = 0,
-            description = "debug",
+            price = 60,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_HockeyPants_UniBlue"),
         },
         {
             name = "Base.Shorts_HockeyPants_White",
-            price = 0,
-            description = "debug",
+            price = 28,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_HockeyPants_White"),
         },
         {
             name = "Base.Trousers_HuntingCamo",
@@ -4420,13 +4420,13 @@ return {
         },
         {
             name = "Base.Shoulderpads_IceHockey",
-            price = 0,
-            description = "debug",
+            price = 40,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_IceHockeyShoulderpads"),
         },
         {
             name = "Base.Shoulderpads_IceHockeyOnTop",
-            price = 0,
-            description = "debug",
+            price = 40,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_IceHockeyShoulderpads"),
         },
         {
             name = "Base.Vest_CatcherVest",
@@ -4450,8 +4450,8 @@ return {
         },
         {
             name = "Base.IceHockeyNeckGuard",
-            price = 0,
-            description = "debug",
+            price = 12,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_IceHockeyNeckGuard"),
         },
         {
             name = "Base.AthleticCup",
@@ -4556,13 +4556,13 @@ return {
         },
         {
             name = "Base.ShinKneeGuard_L_IceHockey",
-            price = 0,
-            description = "debug",
+            price = 20,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_IceHockeyShinKneeGuard_L"),
         },
         {
             name = "Base.ShinKneeGuard_R_IceHockey",
-            price = 0,
-            description = "debug",
+            price = 20,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_IceHockeyShinKneeGuard_R"),
         },
         {
             name = "Base.ShinKneeGuard_L_Protective",
@@ -4587,42 +4587,42 @@ return {
         {
             name = "Base.Shinpad_HockeyGoalie_L",
             price = 0,
-            description = "debug",
+            description = "debug - can be blue, red or white",
         },
         {
             name = "Base.Shinpad_HockeyGoalie_R",
             price = 0,
-            description = "debug",
+            description = "debug - can be blue, red or white",
         },
         {
             name = "Base.Shinpad_HockeyGoalie_L_Blue",
-            price = 0,
-            description = "debug",
+            price = 32,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_HockeyGoalieShinpad_L_Blue"),
         },
         {
             name = "Base.Shinpad_HockeyGoalie_R_Blue",
-            price = 0,
-            description = "debug",
+            price = 32,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_HockeyGoalieShinpad_R_Blue"),
         },
         {
             name = "Base.Shinpad_HockeyGoalie_L_Red",
-            price = 0,
-            description = "debug",
+            price = 32,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_HockeyGoalieShinpad_L_Red"),
         },
         {
             name = "Base.Shinpad_HockeyGoalie_R_Red",
-            price = 0,
-            description = "debug",
+            price = 32,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_HockeyGoalieShinpad_R_Red"),
         },
         {
             name = "Base.Shinpad_HockeyGoalie_L_White",
-            price = 0,
-            description = "debug",
+            price = 32,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_HockeyGoalieShinpad_L_White"),
         },
         {
             name = "Base.Shinpad_HockeyGoalie_R_White",
-            price = 0,
-            description = "debug",
+            price = 32,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_HockeyGoalieShinpad_R_White"),
         },
         {
             name = "Base.Kneepad_Right",
@@ -5299,23 +5299,23 @@ return {
         },
         {
             name = "Base.Ice_Hockey_Jersey_White",
-            price = 0,
-            description = "debug",
+            price = 22,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_IceHockeyJersey_White"),
         },
         {
             name = "Base.Ice_Hockey_Jersey_Black",
-            price = 0,
-            description = "debug",
+            price = 22,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_IceHockeyJersey_Black"),
         },
         {
             name = "Base.Ice_Hockey_Jersey_BlueUni",
-            price = 0,
-            description = "debug",
+            price = 75,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_IceHockeyJersey_BlueUni"),
         },
         {
             name = "Base.Ice_Hockey_Jersey_Red",
-            price = 0,
-            description = "debug",
+            price = 22,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_IceHockeyJersey_Red"),
         },
         {
             name = "Base.Tshirt_LongSleeve_HuntingCamo",
@@ -12127,10 +12127,100 @@ return {
         --[[
             ITEMS_WEAPONS_2HANDED_AXE
         ]]
+        {
+            name = "Base.Axe",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.Axe_Old",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.Axe_Sawblade",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.Axe_ScrapCleaver",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.AxeStone",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.BaseballBat_Metal_Sawblade",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.BaseballBat_RailSpike",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.BaseballBat_Sawblade",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.FieldHockeyStick_Sawblade",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.JawboneBovide_Axe",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.LongHandle_Railspike",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.LongHandle_Sawblade",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.PickAxe",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.PickAxeForged",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.ShortBat_Sawblade",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.StoneAxeLarge",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.TableLeg_Sawblade",
+            price = 0,
+            description = "debug",
+        },
 
         --[[
             ITEMS_WEAPONS_2HANDED
         ]]
+        {
+            name = "Base.Banjo",
+            price = 0,
+            description = "debug",
+        },
         {
             name = "Base.BaseballBat",
             price = 30,
@@ -12142,9 +12232,169 @@ return {
             description = getText("UI_MailOrderCatalogs_ItemDescription_BaseballBat_Crafted"),
         },
         {
+            name = "Base.BaseballBat_Can",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.BaseballBat_GardenForkHead",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.BaseballBat_Metal",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.BaseballBat_Metal_Bolts",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.BaseballBat_Nails",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.BaseballBat_RakeHead",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.BaseballBat_ScrapSheet",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.BaseballBat_Spiked",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.BoltCutters",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.Broom",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.Broom_Twig",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.Broom_BarbedWire",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.CanoePadel",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.CanoePadelX2",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.CanoePadelX2_Broken",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.CraftedFishingRod",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.Crowbar",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.CrowbarForged",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.FieldHockeyStick",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.FieldHockeyStick_Nails",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.FishingRod",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.FishingRodBreak",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.Gaffhook",
+            price = 0,
+            description = "debug",
+        },
+        {
             name = "Base.GardenHoe",
             price = 13,
             description = getText("UI_MailOrderCatalogs_ItemDescription_GardenHoe"),
+        },
+        {
+            name = "Base.GardenHoeForged",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.Golfclub",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.GuitarAcoustic",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.HobbyHorse",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.IceHockeyStick",
+            price = 25,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_IceHockeyStick"),
+        },
+        {
+            name = "Base.IceHockeyStick_BarbedWire",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.IronBar",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.JawboneBovide_Morningstar",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.LaCrosseStick",
+            price = 0,
+            description = "debug",
         },
         {
             name = "Base.LeafRake",
@@ -12152,19 +12402,294 @@ return {
             description = getText("UI_MailOrderCatalogs_ItemDescription_LeafRake"),
         },
         {
+            name = "Base.LongHandle",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.LongHandle_Can",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.LongHandle_Nails",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.LongHandle_RakeHead",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.LongMace",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.LongMace_Stone",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.LongSpikedClub",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.LongStick",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.Mop",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.Morningstar_Scrap",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.Plank",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.Plank_Saw",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.Plank_Nails",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.Poolcue",
+            price = 0,
+            description = "debug",
+        },
+        {
             name = "Base.Rake",
             price = 17,
             description = getText("UI_MailOrderCatalogs_ItemDescription_Rake"),
+        },
+        {
+            name = "Base.Sapling",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.ScrapWeaponRakeHead",
+            price = 0,
+            description = "debug",
         },
         {
             name = "Base.Shovel",
             price = 18,
             description = getText("UI_MailOrderCatalogs_ItemDescription_Shovel"),
         },
+        {
+            name = "Base.SpadeForged",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.SpadeWood",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.Shovel2",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.SnowShovel",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.SteelBar",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.StoneMaul",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.TableLeg",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.TableLeg_Nails",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.WoodenStick_Can",
+            price = 0,
+            description = "debug",
+        },
 
         --[[
             ITEMS_WEAPONS_HEAVY
         ]]
+                {
+            name = "Base.BarBell",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.BarBell_Forged",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.BlockMaul",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.BucketMace_Metal",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.BucketMace_Wood",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.Cudgel_Bone",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.Cudgel_Brake",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.Cudgel_GardenForkHead",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.Cudgel_Nails",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.Cudgel_Railspike",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.Cudgel_ScrapSheet",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.Cudgel_Sawblade",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.Cudgel_SpadeHead",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.Cudgel_Spike",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.EngineMaul",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.GuitarElectricBass",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.GuitarElectric",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.Keytar",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.KettleMace_Metal",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.KettleMace_Wood",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.LargeBranch",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.LongHandle_Brake",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.Plank_Brake",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.Plank_Sawblade",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.RailroadSpikePuller",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.RailroadSpikePullerOld",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.ScrapMaul",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.ScrapWeapon_Brake",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.ScrapWeaponGardenFork",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.ScrapWeaponSpade",
+            price = 0,
+            description = "debug",
+        },
         {
             name = "Base.Sledgehammer",
             price = 0,
@@ -12176,18 +12701,247 @@ return {
             description = "debug",
         },
         {
+            name = "Base.SledgehammerForged",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.TableLeg_Chain",
+            price = 0,
+            description = "debug",
+        },
+        {
             name = "Base.WoodAxe",
             price = 25,
             description = getText("UI_MailOrderCatalogs_ItemDescription_WoodAxe"),
+        },
+        {
+            name = "Base.WoodAxeForged",
+            price = 0,
+            description = "debug",
+        },
+
+        --[[
+            ITEMS_WEAPONS_LONG_BLADE
+        ]]
+                {
+            name = "Base.CrudeShortSword",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.CrudeSword",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.CrudeSword_Broken",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.Katana",
+            price = 5000,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_Katana"),
+        },
+        {
+            name = "Base.Katana_Broken",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.Machete",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.Machete_Crude",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.MacheteForged",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.ShortSword",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.ShortSword_Scrap",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.Sword",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.Sword_Broken",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.Sword_Scrap",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.Sword_Scrap_Broken",
+            price = 0,
+            description = "debug",
         },
 
         --[[
             ITEMS_WEAPONS_SPEARS
         ]]
+                {
+            name = "Base.ClosedUmbrellaBlack",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.ClosedUmbrellaBlue",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.ClosedUmbrellaRed",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.ClosedUmbrellaTINTED",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.ClosedUmbrellaWhite",
+            price = 0,
+            description = "debug",
+        },
         {
             name = "Base.GardenFork",
             price = 17,
             description = getText("UI_MailOrderCatalogs_ItemDescription_GardenFork"),
+        },
+        {
+            name = "Base.GardenFork_Forged",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.SpearCrafted",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.SpearCraftedFireHardened",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.SpearCrude",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.SpearCrudeLong",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.SpearHandFork",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.SpearGlass",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.SpearHuntingKnife",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.SpearKnife",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.SpearKnifeSmall",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.SpearLong",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.SpearScissors",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.SpearScrewdriver",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.SpearShort",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.SpearSteakKnife",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.SpearStone",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.SpearStoneLong",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.Spear_Bone",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.Spear_BoneLong",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.Spear_Plunger",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.SpearLargeKnife",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.SpearScrapKnife",
+            price = 0,
+            description = "debug",
+        },
+        {
+            name = "Base.SpearFightingKnife",
+            price = 0,
+            description = "debug",
         },
 
         --[[

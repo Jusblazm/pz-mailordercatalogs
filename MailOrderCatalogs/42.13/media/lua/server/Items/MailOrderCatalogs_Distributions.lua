@@ -56,6 +56,7 @@ local catalogs = {
     "Base.ThumbsOfGreenCatalog12",
     "Base.ThumbsOfGreenCatalog13",
     "Base.ThumbsOfGreenCatalog14",
+    "Base.Time4SportCatalog1",
     "Base.WindowCatalog",
     "Base.WormOfBooksCatalog1",
     "Base.YourClosetCatalog1",
@@ -137,6 +138,29 @@ if distro and distro.all and distro.all.postbox and distro.all.postbox.items the
         table.insert(items, catalog)
         table.insert(items, postboxWeight)
     end
+end
+
+----------------------------------------
+-- Ultra Rare Katana Catalog
+----------------------------------------
+
+local katanaCatalog = "Base.TheHolyKatanaCatalog"
+local katanaBaseWeight = 0.001
+for location, multiplier in pairs(locationMultipliers) do
+    local dist = ProceduralDistributions.list[location]
+    if dist and dist.items then
+        local items = dist.items
+        table.insert(items, katanaCatalog)
+        table.insert(items, katanaBaseWeight * multiplier)
+    end
+end
+
+local katanaPostboxWeight = 0.001
+local distro = SuburbsDistributions
+if distro and distro.all and distro.all.postbox and distro.all.postbox.items then
+    local items = distro.all.postbox.items
+    table.insert(items, katanaCatalog)
+    table.insert(items, katanaPostboxWeight)
 end
 
 ----------------------------------------
