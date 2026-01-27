@@ -357,20 +357,6 @@ module Base
 		OnCreate			= SpecialLootSpawns.OnCreateCatalog,
 	}
 
-	item TheHolyKatanaCatalog
-	{
-		DisplayCategory     = Literature,
-		ItemType            = base:literature,
-		Weight              = 0.5,
-		Icon                = TheHolyKatanaCatalog,
-		BoredomChange       = -20,
-		StressChange        = -20,
-		StaticModel         = Magazine,
-		WorldStaticModel    = MagazineGround,
-		Tags                = base:magazine,
-		OnCreate			= SpecialLootSpawns.OnCreateCatalog,
-	}
-
 	item LouisvilleBruiserCatalog
 	{
 		DisplayCategory     = Literature,
@@ -561,6 +547,20 @@ module Base
 		Icon                = TheExquisitePearlCatalog,
 		BoredomChange       = -10,
 		StressChange        = -10,
+		StaticModel         = Magazine,
+		WorldStaticModel    = MagazineGround,
+		Tags                = base:magazine,
+		OnCreate			= SpecialLootSpawns.OnCreateCatalog,
+	}
+
+	item TheHolyKatanaCatalog
+	{
+		DisplayCategory     = Literature,
+		ItemType            = base:literature,
+		Weight              = 0.5,
+		Icon                = TheHolyKatanaCatalog,
+		BoredomChange       = -20,
+		StressChange        = -20,
 		StaticModel         = Magazine,
 		WorldStaticModel    = MagazineGround,
 		Tags                = base:magazine,
