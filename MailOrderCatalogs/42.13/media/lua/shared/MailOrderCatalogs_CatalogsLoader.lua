@@ -8,8 +8,12 @@ local function registerCatalogs()
     registrar.registerWebsite(site)
     local site = require("catalogs/cdc_hazmat_gov")
     registrar.registerWebsite(site)
+    local site = require("catalogs/theholykatana_com")
+    local catalog = "Base.TheHolyKatanaCatalog"
+    registrar.registerWebsite(site, catalog)
     -- Sky Blue Banking
     -- competitor eventually?
+    -- Knox Bank
     local site = require("catalogs/knoxbank_com")
     registrar.registerWebsite(site)
     local site = require("catalogs/knoxbank_account_com")
@@ -280,6 +284,9 @@ local function registerCatalogs()
     -- The Top Hanger Catalogs
 
     -- Time 4 Sport Catalogs
+    local site = require("catalogs/time4sport_icehockey_com")
+    local catalog = "Base.Time4SportCatalog1"
+    registrar.registerWebsite(site, catalog)
 
     -- Toyz Catalogs
 

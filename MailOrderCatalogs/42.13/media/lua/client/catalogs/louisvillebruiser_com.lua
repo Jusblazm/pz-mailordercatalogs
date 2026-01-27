@@ -13,6 +13,11 @@ return {
             name = "Base.BaseballBat_Crafted",
             price = 28,
             description = getText("UI_MailOrderCatalogs_ItemDescription_BaseballBat_Crafted"),
+        },
+        {
+            name = "Base.Hat_BaseballCap_LouisvilleBruiser",
+            price = 16,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_Hat_BaseballCap_LouisvilleBruiser"),
         }
     }
 }
