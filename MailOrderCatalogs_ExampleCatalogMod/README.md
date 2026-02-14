@@ -36,5 +36,6 @@ The example mod includes the following files to guide you:
 - `UI_EN.txt` - Example UI text localization
 - `items_examplemodcatalogs.txt` - Example catalog items
 - `ExampleCatalogMod_Distributions.lua` - Template distributions file
+- `mod.info` - Includes necessary requires and versioning
 
 These files are fully functional examples and show exactly what you need to do to add your own catalogs to Mail Order Catalogs. Simply replace or extend them with your own content.

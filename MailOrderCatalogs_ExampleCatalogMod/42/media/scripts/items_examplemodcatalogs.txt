@@ -9,16 +9,15 @@ module Base
 
 	item ExampleCatalog
 	{
-		DisplayName         = Catalog: Example,
 		DisplayCategory     = Literature,
-		Type                = Literature,
+		ItemType            = base:literature,
 		Weight              = 0.5,
 		Icon                = Magazine,
 		BoredomChange       = -10,
 		StressChange        = -10,
 		StaticModel         = Magazine,
 		WorldStaticModel    = MagazineGround,
-		Tags                = Magazine,
+		Tags                = base:magazine,
 		OnCreate			= SpecialLootSpawns.OnCreateCatalog,
 	}
 }
