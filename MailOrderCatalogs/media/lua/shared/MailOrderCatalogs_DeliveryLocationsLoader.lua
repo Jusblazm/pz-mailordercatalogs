@@ -3,6 +3,6 @@ local DeliveryData = require("MailOrderCatalogs_DeliveryLocations")
 
 Events.OnInitWorld.Add(function()
     if DeliveryData then
-        -- MailOrderCatalogs_API.RegisterDeliveryLocation(8076, 11735, 0)
+        -- MailOrderCatalogs_API.registerDeliveryLocation(8076, 11735, 0)
     end
 end)

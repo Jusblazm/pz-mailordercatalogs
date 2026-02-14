@@ -22,7 +22,7 @@ You do **not** need to repack or include this mod to use them.
 
 ### Available Functions
 ``` lua
-MailOrderCatalogs_API.RegisterDeliveryLocation(x, y, z)
+MailOrderCatalogs_API.registerDeliveryLocation(x, y, z)
 -- Registers a delivery location at the given coordinates.
 -- Useful for map makers who want to define new drop-off points.
 ```
@@ -62,33 +62,33 @@ return {
 <!-- AUTO-GENERATED-TABLE:START -->
 | Language                | Progress      | Completed | Status        |
 |-------------------------|---------------|-----------|---------------|
-| 🇺🇸 English              | ██████████ 100% | 758/758     | ✅ Done      |
-| 🇦🇷 Argentina            | ░░░░░░░░░░ 0% | 0/758     | ❌ Not Started |
-| 🏴 Catalan             | ░░░░░░░░░░ 0% | 0/758     | ❌ Not Started |
-| 🇹🇼 Traditional Chinese  | ██░░░░░░░░ 17% | 127/758     | 🔃 In Progress |
-| 🇨🇳 Simplified Chinese   | ██░░░░░░░░ 17% | 127/758     | 🔃 In Progress |
-| 🇨🇿 Czech                | ░░░░░░░░░░ 0% | 0/758     | ❌ Not Started |
-| 🇩🇰 Danish               | ░░░░░░░░░░ 0% | 0/758     | ❌ Not Started |
-| 🇩🇪 German               | ██░░░░░░░░ 17% | 127/758     | 🔃 In Progress |
-| 🇪🇸 Spanish              | ██░░░░░░░░ 17% | 127/758     | 🔃 In Progress |
-| 🇫🇮 Finnish              | ░░░░░░░░░░ 0% | 0/758     | ❌ Not Started |
-| 🇫🇷 French               | ░░░░░░░░░░ 0% | 0/758     | ❌ Not Started |
-| 🇭🇺 Hungarian            | ░░░░░░░░░░ 0% | 0/758     | ❌ Not Started |
-| 🇮🇩 Indonesian           | ░░░░░░░░░░ 0% | 0/758     | ❌ Not Started |
-| 🇮🇹 Italian              | ██░░░░░░░░ 17% | 127/758     | 🔃 In Progress |
-| 🇯🇵 Japanese             | ██░░░░░░░░ 17% | 127/758     | 🔃 In Progress |
-| 🇰🇷 Korean               | ███░░░░░░░ 30% | 225/758     | 🔃 In Progress |
-| 🇳🇱 Dutch                | ██░░░░░░░░ 17% | 127/758     | 🔃 In Progress |
-| 🇳🇴 Norwegian            | ░░░░░░░░░░ 0% | 0/758     | ❌ Not Started |
-| 🇵🇭 Filipino             | ░░░░░░░░░░ 0% | 0/758     | ❌ Not Started |
-| 🇵🇱 Polish               | ░░░░░░░░░░ 0% | 0/758     | ❌ Not Started |
-| 🇵🇹 Portuguese           | ██░░░░░░░░ 17% | 127/758     | 🔃 In Progress |
-| 🇧🇷 Brazilian Portuguese | ██░░░░░░░░ 17% | 127/758     | 🔃 In Progress |
-| 🇷🇴 Romanian             | ░░░░░░░░░░ 0% | 0/758     | ❌ Not Started |
-| 🇷🇺 Russian              | ███████░░░ 67% | 509/758     | 🔃 In Progress |
-| 🇹🇭 Thai                 | ░░░░░░░░░░ 0% | 0/758     | ❌ Not Started |
-| 🇹🇷 Turkish              | ░░░░░░░░░░ 0% | 0/758     | ❌ Not Started |
-| 🇺🇦 Ukrainian            | ███████░░░ 67% | 509/758     | 🔃 In Progress |
+| 🇺🇸 English              | ██████████ 100% | 760/760     | ✅ Done      |
+| 🇦🇷 Argentina            | ░░░░░░░░░░ 0% | 0/760     | ❌ Not Started |
+| 🏴 Catalan             | ░░░░░░░░░░ 0% | 0/760     | ❌ Not Started |
+| 🇹🇼 Traditional Chinese  | ██░░░░░░░░ 17% | 127/760     | 🔃 In Progress |
+| 🇨🇳 Simplified Chinese   | ██░░░░░░░░ 17% | 127/760     | 🔃 In Progress |
+| 🇨🇿 Czech                | ░░░░░░░░░░ 0% | 0/760     | ❌ Not Started |
+| 🇩🇰 Danish               | ░░░░░░░░░░ 0% | 0/760     | ❌ Not Started |
+| 🇩🇪 German               | ██░░░░░░░░ 17% | 127/760     | 🔃 In Progress |
+| 🇪🇸 Spanish              | ██░░░░░░░░ 17% | 127/760     | 🔃 In Progress |
+| 🇫🇮 Finnish              | ░░░░░░░░░░ 0% | 0/760     | ❌ Not Started |
+| 🇫🇷 French               | ░░░░░░░░░░ 0% | 0/760     | ❌ Not Started |
+| 🇭🇺 Hungarian            | ░░░░░░░░░░ 0% | 0/760     | ❌ Not Started |
+| 🇮🇩 Indonesian           | ░░░░░░░░░░ 0% | 0/760     | ❌ Not Started |
+| 🇮🇹 Italian              | ██░░░░░░░░ 17% | 127/760     | 🔃 In Progress |
+| 🇯🇵 Japanese             | ██░░░░░░░░ 17% | 127/760     | 🔃 In Progress |
+| 🇰🇷 Korean               | ███░░░░░░░ 30% | 225/760     | 🔃 In Progress |
+| 🇳🇱 Dutch                | ██░░░░░░░░ 17% | 127/760     | 🔃 In Progress |
+| 🇳🇴 Norwegian            | ░░░░░░░░░░ 0% | 0/760     | ❌ Not Started |
+| 🇵🇭 Filipino             | ░░░░░░░░░░ 0% | 0/760     | ❌ Not Started |
+| 🇵🇱 Polish               | ░░░░░░░░░░ 0% | 0/760     | ❌ Not Started |
+| 🇵🇹 Portuguese           | ██░░░░░░░░ 17% | 127/760     | 🔃 In Progress |
+| 🇧🇷 Brazilian Portuguese | ██░░░░░░░░ 17% | 127/760     | 🔃 In Progress |
+| 🇷🇴 Romanian             | ░░░░░░░░░░ 0% | 0/760     | ❌ Not Started |
+| 🇷🇺 Russian              | ███████░░░ 67% | 509/760     | 🔃 In Progress |
+| 🇹🇭 Thai                 | ░░░░░░░░░░ 0% | 0/760     | ❌ Not Started |
+| 🇹🇷 Turkish              | ░░░░░░░░░░ 0% | 0/760     | ❌ Not Started |
+| 🇺🇦 Ukrainian            | ███████░░░ 67% | 509/760     | 🔃 In Progress |
 <!-- AUTO-GENERATED-TABLE:END -->
 
 ### Translation Notice

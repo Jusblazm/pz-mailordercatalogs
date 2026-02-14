@@ -18,7 +18,7 @@ The example file (`MyMapMod_DeliveryLocationsLoader.lua`) already contain the co
 1. Copy one of the example site files and rename it for your website.  
 2. In your loader file (e.g., `MyMapMod_DeliveryLocationsLoader.lua`), set your locations:
 ```lua
-    MailOrderCatalogs.RegisterDeliveryLocation(1111, 2222, 0) -- Replace with your x, y, z
+    MailOrderCatalogs_API.registerDeliveryLocation(1111, 2222, 0) -- Replace with your x, y, z
 ```
 
 ### Provided Example Files

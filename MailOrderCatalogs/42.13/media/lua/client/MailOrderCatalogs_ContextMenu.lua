@@ -9,7 +9,7 @@ local function onFillWorldObjectContextMenu(playerIndex, context, worldObjects, 
         if sprite then
             local spriteName = sprite:getName()
 
-            -- handle Computer logic
+            -- handle computer logic
             if spriteName and MailOrderCatalogs_Utils.isValidComputerSprite(spriteName) then
                 context:addOption(getText("ContextMenu_MailOrderCatalogs_Computer_AccessComputer"), obj, function()
                     local frontSquare = MailOrderCatalogs_Utils.getFrontSquareOfComputer(obj)

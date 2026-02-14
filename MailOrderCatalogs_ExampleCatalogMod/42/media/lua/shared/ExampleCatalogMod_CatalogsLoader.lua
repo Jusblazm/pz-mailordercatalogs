@@ -14,7 +14,7 @@ if getActivatedMods():contains(MailOrderCatalogs) then
     local function registerCatalogs()
         --[[
             if you want to bind your catalog to an item
-            you can do so using the second example.
+            you can do so using example 2.
                 
             if the player has the item in their inventory
             they will see the website in their quick access list.
@@ -22,9 +22,11 @@ if getActivatedMods():contains(MailOrderCatalogs) then
             for secret websites, you don't need to include a catalog item.
         ]]
 
+        -- example 1 (secret website)
         local site = require("catalogs/siteone_net")
         registrar.registerWebsite(site)
 
+        -- example 2 (website bound to an item)
         local site = require("catalogs/sitetwo_com")
         local catalog = "Base.ExampleCatalog"
         registrar.registerWebsite(site, catalog)
