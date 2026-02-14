@@ -5,9 +5,9 @@ MailOrderCatalogs_API = {}
 -- @param x (number) X coordinate
 -- @param y (number) Y coordinate
 -- @param z (number) Z coordinate (default = 0 if not provided)
-function MailOrderCatalogs_API.RegisterDeliveryLocation(x, y, z)
+function MailOrderCatalogs_API.registerDeliveryLocation(x, y, z)
     if type(x) ~= "number" or type(y) ~= "number" then
-        print("[MailOrderCatalogs] Error: Invalid coordinates passed to RegisterDeliveryLocation (x and y must be numbers)")
+        print("[MailOrderCatalogs] Error: Invalid coordinates passed to registerDeliveryLocation (x and y must be numbers)")
         return
     end
     z = z or 0
