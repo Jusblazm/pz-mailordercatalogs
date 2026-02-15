@@ -13,3 +13,9 @@ local function onGlobalKeyPressed(key)
 end
 
 Events.OnKeyPressed.Add(onGlobalKeyPressed)
+
+local function updateWarning(playerIndex, playerObj)
+    print("[MailOrderCatalogs] Warning: This version of Mail Order Catalogs is no longer supported. Please update to the newest version to get new features and continued support.")
+end
+
+Events.OnCreatePlayer.Add(updateWarning)
