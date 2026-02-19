@@ -193,23 +193,32 @@ function MailOrderCatalogs_ComputerUI.ComputerWindow:renderWebsite(siteID)
         end
 
         local rawDisplayName = MailOrderCatalogs_Utils.getItemDisplayName(item.name)
-        local labelDisplayName = rawDisplayName or getText("UI_MailOrderCatalogs_ComputerUI_DoesNotExist")
+        local labelDisplayName
+        if rawDisplayName == nil then
+            labelDisplayName = getText("UI_MailOrderCatalogs_ComputerUI_DoesNotExist")
+        else
+            labelDisplayName = getText("UI_MailOrderCatalogs_ComputerUI_ItemLabel") .. rawDisplayName
+        end
 
         local itemNameLabel = ISRichTextPanel:new(x, currentY, btnW, 1)
         itemNameLabel:initialise()
         itemNameLabel.autosetheight = true
         itemNameLabel:noBackground()
         itemNameLabel:setMargins(0, 0, 0, 0)
-        itemNameLabel:setText(getText("UI_MailOrderCatalogs_ComputerUI_ItemLabel") .. labelDisplayName)
+        itemNameLabel:setText(labelDisplayName)
         itemNameLabel:paginate()
         self.rightPanel:addChild(itemNameLabel)
         currentY = currentY + itemNameLabel:getHeight() + labelSpacing
 
         local price = MailOrderCatalogs_Utils.getItemPrice(item)
+        local priceText
+        if price == nil then
+            priceText = getText("UI_MailOrderCatalogs_ComputerUI_OutOfStock")
+        else
+            priceText = getText("UI_MailOrderCatalogs_ComputerUI_PriceLabel") .. string.format("%.2f", price)
+        end
 
-        local itemPriceLabel = ISLabel:new(x, currentY, 20,
-            getText("UI_MailOrderCatalogs_ComputerUI_PriceLabel") .. string.format("%.2f", price),
-            1, 1, 1, 1, UIFont.Small, true)
+        local itemPriceLabel = ISLabel:new(x, currentY, 20, priceText, 1, 1, 1, 1, UIFont.Small, true)
         itemPriceLabel:initialise()
         self.rightPanel:addChild(itemPriceLabel)
         currentY = currentY + itemPriceLabel:getHeight() + labelSpacing
@@ -258,7 +267,9 @@ function MailOrderCatalogs_ComputerUI.ComputerWindow:renderWebsite(siteID)
             end)
         addToCartButton:initialise()
         addToCartButton:instantiate()
-        if rawDisplayName == nil then addToCartButton.enable = false end
+        if rawDisplayName == nil or price == nil then 
+            addToCartButton.enable = false 
+        end
         self.rightPanel:addChild(addToCartButton)
 
         currentY = currentY + btnH + itemSpacing
@@ -267,9 +278,7 @@ function MailOrderCatalogs_ComputerUI.ComputerWindow:renderWebsite(siteID)
 
     local siteData = MailOrderCatalogs_CatalogRegistrar.Websites[siteID]
     if not siteData then
-        local label = ISLabel:new(padding, padding, 20,
-            getText("UI_MailOrderCatalogs_ComputerUI_UnknownWebsite") .. tostring(siteID),
-            1, 1, 1, 1, UIFont.Small, true)
+        local label = ISLabel:new(padding, padding, 20, getText("UI_MailOrderCatalogs_ComputerUI_UnknownWebsite") .. tostring(siteID), 1, 1, 1, 1, UIFont.Small, true)
         label:initialise()
         self.rightPanel:addChild(label)
         return

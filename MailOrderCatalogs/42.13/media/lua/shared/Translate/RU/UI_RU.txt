@@ -3,6 +3,7 @@ UI_RU = {
     UI_MailOrderCatalogs_ComputerUI_CartItems = "Корзина:",
     UI_MailOrderCatalogs_ComputerUI_TotalPrice = "К оплате: ",
     UI_MailOrderCatalogs_ComputerUI_DoesNotExist = "Не существует",
+    UI_MailOrderCatalogs_ComputerUI_OutOfStock = "Нет в наличии",
     UI_MailOrderCatalogs_ComputerUI_ItemLabel = "Предмет: ",
     UI_MailOrderCatalogs_ComputerUI_PriceLabel = "Цена: $",
     UI_MailOrderCatalogs_ComputerUI_ButtonText = "Добавить в корзину",

@@ -3,6 +3,7 @@ UI_PT = {
     UI_MailOrderCatalogs_ComputerUI_CartItems = "Carrinho:",
     UI_MailOrderCatalogs_ComputerUI_TotalPrice = "Total: ",
     UI_MailOrderCatalogs_ComputerUI_DoesNotExist = "não existe",
+    UI_MailOrderCatalogs_ComputerUI_OutOfStock = "Esgotado"
     UI_MailOrderCatalogs_ComputerUI_ItemLabel = "Item: ",
     UI_MailOrderCatalogs_ComputerUI_PriceLabel = "Preço: $",
     UI_MailOrderCatalogs_ComputerUI_ButtonText = "Adicionar ao carrinho",

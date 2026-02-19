@@ -3,6 +3,7 @@ UI_KO = {
     UI_MailOrderCatalogs_ComputerUI_CartItems = "장바구니:",
     UI_MailOrderCatalogs_ComputerUI_TotalPrice = "총액: ",
     UI_MailOrderCatalogs_ComputerUI_DoesNotExist = "존재하지 않습니다",
+    UI_MailOrderCatalogs_ComputerUI_OutOfStock = "품절",
     UI_MailOrderCatalogs_ComputerUI_ItemLabel = "아이템: ",
     UI_MailOrderCatalogs_ComputerUI_PriceLabel = "가격: $",
     UI_MailOrderCatalogs_ComputerUI_ButtonText = "장바구니에 추가",

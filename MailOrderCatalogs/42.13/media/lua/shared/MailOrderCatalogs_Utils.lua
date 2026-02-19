@@ -185,8 +185,8 @@ function MailOrderCatalogs_Utils.getDeliverySpeed()
 end
 
 function MailOrderCatalogs_Utils.getItemPrice(item)
-    if not item or not item.price then
-        return 1
+    if not item or item.price == nil then
+        return nil
     end
 
     local multiplier = 2

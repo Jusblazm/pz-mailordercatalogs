@@ -11,7 +11,7 @@ return {
         },
         {
             name = "Base.Fork2",
-            price = 5,
+            price = nil,
             description = getText("UI_MailOrderCatalogs_ItemDescription_NotAnItem"),
         },
         {

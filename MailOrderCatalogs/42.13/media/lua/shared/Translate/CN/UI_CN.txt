@@ -3,6 +3,7 @@ UI_CN = {
     UI_MailOrderCatalogs_ComputerUI_CartItems = "购物车：",
     UI_MailOrderCatalogs_ComputerUI_TotalPrice = "总计：",
     UI_MailOrderCatalogs_ComputerUI_DoesNotExist = "不存在",
+    UI_MailOrderCatalogs_ComputerUI_OutOfStock = "缺货",
     UI_MailOrderCatalogs_ComputerUI_ItemLabel = "商品：",
     UI_MailOrderCatalogs_ComputerUI_PriceLabel = "价格：$",
     UI_MailOrderCatalogs_ComputerUI_ButtonText = "加入购物车",

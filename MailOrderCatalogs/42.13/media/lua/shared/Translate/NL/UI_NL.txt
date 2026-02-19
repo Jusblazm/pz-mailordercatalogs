@@ -3,6 +3,7 @@ UI_NL = {
     UI_MailOrderCatalogs_ComputerUI_CartItems = "Winkelwagen:",
     UI_MailOrderCatalogs_ComputerUI_TotalPrice = "Totaal: ",
     UI_MailOrderCatalogs_ComputerUI_DoesNotExist = "bestaat niet",
+    UI_MailOrderCatalogs_ComputerUI_OutOfStock = "Niet op voorraad",
     UI_MailOrderCatalogs_ComputerUI_ItemLabel = "Artikel: ",
     UI_MailOrderCatalogs_ComputerUI_PriceLabel = "Prijs: $",
     UI_MailOrderCatalogs_ComputerUI_ButtonText = "Toevoegen aan winkelwagen",
