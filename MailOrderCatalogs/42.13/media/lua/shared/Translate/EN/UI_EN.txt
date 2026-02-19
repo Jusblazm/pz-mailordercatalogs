@@ -3,6 +3,7 @@ UI_EN = {
     UI_MailOrderCatalogs_ComputerUI_CartItems = "Cart:",
     UI_MailOrderCatalogs_ComputerUI_TotalPrice = "Total: ",
     UI_MailOrderCatalogs_ComputerUI_DoesNotExist = "does not exist",
+    UI_MailOrderCatalogs_ComputerUI_OutOfStock = "Out of stock",
     UI_MailOrderCatalogs_ComputerUI_ItemLabel = "Item: ",
     UI_MailOrderCatalogs_ComputerUI_PriceLabel = "Price: $",
     UI_MailOrderCatalogs_ComputerUI_ButtonText = "Add to Cart",

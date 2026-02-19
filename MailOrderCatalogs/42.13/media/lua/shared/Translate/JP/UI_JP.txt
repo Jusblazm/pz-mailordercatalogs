@@ -3,6 +3,7 @@ UI_JP = {
     UI_MailOrderCatalogs_ComputerUI_CartItems = "カート:",
     UI_MailOrderCatalogs_ComputerUI_TotalPrice = "合計: ",
     UI_MailOrderCatalogs_ComputerUI_DoesNotExist = "は存在しません",
+    UI_MailOrderCatalogs_ComputerUI_OutOfStock = "在庫切れ",
     UI_MailOrderCatalogs_ComputerUI_ItemLabel = "商品: ",
     UI_MailOrderCatalogs_ComputerUI_PriceLabel = "価格: $",
     UI_MailOrderCatalogs_ComputerUI_ButtonText = "カートに追加",
