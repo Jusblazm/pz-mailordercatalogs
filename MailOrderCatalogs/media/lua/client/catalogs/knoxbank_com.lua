@@ -40,27 +40,7 @@ return {
         local btnOrderCard = ISButton:new(padding, y, btnW, btnH, getText("UI_MailOrderCatalogs_KnoxBank_OrderCard"), self, function()
             print("[MailOrderCatalogs] General: New credit card ordered for " .. tostring(player))
             if not player or player:isDead() then return end
-
-            local inv = player:getInventory()
-            local item = inv:AddItem("Base.CreditCard")
-            
-            local owner = nil
-            local desc = player:getDescriptor()
-            if desc then
-                owner = desc:getForename() .. " " .. desc:getSurname()
-                item:setName("Credit Card: " .. owner)
-            end
-            local modData = item:getModData()
-            modData.owner = owner
-            modData.accountID = player:getSteamID() .. "_" .. owner
-            modData.last4 = tostring(ZombRand(1000, 9999))
-            modData.pin = "11"
-            modData.isStolen = false
-            modData.attempts = 0
-            modData.websiteURL = "knoxbank.com/account"
-
-            MailOrderCatalogs_BankServer.getOrCreateAccount(player)
-            self:setCard(item)
+            sendClientCommand("EZPZBanking", "OrderCreditCard", {})
             self:loadWebsite("knoxbank.com")
         end)
         btnOrderCard:initialise()

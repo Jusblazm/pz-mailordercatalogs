@@ -14,7 +14,7 @@ return {
         local y = padding
 
         local modData = card:getModData()
-        local account = MailOrderCatalogs_BankServer.getOrCreateAccountByID(modData)
+        local account = EZPZBanking_BankServer.getOrCreateAccountByID(modData)
         local balance = tonumber(account.balance) or 0
         local formatBalance = string.format("%.2f", balance)
 
@@ -53,9 +53,12 @@ return {
                 return
             end
             pinErrorLabel:setVisible(false)
-            modData.pin = newPin
-            MailOrderCatalogs_BankServer.setPIN(modData, newPin)
-            currentPinLabel:setName(getText("UI_MailOrderCatalogs_KnoxBank_CurrentPIN") .. tostring(MailOrderCatalogs_BankServer.getPIN(modData)))
+            sendClientCommand("EZPZBanking", "SetPIN", { 
+                pin = newPin, 
+                itemID = card:getID(),
+                containerType = "inventory"
+            })
+            currentPinLabel:setName(getText("UI_MailOrderCatalogs_KnoxBank_CurrentPIN") .. tostring(newPin))
         end)
         submitButton:initialise()
         self.rightPanel:addChild(submitButton)
