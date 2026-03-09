@@ -6,6 +6,5 @@ icon=icon.png
 author=Jusblazm
 url=https://github.com/Jusblazm/pz-mailordercatalogs
 require=\JusEZPZBanking
-versionMin=42.13
-versionMax=42.14
+versionMin=42.15
 modversion=2.5

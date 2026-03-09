@@ -1,0 +1,17 @@
+{
+    "Sandbox_MailOrderCatalogs": "Налаштування каталогів поштових замовлень",
+    "Sandbox_MailOrderCatalogs_PriceMultiplier": "Ціна товарів",
+    "Sandbox_MailOrderCatalogs_PriceMultiplier_tooltip": "Регулює вартість усіх товарів з каталогів поштових замовлень. Встановіть Половина для дешевших, Нормальна для стандартної ціни або Подвоєно для дорожчих товарів.",
+    "Sandbox_MailOrderCatalogs_PriceMultiplier_option1": "Половина",
+    "Sandbox_MailOrderCatalogs_PriceMultiplier_option2": "Нормальна",
+    "Sandbox_MailOrderCatalogs_PriceMultiplier_option3": "Подвоєно",
+    "Sandbox_MailOrderCatalogs_DeliverySpeed": "Швидкість доставки замовлень",
+    "Sandbox_MailOrderCatalogs_DeliverySpeed_tooltip": "Налаштовує швидкість доставки всіх замовлень з поштових каталогів.",
+    "Sandbox_MailOrderCatalogs_DeliverySpeed_option1": "Миттєво",
+    "Sandbox_MailOrderCatalogs_DeliverySpeed_option2": "1 день",
+    "Sandbox_MailOrderCatalogs_DeliverySpeed_option3": "3 дні",
+    "Sandbox_MailOrderCatalogs_EnableHalloweenEvent": "Увімкнути подію Хелловін",
+    "Sandbox_MailOrderCatalogs_OnlyOctober": "Подія Хелловін лише у жовтні в грі",
+    "Sandbox_MailOrderCatalogs_EnableChristmasEvent": "Увімкнути подію Різдво",
+    "Sandbox_MailOrderCatalogs_OnlyDecember": "Подія Різдво лише у грудні в грі"
+}
