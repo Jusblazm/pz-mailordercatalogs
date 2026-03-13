@@ -7,5 +7,5 @@ author=Jusblazm
 url=https://github.com/Jusblazm/pz-mailordercatalogs
 require=\JusEZPZBanking
 versionMin=42.13
-versionMax=42.14
-modversion=2.5
+versionMax=42.13
+modversion=2.5.1

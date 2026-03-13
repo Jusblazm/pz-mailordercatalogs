@@ -1,0 +1,6 @@
+Tooltip_CN = {
+    Tooltip_MailOrderCatalogs_ComputerUI_URLBar = "在此输入网站 URL",
+    
+    Tooltip_MailOrderCatalogs_KnoxBank_AccessAccount = "需要信用卡在背包中",
+    Tooltip_MailOrderCatalogs_KnoxBank_OrderCard = "卡片遗失？立即申请新卡！",
+}

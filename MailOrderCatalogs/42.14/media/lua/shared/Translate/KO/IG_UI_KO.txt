@@ -1,0 +1,6 @@
+IGUI_KO = {
+    IGUI_MailOrderCatalogs_PlayerText_PackageNearby = "내 소포가 근처에 배달된 것 같아",
+    IGUI_MailOrderCatalogs_PlayerText_PackageNearbyFuture = "내 소포가 근처에 배달될 것 같습니다",
+    IGUI_MailOrderCatalogs_PlayerText_PackagePostOffice = "내 소포가 근처 우체국에 배달된 것 같아",
+    IGUI_MailOrderCatalogs_PlayerText_CantReachComputer = "컴퓨터에 접근할 수 없어",
+}

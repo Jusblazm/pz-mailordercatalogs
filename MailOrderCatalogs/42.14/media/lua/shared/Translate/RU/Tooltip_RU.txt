@@ -1,0 +1,6 @@
+Tooltip_RU = {
+    Tooltip_MailOrderCatalogs_ComputerUI_URLBar = "Введите URL веб-сайта здесь",
+    
+    Tooltip_MailOrderCatalogs_KnoxBank_AccessAccount = "Требуется кредитная карта в инвентаре",
+    Tooltip_MailOrderCatalogs_KnoxBank_OrderCard = "Потеряли карту? Получите новую!",
+}

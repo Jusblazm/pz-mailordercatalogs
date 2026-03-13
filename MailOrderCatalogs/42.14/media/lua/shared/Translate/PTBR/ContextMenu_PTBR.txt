@@ -1,0 +1,3 @@
+ContextMenu_PTBR = {
+    ContextMenu_MailOrderCatalogs_Computer_AccessComputer = "Acessar o computador",
+}
