@@ -12,7 +12,7 @@ MailOrderCatalogs_Utils.validComputerSprites = {
     ["appliances_com_01_79"] = true, -- on
 }
 
-MailOrderCatalogs_Utils.ComputerFacingDirections = {
+MailOrderCatalogs_Utils.computerFacingDirections = {
     ["appliances_com_01_72"] = 2, -- South
     ["appliances_com_01_73"] = 1, -- East
     ["appliances_com_01_74"] = 0, -- North
@@ -28,7 +28,7 @@ function MailOrderCatalogs_Utils.isValidComputerSprite(spriteName)
 end
 
 function MailOrderCatalogs_Utils.getFrontSquareOfComputer(obj)
-    return MailOrderCatalogs_Utils.getFrontSquareFromDirectionTable(obj, MailOrderCatalogs_Utils.ComputerFacingDirections)
+    return MailOrderCatalogs_Utils.getFrontSquareFromDirectionTable(obj, MailOrderCatalogs_Utils.computerFacingDirections)
 end
 
 function MailOrderCatalogs_Utils.getFrontSquareFromDirectionTable(obj, directionTable)
