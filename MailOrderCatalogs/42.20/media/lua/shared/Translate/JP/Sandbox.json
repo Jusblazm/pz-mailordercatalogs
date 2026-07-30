@@ -1,0 +1,17 @@
+{
+    "Sandbox_MailOrderCatalogs": "通信販売カタログ設定",
+    "Sandbox_MailOrderCatalogs_PriceMultiplier": "アイテムの価格",
+    "Sandbox_MailOrderCatalogs_PriceMultiplier_tooltip": "通信販売カタログの全アイテムの価格を調整します。半額にすると安く、通常は標準価格、2倍は高額になります。",
+    "Sandbox_MailOrderCatalogs_PriceMultiplier_option1": "半額",
+    "Sandbox_MailOrderCatalogs_PriceMultiplier_option2": "通常",
+    "Sandbox_MailOrderCatalogs_PriceMultiplier_option3": "2倍",
+    "Sandbox_MailOrderCatalogs_DeliverySpeed": "注文の配送速度",
+    "Sandbox_MailOrderCatalogs_DeliverySpeed_tooltip": "全ての通販カタログの配送速度を調整します。",
+    "Sandbox_MailOrderCatalogs_DeliverySpeed_option1": "即時",
+    "Sandbox_MailOrderCatalogs_DeliverySpeed_option2": "1日",
+    "Sandbox_MailOrderCatalogs_DeliverySpeed_option3": "3日",
+    "Sandbox_MailOrderCatalogs_EnableHalloweenEvent": "ハロウィンイベントを有効化",
+    "Sandbox_MailOrderCatalogs_OnlyOctober": "ハロウィンイベントはゲーム内10月のみ実施",
+    "Sandbox_MailOrderCatalogs_EnableChristmasEvent": "クリスマスイベントを有効化",
+    "Sandbox_MailOrderCatalogs_OnlyDecember": "クリスマスイベントはゲーム内12月のみ実施"
+}
