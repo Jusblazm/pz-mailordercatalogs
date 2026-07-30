@@ -1,3 +1,0 @@
-ContextMenu_UA = {
-    ContextMenu_MailOrderCatalogs_Computer_AccessComputer = "Отримати доступ до комп’ютера",
-}

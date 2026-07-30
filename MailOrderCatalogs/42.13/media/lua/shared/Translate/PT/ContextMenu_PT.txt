@@ -1,3 +1,0 @@
-ContextMenu_PT = {
-    ContextMenu_MailOrderCatalogs_Computer_AccessComputer = "Aceder ao Computador",
-}

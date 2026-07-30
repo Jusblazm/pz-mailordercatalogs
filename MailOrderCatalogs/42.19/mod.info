@@ -1,0 +1,10 @@
+name=Mail Order Catalogs
+id=JusMailOrderCatalogs
+description=Creates a semi-honest mail order catalog system, similar to what would exist in 1993.
+poster=poster.png
+icon=icon.png
+author=Jusblazm
+url=https://github.com/Jusblazm/pz-mailordercatalogs
+require=\JusEZPZBanking
+versionMin=42.19
+modversion=2.6

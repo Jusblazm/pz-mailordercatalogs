@@ -1,6 +1,0 @@
-Tooltip_DE = {
-    Tooltip_MailOrderCatalogs_ComputerUI_URLBar = "Website-URL hier eingeben",
-
-    Tooltip_MailOrderCatalogs_KnoxBank_AccessAccount = "Benötigt Kreditkarte im Inventar",
-    Tooltip_MailOrderCatalogs_KnoxBank_OrderCard = "Karte verloren? Hol dir eine neue!",
-}

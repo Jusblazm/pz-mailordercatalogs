@@ -10,7 +10,7 @@ If found elsewhere, please report.
 
 Please check the Steam Workshop page for full details.
 
-This is built as a **framework**. You can easily add new websites and catalogs, that Mail Order Catalogs will automatically recognize and utilize. Being able to register modded computers is a work in progress. Once finished, you will be able to extend Mail Order Catalogs to your custom computers.
+This is built as a **framework**. You can easily add new websites and catalogs, that Mail Order Catalogs will automatically recognize and utilize. You can also register modded computers, which will extend Mail Order Catalogs functionality to them.
 
 ## Modders
 If you're a map maker, please check out the Example Map Mod for how to register a custom delivery location in your town (All of my predefined locations are inside Post Offices).\
@@ -25,6 +25,10 @@ You do **not** need to repack or include this mod to use them.
 MailOrderCatalogs_API.registerDeliveryLocation(x, y, z)
 -- Registers a delivery location at the given coordinates.
 -- Useful for map makers who want to define new drop-off points.
+
+MailOrderCatalogs_API.registerComputer(spriteName, facing)
+-- Registers a new computer sprite for mod usage.
+-- Useful for allowing new PCs to access mod functionality.
 ```
 
 ### Advanced Websites
@@ -92,7 +96,7 @@ return {
 <!-- AUTO-GENERATED-TABLE:END -->
 
 ### Translation Notice
-Translations are done via ChatGPT and checked with Google Translate. I do my best, but I'm sure there are some errors. If you would like to contribute please get in touch.
+Translations are provided by AI for your benefit. There are bound to be some errors. If you would like to contribute, please reach out to me; I will happily replace AI-generated translations.
 
 ## Translation Credits
 A hearty thank you to everyone who contributed to translations for Mail Order Catalogs.\

@@ -1,0 +1,17 @@
+{
+    "Sandbox_MailOrderCatalogs": "Ajustes de catálogos de pedidos por correo",
+    "Sandbox_MailOrderCatalogs_PriceMultiplier": "Precio de los artículos",
+    "Sandbox_MailOrderCatalogs_PriceMultiplier_tooltip": "Ajusta el coste de todos los artículos de los catálogos de pedidos por correo. Ponlo en Mitad para objetos más baratos, Normal para precios estándar o Doble para objetos más caros.",
+    "Sandbox_MailOrderCatalogs_PriceMultiplier_option1": "Mitad",
+    "Sandbox_MailOrderCatalogs_PriceMultiplier_option2": "Normal",
+    "Sandbox_MailOrderCatalogs_PriceMultiplier_option3": "Doble",
+    "Sandbox_MailOrderCatalogs_DeliverySpeed": "Velocidad de entrega de pedidos",
+    "Sandbox_MailOrderCatalogs_DeliverySpeed_tooltip": "Ajusta la velocidad de entrega de todos los pedidos por catálogo.",
+    "Sandbox_MailOrderCatalogs_DeliverySpeed_option1": "Instantánea",
+    "Sandbox_MailOrderCatalogs_DeliverySpeed_option2": "1 día",
+    "Sandbox_MailOrderCatalogs_DeliverySpeed_option3": "3 días",
+    "Sandbox_MailOrderCatalogs_EnableHalloweenEvent": "Activar evento de Halloween",
+    "Sandbox_MailOrderCatalogs_OnlyOctober": "Evento de Halloween solo durante octubre en el juego",
+    "Sandbox_MailOrderCatalogs_EnableChristmasEvent": "Activar evento de Navidad",
+    "Sandbox_MailOrderCatalogs_OnlyDecember": "Evento de Navidad solo durante diciembre en el juego"
+}
