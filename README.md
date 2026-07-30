@@ -66,33 +66,33 @@ return {
 <!-- AUTO-GENERATED-TABLE:START -->
 | Language                | Progress      | Completed | Status        |
 |-------------------------|---------------|-----------|---------------|
-| 🇺🇸 English              | ██████████ 100% | 761/761     | ✅ Done      |
-| 🇦🇷 Argentina            | ░░░░░░░░░░ 0% | 0/761     | ❌ Not Started |
-| 🏴 Catalan             | ░░░░░░░░░░ 0% | 0/761     | ❌ Not Started |
-| 🇹🇼 Traditional Chinese  | ██░░░░░░░░ 17% | 128/761     | 🔃 In Progress |
-| 🇨🇳 Simplified Chinese   | ██░░░░░░░░ 17% | 128/761     | 🔃 In Progress |
-| 🇨🇿 Czech                | ░░░░░░░░░░ 0% | 0/761     | ❌ Not Started |
-| 🇩🇰 Danish               | ░░░░░░░░░░ 0% | 0/761     | ❌ Not Started |
-| 🇩🇪 German               | ██░░░░░░░░ 17% | 128/761     | 🔃 In Progress |
-| 🇪🇸 Spanish              | ██░░░░░░░░ 17% | 128/761     | 🔃 In Progress |
-| 🇫🇮 Finnish              | ░░░░░░░░░░ 0% | 0/761     | ❌ Not Started |
-| 🇫🇷 French               | ░░░░░░░░░░ 0% | 0/761     | ❌ Not Started |
-| 🇭🇺 Hungarian            | ░░░░░░░░░░ 0% | 0/761     | ❌ Not Started |
-| 🇮🇩 Indonesian           | ░░░░░░░░░░ 0% | 0/761     | ❌ Not Started |
-| 🇮🇹 Italian              | ██░░░░░░░░ 17% | 128/761     | 🔃 In Progress |
-| 🇯🇵 Japanese             | ██░░░░░░░░ 17% | 128/761     | 🔃 In Progress |
-| 🇰🇷 Korean               | ███░░░░░░░ 30% | 226/761     | 🔃 In Progress |
-| 🇳🇱 Dutch                | ██░░░░░░░░ 17% | 128/761     | 🔃 In Progress |
-| 🇳🇴 Norwegian            | ░░░░░░░░░░ 0% | 0/761     | ❌ Not Started |
-| 🇵🇭 Filipino             | ░░░░░░░░░░ 0% | 0/761     | ❌ Not Started |
-| 🇵🇱 Polish               | ░░░░░░░░░░ 0% | 0/761     | ❌ Not Started |
-| 🇵🇹 Portuguese           | ██░░░░░░░░ 17% | 128/761     | 🔃 In Progress |
-| 🇧🇷 Brazilian Portuguese | ██░░░░░░░░ 17% | 128/761     | 🔃 In Progress |
-| 🇷🇴 Romanian             | ░░░░░░░░░░ 0% | 0/761     | ❌ Not Started |
-| 🇷🇺 Russian              | ███████░░░ 67% | 510/761     | 🔃 In Progress |
-| 🇹🇭 Thai                 | ░░░░░░░░░░ 0% | 0/761     | ❌ Not Started |
-| 🇹🇷 Turkish              | ░░░░░░░░░░ 0% | 0/761     | ❌ Not Started |
-| 🇺🇦 Ukrainian            | ███████░░░ 67% | 510/761     | 🔃 In Progress |
+| 🇺🇸 English              | ██████████ 100% | 870/870     | ✅ Done      |
+| 🇦🇷 Argentina            | ░░░░░░░░░░ 0% | 0/870     | ❌ Not Started |
+| 🏴 Catalan             | ░░░░░░░░░░ 0% | 0/870     | ❌ Not Started |
+| 🇹🇼 Traditional Chinese  | █░░░░░░░░░ 15% | 128/870     | 🔃 In Progress |
+| 🇨🇳 Simplified Chinese   | █░░░░░░░░░ 15% | 128/870     | 🔃 In Progress |
+| 🇨🇿 Czech                | ░░░░░░░░░░ 0% | 0/870     | ❌ Not Started |
+| 🇩🇰 Danish               | ░░░░░░░░░░ 0% | 0/870     | ❌ Not Started |
+| 🇩🇪 German               | █░░░░░░░░░ 15% | 128/870     | 🔃 In Progress |
+| 🇪🇸 Spanish              | █░░░░░░░░░ 15% | 128/870     | 🔃 In Progress |
+| 🇫🇮 Finnish              | ░░░░░░░░░░ 0% | 0/870     | ❌ Not Started |
+| 🇫🇷 French               | ░░░░░░░░░░ 0% | 0/870     | ❌ Not Started |
+| 🇭🇺 Hungarian            | ░░░░░░░░░░ 0% | 0/870     | ❌ Not Started |
+| 🇮🇩 Indonesian           | ░░░░░░░░░░ 0% | 0/870     | ❌ Not Started |
+| 🇮🇹 Italian              | █░░░░░░░░░ 15% | 128/870     | 🔃 In Progress |
+| 🇯🇵 Japanese             | █░░░░░░░░░ 15% | 128/870     | 🔃 In Progress |
+| 🇰🇷 Korean               | ███░░░░░░░ 26% | 226/870     | 🔃 In Progress |
+| 🇳🇱 Dutch                | █░░░░░░░░░ 15% | 128/870     | 🔃 In Progress |
+| 🇳🇴 Norwegian            | ░░░░░░░░░░ 0% | 0/870     | ❌ Not Started |
+| 🇵🇭 Filipino             | ░░░░░░░░░░ 0% | 0/870     | ❌ Not Started |
+| 🇵🇱 Polish               | ░░░░░░░░░░ 0% | 0/870     | ❌ Not Started |
+| 🇵🇹 Portuguese           | █░░░░░░░░░ 15% | 128/870     | 🔃 In Progress |
+| 🇧🇷 Brazilian Portuguese | █░░░░░░░░░ 15% | 128/870     | 🔃 In Progress |
+| 🇷🇴 Romanian             | ░░░░░░░░░░ 0% | 0/870     | ❌ Not Started |
+| 🇷🇺 Russian              | ██████░░░░ 59% | 510/870     | 🔃 In Progress |
+| 🇹🇭 Thai                 | ░░░░░░░░░░ 0% | 0/870     | ❌ Not Started |
+| 🇹🇷 Turkish              | ░░░░░░░░░░ 0% | 0/870     | ❌ Not Started |
+| 🇺🇦 Ukrainian            | ██████░░░░ 59% | 510/870     | 🔃 In Progress |
 <!-- AUTO-GENERATED-TABLE:END -->
 
 ### Translation Notice
