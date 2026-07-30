@@ -96,7 +96,7 @@ return {
 <!-- AUTO-GENERATED-TABLE:END -->
 
 ### Translation Notice
-Translations are done via ChatGPT and checked with Google Translate. I do my best, but I'm sure there are some errors. If you would like to contribute please get in touch.
+Translations are provided by AI for your benefit. There are bound to be some errors. If you would like to contribute, please reach out to me; I will happily replace AI-generated translations.
 
 ## Translation Credits
 A hearty thank you to everyone who contributed to translations for Mail Order Catalogs.\
