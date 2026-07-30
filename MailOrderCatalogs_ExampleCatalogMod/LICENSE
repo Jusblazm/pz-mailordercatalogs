@@ -1,0 +1,35 @@
+Jusblazm's Example and Template License v1.0
+
+Copyright © 2025-2026 Jusblazm
+
+These files are provided as examples and templates to assist developers creating their own compatible Project Zomboid mods.
+
+Permission is granted to copy, modify, extend, and redistribute files explicitly designated as Example or Template files under this license as part of a larger Project Zomboid mod.
+
+This permission includes example assets specifically provided within these files for demonstration or template purposes, including example images, posters, and other included resources.
+
+You may:
+
+- Copy Example and Template files.
+- Modify Example and Template files.
+- Include Example and Template files in your own Project Zomboid mod.
+- Extend Example and Template files for your own compatible content.
+- Use Example and Template files as a starting point for your own work.
+
+You may not:
+
+- Claim ownership of the original Example or Template files.
+- Remove existing copyright notices where present.
+- Redistribute Example or Template files as a standalone project, template package, asset pack, framework, or replacement for the original project.
+- Use these permissions as authorization to copy the parent project's underlying framework, systems, architecture, or implementation.
+- Represent your project as official, endorsed, sponsored, or affiliated with the copyright holder.
+
+Modified versions of Example or Template files may be included in your own Project Zomboid mod under your own project license, provided that the restrictions of this license remain satisfied.
+
+These permissions apply only to files explicitly identified as Example or Template files.
+
+The remainder of the repository, including source code, systems, frameworks, documentation, and other assets, remains governed by Jusblazm's Source Available License.
+
+In the event of conflict between this license and Jusblazm's Source Available License, this license applies only to the Example and Template files specifically covered here.
+
+Attribution is appreciated but not required. Existing copyright notices must remain intact.
