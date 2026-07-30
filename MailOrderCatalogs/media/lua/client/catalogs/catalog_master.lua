@@ -6809,7 +6809,7 @@ return {
         },
         {
             name = "Base.NailsBox",
-            price = 9,
+            price = 12,
             description = getText("UI_MailOrderCatalogs_ItemDescription_NailsBox"),
         },
         {

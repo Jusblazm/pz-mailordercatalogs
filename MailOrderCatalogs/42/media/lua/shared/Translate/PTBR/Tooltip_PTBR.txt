@@ -1,6 +1,0 @@
-Tooltip_PTBR = {
-    Tooltip_MailOrderCatalogs_ComputerUI_URLBar = "Digite aqui a URL do site",
-    
-    Tooltip_MailOrderCatalogs_KnoxBank_AccessAccount = "É necessário ter um cartão de crédito no inventário",
-    Tooltip_MailOrderCatalogs_KnoxBank_OrderCard = "Perdeu seu cartão? Peça um novo!",
-}

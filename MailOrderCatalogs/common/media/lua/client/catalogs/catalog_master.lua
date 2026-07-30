@@ -1083,118 +1083,118 @@ return {
         },
         {
             name = "Base.KeyRing",
-            price = 0,
-            description = "debug",
+            price = 3,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_KeyRing"),
         },
         {
             name = "Base.KeyRing_CarDealer",
-            price = 0,
-            description = "debug",
+            price = 6,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_KeyRing_CarDealer"),
         },
         {
             name = "Base.KeyRing_Bass",
-            price = 0,
-            description = "debug",
+            price = 5,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_KeyRing_Bass"),
         },
         {
             name = "Base.KeyRing_BlueFox",
-            price = 0,
-            description = "debug",
+            price = 5,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_KeyRing_BlueFox"),
         },
         {
             name = "Base.KeyRing_Bug",
-            price = 0,
-            description = "debug",
+            price = 4,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_KeyRing_Bug"),
         },
         {
             name = "Base.KeyRing_Clover",
-            price = 0,
-            description = "debug",
+            price = 4,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_KeyRing_Clover"),
         },
         {
             name = "Base.KeyRing_EagleFlag",
-            price = 0,
-            description = "debug",
+            price = 6,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_KeyRing_EagleFlag"),
         },
         {
             name = "Base.KeyRing_EightBall",
-            price = 0,
-            description = "debug",
+            price = 5,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_KeyRing_EightBall"),
         },
         {
             name = "Base.KeyRing_Hotdog",
-            price = 0,
-            description = "debug",
+            price = 4,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_KeyRing_Hotdog"),
         },
         {
             name = "Base.KeyRing_Kitty",
-            price = 0,
-            description = "debug",
+            price = 4,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_KeyRing_Kitty"),
         },
         {
             name = "Base.KeyRing_Large",
-            price = 0,
-            description = "debug",
+            price = 8,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_KeyRing_Large"),
         },
         {
             name = "Base.KeyRing_Nolans",
-            price = 0,
-            description = "debug",
+            price = 7,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_KeyRing_Nolans"),
         },
         {
             name = "Base.KeyRing_Panther",
-            price = 0,
-            description = "debug",
+            price = 5,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_KeyRing_Panther"),
         },
         {
             name = "Base.KeyRing_PineTree",
-            price = 0,
-            description = "debug",
+            price = 4,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_KeyRing_PineTree"),
         },
         {
             name = "Base.KeyRing_PrayingHands",
-            price = 0,
-            description = "debug",
+            price = 5,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_KeyRing_PrayingHands"),
         },
         {
             name = "Base.KeyRing_RabbitFoot",
-            price = 0,
-            description = "debug",
+            price = 6,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_KeyRing_RabbitFoot"),
         },
         {
             name = "Base.KeyRing_RainbowStar",
-            price = 0,
-            description = "debug",
+            price = 5,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_KeyRing_RainbowStar"),
         },
         {
             name = "Base.KeyRing_RubberDuck",
-            price = 0,
-            description = "debug",
+            price = 4,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_KeyRing_RubberDuck"),
         },
         {
             name = "Base.KeyRing_SecurityPass",
-            price = 0,
-            description = "debug",
+            price = 7,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_KeyRing_SecurityPass"),
         },
         {
             name = "Base.KeyRing_Sexy",
-            price = 0,
-            description = "debug",
+            price = 6,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_KeyRing_Sexy"),
         },
         {
             name = "Base.KeyRing_Spiffos",
-            price = 0,
-            description = "debug",
+            price = 8,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_KeyRing_Spiffos"),
         },
         {
             name = "Base.KeyRing_StinkyFace",
-            price = 0,
-            description = "debug",
+            price = 4,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_KeyRing_StinkyFace"),
         },
         {
             name = "Base.KeyRing_WestMaple",
-            price = 0,
-            description = "debug",
+            price = 7,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_KeyRing_WestMaple"),
         },
         {
             name = "Base.WheatSack",
@@ -3548,18 +3548,18 @@ return {
         },
         {
             name = "Base.Medal_Gold",
-            price = 0,
-            description = "debug",
+            price = 120,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_Medal_Gold"),
         },
         {
             name = "Base.Medal_Silver",
-            price = 0,
-            description = "debug",
+            price = 85,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_Medal_Silver"),
         },
         {
             name = "Base.Medal_Bronze",
-            price = 0,
-            description = "debug",
+            price = 40,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_Medal_Bronze"),
         },
         {
             name = "Base.Ring_Right_MiddleFinger_Signet",
@@ -6054,78 +6054,78 @@ return {
         ]]
         {
             name = "Base.Cologne",
-            price = 0,
-            description = "debug",
+            price = 18,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_Cologne"),
         },
         {
             name = "Base.Comb",
-            price = 0,
-            description = "debug",
+            price = 4,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_Comb"),
         },
         {
             name = "Base.HairDyeCommon",
-            price = 0,
-            description = "debug",
+            price = 10,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_HairDyeCommon"),
         },
         {
             name = "Base.HairDyeUncommon",
-            price = 0,
-            description = "debug",
+            price = 18,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_HairDyeUncommon"),
         },
         {
             name = "Base.HairDyeRare",
-            price = 0,
-            description = "debug",
+            price = 25,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_HairDyeRare"),
         },
         {
             name = "Base.Hairgel",
-            price = 0,
-            description = "debug",
+            price = 7,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_Hairgel"),
         },
         {
             name = "Base.Hairspray2",
-            price = 0,
-            description = "debug",
+            price = 8,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_Hairspray2"),
         },
         {
             name = "Base.Lipstick",
-            price = 0,
-            description = "debug",
+            price = 5,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_Lipstick"),
         },
         {
             name = "Base.Mirror",
-            price = 0,
-            description = "debug",
+            price = 6,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_Mirror"),
         },
         {
             name = "Base.MakeupEyeshadow",
-            price = 0,
-            description = "debug",
+            price = 8,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_MakeupEyeshadow"),
         },
         {
             name = "Base.MakeupFoundation",
-            price = 0,
-            description = "debug",
+            price = 9,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_MakeupFoundation"),
         },
         {
             name = "Base.Perfume",
-            price = 0,
-            description = "debug",
+            price = 13,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_Perfume"),
         },
         {
             name = "Base.Razor",
-            price = 0,
-            description = "debug",
+            price = 7,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_Razor"),
         },
         {
             name = "Base.HairDryer",
-            price = 0,
-            description = "debug",
+            price = 23,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_HairDryer"),
         },
         {
             name = "Base.StraightRazor",
-            price = 0,
-            description = "debug",
+            price = 16,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_StraightRazor"),
         },
 
         --[[
@@ -6809,13 +6809,13 @@ return {
         },
         {
             name = "Base.NailsBox",
-            price = 9,
+            price = 12,
             description = getText("UI_MailOrderCatalogs_ItemDescription_NailsBox"),
         },
         {
             name = "Base.NailsCarton",
-            price = 0,
-            description = "debug",
+            price = 144,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_NailsCarton"),
         },
         {
             name = "Base.Screws",
@@ -6824,18 +6824,18 @@ return {
         },
         {
             name = "Base.ScrewsBox",
-            price = 0,
-            description = "debug",
+            price = 14,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_ScrewsBox"),
         },
         {
             name = "Base.ScrewsCarton",
-            price = 0,
-            description = "debug",
+            price = 168,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_ScrewsCarton"),
         },
         {
             name = "Base.Woodglue",
-            price = 0,
-            description = "debug",
+            price = 5,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_Woodglue"),
         },
         {
             name = "Base.GardenSaw",
@@ -6863,23 +6863,23 @@ return {
         ]]
         {
             name = "Base.Bleach",
-            price = 0,
-            description = "debug",
+            price = 9,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_Bleach"),
         },
         {
             name = "Base.CleaningLiquid2",
-            price = 0,
-            description = "debug",
+            price = 7,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_CleaningLiquid2"),
         },
         {
             name = "Base.Soap2",
-            price = 0,
-            description = "debug",
+            price = 6,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_Soap2"),
         },
         {
             name = "Base.Sponge",
-            price = 0,
-            description = "debug",
+            price = 3,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_Sponge"),
         },
 
         --[[
@@ -6931,38 +6931,38 @@ return {
         ]]
         {
             name = "Base.Chopsticks",
-            price = 0,
-            description = "debug",
+            price = 1,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_Chopsticks")
         },
         {
             name = "Base.Bowl",
-            price = 0,
-            description = "debug",
+            price = 3,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_Bowl")
         },
         {
             name = "Base.Plate",
-            price = 0,
-            description = "debug",
+            price = 3,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_Plate")
         },
         {
             name = "Base.GlassTumbler",
-            price = 0,
-            description = "debug",
+            price = 2,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_GlassTumbler")
         },
         {
             name = "Base.GlassChampagne",
-            price = 0,
-            description = "debug",
+            price = 4,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_GlassChampagne")
         },
         {
             name = "Base.GlassWine",
-            price = 0,
-            description = "debug",
+            price = 4,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_GlassWine")
         },
         {
             name = "Base.Mugl",
-            price = 0,
-            description = "debug",
+            price = 3,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_Mugl")
         },
         {
             name = "Base.MugWhite",
@@ -6976,183 +6976,183 @@ return {
         },
         {
             name = "Base.Teacup",
-            price = 0,
-            description = "debug",
+            price = 3,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_Teacup")
         },
         {
             name = "Base.BakingPan",
-            price = 0,
-            description = "debug",
+            price = 8,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_BakingPan")
         },
         {
             name = "Base.BakingTray",
-            price = 0,
-            description = "debug",
+            price = 7,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_BakingTray")
         },
         {
             name = "Base.MuffinTray",
-            price = 0,
-            description = "debug",
+            price = 9,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_MuffinTray")
         },
         {
             name = "Base.Pot",
-            price = 0,
-            description = "debug",
+            price = 12,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_Pot")
         },
         {
             name = "Base.RoastingPan",
-            price = 0,
-            description = "debug",
+            price = 14,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_RoastingPan")
         },
         {
             name = "Base.CheeseCloth",
-            price = 0,
-            description = "debug",
+            price = 3,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_CheeseCloth")
         },
         {
             name = "Base.CocktailUmbrella",
-            price = 0,
-            description = "debug",
+            price = 1,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_CocktailUmbrella")
         },
         {
             name = "Base.Corkscrew",
-            price = 0,
-            description = "debug",
+            price = 4,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_Corkscrew")
         },
         {
             name = "Base.CuttingBoardPlastic",
-            price = 0,
-            description = "debug",
+            price = 5,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_CuttingBoardPlastic")
         },
         {
             name = "Base.CuttingBoardWooden",
-            price = 0,
-            description = "debug",
+            price = 7,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_CuttingBoardWooden")
         },
         {
             name = "Base.GrillBrush",
-            price = 0,
-            description = "debug",
+            price = 6,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_GrillBrush")
         },
         {
             name = "Base.Kettle",
-            price = 0,
-            description = "debug",
+            price = 10,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_Kettle")
         },
         {
             name = "Base.Kettle_Copper",
-            price = 0,
-            description = "debug",
+            price = 16,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_Kettle_Copper")
         },
         {
             name = "Base.KitchenTongs",
-            price = 0,
-            description = "debug",
+            price = 4,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_KitchenTongs")
         },
         {
             name = "Base.MortarPestle",
-            price = 0,
-            description = "debug",
+            price = 9,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_MortarPestle")
         },
         {
             name = "Base.OvenMitt",
-            price = 0,
-            description = "debug",
+            price = 3,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_OvenMitt")
         },
         {
             name = "Base.PlasticTray",
-            price = 0,
-            description = "debug",
+            price = 3,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_PlasticTray")
         },
         {
             name = "Base.Spatula",
-            price = 0,
-            description = "debug",
+            price = 3,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_Spatula")
         },
         {
             name = "Base.Straw2",
-            price = 0,
-            description = "debug",
+            price = 1,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_Straw2")
         },
         {
             name = "Base.Timer",
-            price = 0,
-            description = "debug",
+            price = 6,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_Timer")
         },
         {
             name = "Base.TinOpener",
-            price = 0,
-            description = "debug",
+            price = 5,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_TinOpener")
         },
         {
             name = "Base.BastingBrush",
-            price = 0,
-            description = "debug",
+            price = 3,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_BastingBrush")
         },
         {
             name = "Base.Whisk",
-            price = 0,
-            description = "debug",
+            price = 4,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_Whisk")
         },
         {
             name = "Base.Ladle",
-            price = 0,
-            description = "debug",
+            price = 4,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_Ladle")
         },
         {
             name = "Base.CheeseGrater",
-            price = 0,
-            description = "debug",
+            price = 6,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_CheeseGrater")
         },
         {
             name = "Base.Strainer",
-            price = 0,
-            description = "debug",
+            price = 5,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_Strainer")
         },
         {
             name = "Base.SkewersWooden",
-            price = 0,
-            description = "debug",
+            price = 1,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_SkewersWooden")
         },
         {
             name = "Base.PizzaCutter",
-            price = 0,
-            description = "debug",
+            price = 5,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_PizzaCutter")
         },
         {
             name = "Base.BottleOpener",
-            price = 0,
-            description = "debug",
+            price = 3,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_BottleOpener")
         },
         {
             name = "Base.BottleOpener_Keychain",
-            price = 0,
-            description = "debug",
+            price = 10,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_BottleOpener_Keychain")
         },
         {
             name = "Base.PlasticFork",
-            price = 0,
-            description = "debug",
+            price = 1,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_PlasticFork")
         },
         {
             name = "Base.PlasticKnife",
-            price = 0,
-            description = "debug",
+            price = 1,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_PlasticKnife")
         },
         {
             name = "Base.PlasticSpoon",
-            price = 0,
-            description = "debug",
+            price = 1,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_PlasticSpoon")
         },
         {
             name = "Base.WoodenFork",
-            price = 0,
-            description = "debug",
+            price = 2,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_WoodenFork")
         },
         {
             name = "Base.WoodenSpoon",
-            price = 0,
-            description = "debug",
+            price = 2,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_WoodenSpoon")
         },
 
         --[[
@@ -9352,7 +9352,7 @@ return {
         --[[
             ITEMS_LITERATURE
         ]]
-        -- specified spawns not added, only generic
+        -- specific spawns not added, only generic
         -- too many options would over clutter the page
         {
             name = "Base.MagazineCrossword",
@@ -10514,103 +10514,103 @@ return {
         ]]
         {
             name = "Base.WalkieTalkie1",
-            price = 0,
-            description = "debug",
+            price = 15,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_WalkieTalkie1"),
         },
         {
             name = "Base.WalkieTalkie2",
-            price = 0,
-            description = "debug",
+            price = 25,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_WalkieTalkie2"),
         },
         {
             name = "Base.WalkieTalkie3",
-            price = 0,
-            description = "debug",
+            price = 45,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_WalkieTalkie3"),
         },
         {
             name = "Base.WalkieTalkie4",
-            price = 0,
-            description = "debug",
+            price = 70,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_WalkieTalkie4"),
         },
         {
             name = "Base.WalkieTalkie5",
-            price = 0,
-            description = "debug",
+            price = 110,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_WalkieTalkie5"),
         },
         {
             name = "Base.WalkieTalkieMakeShift",
-            price = 0,
-            description = "debug",
+            price = 8,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_WalkieTalkieMakeShift"),
         },
         {
             name = "Base.ManPackRadio",
-            price = 0,
-            description = "debug",
+            price = 450,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_ManPackRadio"),
         },
         {
             name = "Base.HamRadio1",
-            price = 0,
-            description = "debug",
+            price = 180,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_HamRadio1"),
         },
         {
             name = "Base.HamRadio2",
-            price = 0,
-            description = "debug",
+            price = 320,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_HamRadio2"),
         },
         {
             name = "Base.HamRadioMakeShift",
-            price = 0,
-            description = "debug",
+            price = 60,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_HamRadioMakeShift"),
         },
         {
             name = "Base.CDplayer",
-            price = 0,
-            description = "debug",
+            price = 14,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_CDplayer"),
         },
         {
             name = "Base.RadioBlack",
-            price = 0,
-            description = "debug",
+            price = 35,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_RadioBlack"),
         },
         {
             name = "Base.RadioMakeShift",
-            price = 0,
-            description = "debug",
+            price = 10,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_RadioMakeShift"),
         },
         {
             name = "Base.RadioRed",
-            price = 0,
-            description = "debug",
+            price = 35,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_RadioRed"),
         },
         {
             name = "Base.TvAntique",
-            price = 0,
-            description = "debug",
+            price = 90,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_TvAntique"),
         },
         {
             name = "Base.TvBlack",
-            price = 0,
-            description = "debug",
+            price = 140,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_TvBlack"),
         },
         {
             name = "Base.TvWideScreen",
-            price = 0,
-            description = "debug",
+            price = 220,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_TvWideScreen"),
         },
         {
             name = "Base.RadioMag1",
             price = 0,
-            description = "debug",
+            description = getText("UI_MailOrderCatalogs_ItemDescription_SkillMagazine"),
         },
         {
             name = "Base.RadioMag2",
             price = 0,
-            description = "debug",
+            description = getText("UI_MailOrderCatalogs_ItemDescription_SkillMagazine"),
         },
         {
             name = "Base.RadioMag3",
             price = 0,
-            description = "debug",
+            description = getText("UI_MailOrderCatalogs_ItemDescription_SkillMagazine"),
         },
 
         --[[

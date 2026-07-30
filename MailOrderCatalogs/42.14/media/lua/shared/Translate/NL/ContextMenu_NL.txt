@@ -1,3 +1,0 @@
-ContextMenu_NL = {
-    ContextMenu_MailOrderCatalogs_Computer_AccessComputer = "Gebruik computer",
-}
