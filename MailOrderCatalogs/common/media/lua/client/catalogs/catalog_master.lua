@@ -2965,13 +2965,13 @@ return {
         },
         {
             name = "Base.HoodieDOWN_WhiteTINT",
-            price = 0,
-            description = "debug",
+            price = 22,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_HoodieDOWN_WhiteTINT"),
         },
         {
             name = "Base.HoodieUP_WhiteTINT",
-            price = 0,
-            description = "debug",
+            price = 22,
+            description = getText("UI_MailOrderCatalogs_ItemDescription_HoodieUP_WhiteTINT"),
         },
         {
             name = "Base.PonchoGreen",
@@ -8959,9 +8959,9 @@ return {
             description = getText("UI_MailOrderCatalogs_ItemDescription_SkillBook5"),
         },
         {
-            name = "Base.BookMechanicSet",
+            name = "Base.BookMechanicsSet",
             price = 220,
-            description = getText("UI_MailOrderCatalogs_ItemDescription_BookMechanicSet"),
+            description = getText("UI_MailOrderCatalogs_ItemDescription_BookMechanicsSet"),
         },
         {
             name = "Base.BookMechanic1",
